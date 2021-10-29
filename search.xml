@@ -388,7 +388,7 @@
   <entry>
     <title>Hexo创建新博客</title>
     <url>/2021/10/29/Hexo%E5%88%9B%E5%BB%BA%E6%96%B0%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>hexo new 标题名<br>hexo g &amp; deploy</p>
+    <content><![CDATA[<p>hexo new 标题名<br>hexo g –d</p>
 ]]></content>
       <categories>
         <category>技术</category>
