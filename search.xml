@@ -399,4 +399,14 @@
     <url>/2021/08/25/%E9%AD%94%E9%AC%BC%E4%BB%A3%E8%A8%80%E4%BA%BA/</url>
     <content><![CDATA[]]></content>
   </entry>
+  <entry>
+    <title>生成ssh密钥</title>
+    <url>/2021/10/29/%E7%94%9F%E6%88%90ssh%E5%AF%86%E9%92%A5/</url>
+    <content><![CDATA[<p><code>ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</code></p>
+<p>windows存储在<code>c:/user/userName/.ssh</code></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
 </search>
