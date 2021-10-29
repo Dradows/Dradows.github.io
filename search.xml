@@ -417,6 +417,7 @@
 <p><code>package.json</code>中添加pm2配置项</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;script&quot;: &quot;bin&#x2F;www&quot;,</span><br><span class="line">&quot;watch&quot;: false,</span><br><span class="line">&quot;ignore_watch&quot;: [</span><br><span class="line">  &quot;.git&quot;</span><br><span class="line">],</span><br><span class="line">&quot;log_date_format&quot;: &quot;YYYY-MM-DD HH:mm:ss&quot;,</span><br><span class="line">&quot;error_file&quot;: &quot;err.log&quot;,</span><br><span class="line">&quot;out_file&quot;: &quot;out.log&quot;,</span><br></pre></td></tr></table></figure>
 
+<p><code>pm2 start package.json</code></p>
 ]]></content>
       <categories>
         <category>技术</category>
