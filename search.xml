@@ -409,4 +409,17 @@
         <category>技术</category>
       </categories>
   </entry>
+  <entry>
+    <title>新建express项目</title>
+    <url>/2021/10/29/%E6%96%B0%E5%BB%BAexpress%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g express-generator</span><br><span class="line">express --view&#x3D;pug appName</span><br></pre></td></tr></table></figure>
+
+<p><code>package.json</code>中添加pm2配置项</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;script&quot;: &quot;bin&#x2F;www&quot;,</span><br><span class="line">&quot;watch&quot;: false,</span><br><span class="line">&quot;ignore_watch&quot;: [</span><br><span class="line">  &quot;.git&quot;</span><br><span class="line">],</span><br><span class="line">&quot;log_date_format&quot;: &quot;YYYY-MM-DD HH:mm:ss&quot;,</span><br><span class="line">&quot;error_file&quot;: &quot;err.log&quot;,</span><br><span class="line">&quot;out_file&quot;: &quot;out.log&quot;,</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
 </search>
