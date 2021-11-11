@@ -423,4 +423,39 @@
         <category>技术</category>
       </categories>
   </entry>
+  <entry>
+    <title>git加速</title>
+    <url>/2021/11/12/git%E5%8A%A0%E9%80%9F/</url>
+    <content><![CDATA[<p>设置代理</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy socks5:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">git config --global https.proxy socks5:&#x2F;&#x2F;127.0.0.1:1080</span><br></pre></td></tr></table></figure>
+<p>查看代理</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+<p>取消代理</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>npm加速</title>
+    <url>/2021/11/12/npm%E5%8A%A0%E9%80%9F/</url>
+    <content><![CDATA[<h3 id="通过修改源加速"><a href="#通过修改源加速" class="headerlink" title="通过修改源加速"></a>通过修改源加速</h3><p>设置源</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npmmirror.com</span><br></pre></td></tr></table></figure>
+<p>查看源</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
+<p>删除源</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config rm registry</span><br></pre></td></tr></table></figure>
+<h3 id="通过代理加速"><a href="#通过代理加速" class="headerlink" title="通过代理加速"></a>通过代理加速</h3><p>设置代理</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">npm config set https-proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br></pre></td></tr></table></figure>
+<p>查看代理</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config get proxy</span><br><span class="line">npm config get https-proxy</span><br></pre></td></tr></table></figure>
+<p>删除代理</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config rm proxy</span><br><span class="line">npm config rm https-proxy</span><br></pre></td></tr></table></figure>
+<p>个人体验换源更好</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
 </search>
