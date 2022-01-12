@@ -40,10 +40,10 @@
     --btn-default-hover-border-color: #666;
   }
   img {
-    opacity: 0.75;
+    opacity: 0.95;
   }
   img:hover {
-    opacity: 0.9;
+    opacity: 1;
   }
 }
 html {
