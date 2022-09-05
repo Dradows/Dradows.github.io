@@ -511,4 +511,14 @@
         <tag>conda</tag>
       </tags>
   </entry>
+  <entry>
+    <title>pm2</title>
+    <url>/2022/09/05/pm2/</url>
+    <content><![CDATA[<h1 id="自启"><a href="#自启" class="headerlink" title="自启"></a>自启</h1><p>保存当前进程列表<br><code>pm2 save</code></p>
+<p>设置自启<br><code>pm2 startup</code></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
 </search>
