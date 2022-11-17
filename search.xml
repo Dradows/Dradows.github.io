@@ -424,17 +424,19 @@
     <title>npm加速</title>
     <url>/2021/11/12/npm%E5%8A%A0%E9%80%9F/</url>
     <content><![CDATA[<h3 id="通过修改源加速"><a href="#通过修改源加速" class="headerlink" title="通过修改源加速"></a>通过修改源加速</h3><p>设置源</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 <p>查看源</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
 <p>删除源</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config rm registry</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config rm registry</span><br></pre></td></tr></table></figure>
 <h3 id="通过代理加速"><a href="#通过代理加速" class="headerlink" title="通过代理加速"></a>通过代理加速</h3><p>设置代理</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">npm config set https-proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set proxy http://127.0.0.1:1080</span><br><span class="line">npm config set https-proxy http://127.0.0.1:1080</span><br></pre></td></tr></table></figure>
+
 <p>查看代理</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config get proxy</span><br><span class="line">npm config get https-proxy</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config get proxy</span><br><span class="line">npm config get https-proxy</span><br></pre></td></tr></table></figure>
+
 <p>删除代理</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config rm proxy</span><br><span class="line">npm config rm https-proxy</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config rm proxy</span><br><span class="line">npm config rm https-proxy</span><br></pre></td></tr></table></figure>
 <p>个人体验换源更好</p>
 ]]></content>
       <categories>
@@ -536,6 +538,15 @@
 ]]></content>
       <categories>
         <category>技术</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>暴雪</title>
+    <url>/2022/11/18/%E6%9A%B4%E9%9B%AA/</url>
+    <content><![CDATA[<p>第一次接触暴雪的游戏，大概是在高中的时候。太过久远的记忆记不清楚了，翻了一下消费记录，第一次购买风暴英雄的英雄是在2014年年末，距今已经接近8年了。<br><img src="/image/brain.png" alt="&#39;2014年&#39;"></p>
+]]></content>
+      <categories>
+        <category>闲话</category>
       </categories>
   </entry>
 </search>
