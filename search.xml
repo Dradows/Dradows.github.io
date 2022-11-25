@@ -588,4 +588,19 @@
         <category>技术</category>
       </categories>
   </entry>
+  <entry>
+    <title>python加速</title>
+    <url>/2022/11/26/python%E5%8A%A0%E9%80%9F/</url>
+    <content><![CDATA[<h2 id="使用pypy编译"><a href="#使用pypy编译" class="headerlink" title="使用pypy编译"></a>使用<a href="https://www.pypy.org/">pypy</a>编译</h2><ol>
+<li><a href="https://www.pypy.org/">官网</a>下载安装</li>
+<li>添加环境变量（可能需要重启，或者之后用绝对目录运行）</li>
+<li><code>pypy -m ensurepip</code> 安装 pip</li>
+<li><code>pypy -m pip install xxxx</code> 安装对应库</li>
+<li><code>pypy xxxx.py</code> 运行</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
 </search>
