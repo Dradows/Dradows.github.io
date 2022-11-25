@@ -397,7 +397,7 @@
   <entry>
     <title>暴雪</title>
     <url>/2022/11/18/%E6%9A%B4%E9%9B%AA/</url>
-    <content><![CDATA[<p>第一次接触暴雪的游戏，大概是在高中的时候。太过久远的记忆记不清楚了，翻了一下消费记录，第一次购买风暴英雄的英雄是在2014年年末，距今已经接近8年了。<br><img src="/../images/2014%E5%B9%B4.png" alt="&#39;第一次接触暴雪&#39;"></p>
+    <content><![CDATA[<p>第一次接触暴雪的游戏，大概是在高中的时候。太过久远的记忆记不清楚了，翻了一下消费记录，第一次购买风暴英雄的英雄是在2014年年末，距今已经接近8年了。<br><img src="/../images/2014%E5%B9%B4.png" alt="&#39;第一次接触暴雪&#39;"><br>炉石也是差不多那时候开始接触，但买卡包没记录在交易记录里，也就没法追溯具体的时间了，而且那时候连银行卡都没，什么都消费不了，炉石只能组组蓝白卡组，很难讲有什么乐趣，其实也没留下太多印象。但风暴是不涉及氪金变强的，虽然也有英雄的限制，但风暴大胆的英雄设计让很多英雄都有自己独特的乐趣，比如阿巴瑟，奔波儿灞，阿兹莫丹，在没有</p>
 ]]></content>
       <categories>
         <category>闲话</category>
@@ -564,6 +564,25 @@
 
 <p>更新包</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>git操作</title>
+    <url>/2022/11/26/git%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<h2 id="git-clone修改文件后创立分支"><a href="#git-clone修改文件后创立分支" class="headerlink" title="git clone修改文件后创立分支"></a>git clone修改文件后创立分支</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch dev</span><br><span class="line">git checkout dev</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;init&quot;</span></span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>python版本过新，pip安装library出现legacy-install-failure错误</title>
+    <url>/2022/11/26/python%E7%89%88%E6%9C%AC%E8%BF%87%E6%96%B0%EF%BC%8Cpip%E5%87%BA%E7%8E%B0legacy-install-failure%E9%94%99%E8%AF%AF/</url>
+    <content><![CDATA[<h2 id="使用pipwin安装"><a href="#使用pipwin安装" class="headerlink" title="使用pipwin安装"></a>使用pipwin安装</h2><p>pipwin从非官方来源安装库，通常可以适应更新版本的python（不保证绝对的安全）。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install pipwin</span><br><span class="line">pipwin install XXXX</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术</category>
