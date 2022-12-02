@@ -612,4 +612,46 @@
         <category>闲话</category>
       </categories>
   </entry>
+  <entry>
+    <title>linux指令</title>
+    <url>/2022/12/03/linux%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="查看-centos-版本"><a href="#查看-centos-版本" class="headerlink" title="查看 centos 版本"></a>查看 centos 版本</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> /etc/redhat-release</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>yum加速</title>
+    <url>/2022/12/03/yum%E5%8A%A0%E9%80%9F/</url>
+    <content><![CDATA[<h2 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h2><ol>
+<li><code>mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak</code> 备份</li>
+<li>下载阿里源<ul>
+<li>centos6 <code>wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo</code></li>
+<li>centos7 <code>wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</code></li>
+</ul>
+</li>
+<li><code>yum makecache</code> 生成缓存</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>围棋ai</title>
+    <url>/2022/12/01/%E5%9B%B4%E6%A3%8Bai/</url>
+    <content><![CDATA[<h2 id="katago"><a href="#katago" class="headerlink" title="katago"></a><a href="https://github.com/lightvector/KataGo">katago</a></h2><ol>
+<li><a href="https://github.com/lightvector/KataGo/releases">release</a>中下载发行包，<a href="https://katagotraining.org/networks/">官网</a>官网下载权重</li>
+<li><code>katago.exe genconfig -model model.bin -output gtp_custom.cfg</code> 生成配置文件</li>
+</ol>
+<h2 id="sabaki"><a href="#sabaki" class="headerlink" title="sabaki"></a><a href="https://github.com/SabakiHQ/Sabaki">sabaki</a></h2><ol>
+<li><a href="https://github.com/SabakiHQ/Sabaki/releases/">release</a>中下载发行包。</li>
+<li>打开引擎侧边栏，添加引擎</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
 </search>
