@@ -371,12 +371,12 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="查看-centos-版本"><a href="#查看-centos-版本" class="headerlink" title="查看 centos 版本"></a>查看 centos 版本</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> /etc/redhat-release</span><br></pre></td></tr></table></figure>
-
-<h2 id="查看对应端口进程"><a href="#查看对应端口进程" class="headerlink" title="查看对应端口进程"></a>查看对应端口进程</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -tunpl | grep 端口号</span><br></pre></td></tr></table></figure>
-
-<h2 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a>解压缩</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar –xvf file.tar</span><br></pre></td></tr></table></figure>
-
+          <h2 id="查看-centos-版本"><a class="markdownIt-Anchor" href="#查看-centos-版本"></a> 查看 centos 版本</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> /etc/redhat-release</span><br></pre></td></tr></table></figure>
+<h2 id="查看对应端口进程"><a class="markdownIt-Anchor" href="#查看对应端口进程"></a> 查看对应端口进程</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -tunpl | grep 端口号</span><br></pre></td></tr></table></figure>
+<h2 id="解压缩"><a class="markdownIt-Anchor" href="#解压缩"></a> 解压缩</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar –xvf file.tar</span><br></pre></td></tr></table></figure>
 <p>参数：</p>
 <ul>
 <li><code>-x</code> 解压</li>
@@ -386,8 +386,10 @@
 <li><code>-Z</code> 解压<code>.Z</code>文件</li>
 <li><code>-j</code> 解压<code>.bz2</code>文件</li>
 </ul>
-<p><code>unzip</code> 解压<code>.zip</code>文件<br><code>unrar</code> 解压<code>.rar</code>文件</p>
-<h2 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h2><ul>
+<p><code>unzip</code> 解压<code>.zip</code>文件<br />
+<code>unrar</code> 解压<code>.rar</code>文件</p>
+<h2 id="搜索"><a class="markdownIt-Anchor" href="#搜索"></a> 搜索</h2>
+<ul>
 <li><code>which</code> 搜索可执行文件。</li>
 <li><code>whereis</code> 比 <code>which</code> 搜索更多文件类型。</li>
 <li><code>locate</code> 通过数据库索引查找，更快但有延迟，可通过<code>updatedb</code>更新索引。</li>
@@ -478,11 +480,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h2><ol>
+          <h2 id="换源"><a class="markdownIt-Anchor" href="#换源"></a> 换源</h2>
+<ol>
 <li><code>mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak</code> 备份</li>
-<li>下载阿里源<ul>
-<li>centos6<br><code>wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo</code></li>
-<li>centos7<br><code>wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</code></li>
+<li>下载阿里源
+<ul>
+<li>centos6<br />
+<code>wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo</code></li>
+<li>centos7<br />
+<code>wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</code></li>
 </ul>
 </li>
 <li><code>yum makecache</code> 生成缓存</li>
@@ -578,13 +584,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="katago"><a href="#katago" class="headerlink" title="katago"></a><a target="_blank" rel="noopener" href="https://github.com/lightvector/KataGo">katago</a></h2><ol>
+          <h2 id="katago"><a class="markdownIt-Anchor" href="#katago"></a> <a target="_blank" rel="noopener" href="https://github.com/lightvector/KataGo">katago</a></h2>
+<ol>
 <li><a target="_blank" rel="noopener" href="https://github.com/lightvector/KataGo/releases">release</a>中下载发行包，<a target="_blank" rel="noopener" href="https://katagotraining.org/networks/">官网</a>官网下载权重</li>
 <li><code>katago.exe genconfig -model model.bin -output gtp_custom.cfg</code> 生成配置文件</li>
 </ol>
-<h2 id="sabaki"><a href="#sabaki" class="headerlink" title="sabaki"></a><a target="_blank" rel="noopener" href="https://github.com/SabakiHQ/Sabaki">sabaki</a></h2><ol>
+<h2 id="sabaki"><a class="markdownIt-Anchor" href="#sabaki"></a> <a target="_blank" rel="noopener" href="https://github.com/SabakiHQ/Sabaki">sabaki</a></h2>
+<ol>
 <li><a target="_blank" rel="noopener" href="https://github.com/SabakiHQ/Sabaki/releases/">release</a>中下载发行包。</li>
-<li>打开引擎侧边栏，添加引擎,参数为<code>gtp -model &#39;model.bin&#39; -config &#39;gtp.cfg&#39;</code></li>
+<li>打开引擎侧边栏，添加引擎,参数为<code>gtp -model 'model.bin' -config 'gtp.cfg'</code></li>
 </ol>
 
       
@@ -757,7 +765,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="使用pypy编译"><a href="#使用pypy编译" class="headerlink" title="使用pypy编译"></a>使用<a target="_blank" rel="noopener" href="https://www.pypy.org/">pypy</a>编译</h2><ol>
+          <h2 id="使用pypy编译"><a class="markdownIt-Anchor" href="#使用pypy编译"></a> 使用<a target="_blank" rel="noopener" href="https://www.pypy.org/">pypy</a>编译</h2>
+<ol>
 <li><a target="_blank" rel="noopener" href="https://www.pypy.org/">官网</a>下载安装</li>
 <li>添加环境变量（可能需要重启，或者之后用绝对目录运行）</li>
 <li><code>pypy -m ensurepip</code> 安装 pip</li>
@@ -849,7 +858,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="git-clone修改文件后创立分支"><a href="#git-clone修改文件后创立分支" class="headerlink" title="git clone修改文件后创立分支"></a>git clone修改文件后创立分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git branch dev</span><br><span class="line">git checkout dev</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;init&quot;</span></span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+          <h2 id="git-clone修改文件后创立分支"><a class="markdownIt-Anchor" href="#git-clone修改文件后创立分支"></a> git clone修改文件后创立分支</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git branch dev</span><br><span class="line">git checkout dev</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;init&quot;</span></span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -935,7 +945,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="使用pipwin安装"><a href="#使用pipwin安装" class="headerlink" title="使用pipwin安装"></a>使用pipwin安装</h2><p>pipwin从非官方来源安装库，通常可以适应更新版本的python（不保证绝对的安全）。</p>
+          <h2 id="使用pipwin安装"><a class="markdownIt-Anchor" href="#使用pipwin安装"></a> 使用pipwin安装</h2>
+<p>pipwin从非官方来源安装库，通常可以适应更新版本的python（不保证绝对的安全）。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install pipwin</span><br><span class="line">pipwin install XXXX</span><br></pre></td></tr></table></figure>
 
       
@@ -1024,13 +1035,10 @@
     <div class="post-body" itemprop="articleBody">
           <p>安装相关包</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm-check npm-upgrade</span><br></pre></td></tr></table></figure>
-
-<p>检查版本&#x2F;使用情况</p>
+<p>检查版本/使用情况</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-check</span><br></pre></td></tr></table></figure>
-
 <p>更新 package.json</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-upgrade</span><br></pre></td></tr></table></figure>
-
 <p>更新包</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
@@ -1124,7 +1132,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>第一次接触暴雪的游戏，大概是在高中的时候。太过久远的记忆记不清楚了，翻了一下消费记录，第一次购买风暴英雄的英雄是在2014年年末，距今已经接近8年了。<br><img src="/../images/2014%E5%B9%B4.png" alt="&#39;第一次接触暴雪&#39;"><br>炉石也是差不多那时候开始接触，但买卡包没记录在交易记录里，也就没法追溯具体的时间了，而且那时候连银行卡都没，什么都消费不了，炉石只能组组蓝白卡组，很难讲有什么乐趣，其实也没留下太多印象。但风暴是不涉及氪金变强的，虽然也有英雄的限制，但风暴大胆的英雄设计让很多英雄都有自己独特的乐趣，比如阿巴瑟，奔波儿灞，阿兹莫丹，在没有装备限制的情况下，出现了很多其他MOBA不可能出现的英雄。<br>暗黑破坏神2我在初中（甚至小学？）的时候就接触过了，但第一次接触的时候似乎没什么耐心，而且也不被允许玩太久电脑，所以并没怎么通关，但那时候几乎就奠定了我对游戏“职业”的偏好。首选的是德鲁伊、死灵法师这样的召唤系，其次是法师。不过暗黑并没真正养成我对刷子游戏的喜好，哪怕后来我能通关了也仅局限于尝试不同角色从零到通关的过程，而对通关后刷刷刷的热情极低。这种类型的游戏，暗黑3，无主之地，全境封锁，outriders，命运，基本都只处于通关后封箱的状态。暗黑3通关过两三个职业，之后在不同赛季反复下过几次，但都坚持不下去赛季内容，基本下几次图就又删了。无主2和3都通过，包括后来的小缇娜，我甚至都只单职业通关。全境2倒是玩了挺久，还建了个excel统计装备，刷了几套不错的搭配，DLC也玩了，但育碧的一连串操作确实很打击热情，让本就很虚无的游戏装备更添了一份虚无感，之后就再没关注过了。outriders的本体我也玩了差不多160小时，甚至录了人生第一份游戏攻略视频，2000+1500的播放大概对一个从没发过视频的人来说处于一个不高不低的状态吧，不过我本来也只是录着玩的所以也不太在乎这个。但出DLC后看到那和本体差不多的价格，再回想起全境2重刷的痛苦经历，也不打算继续尝试了。而命运2对于一个在它登录steam后才了解到的人来说，剧情实在太没有代入感，我现在甚至一丁点相关的剧情都想不起来，只记得几个凯德几号之类的人名。而且许多实用装备直接和PVP或者高重复度PVE挂钩，对于不想无止境地投入时间的人来说也很劝退，所以只玩了它在steam上的第一个赛季，后来哪怕多次在steam首页推销新DLC也没关注。说到命运2想起了前面没提到的warframe，大概下过下次，从国际服到国服到国际服，第一次下了后一脸懵逼，老图组不到，可能还有一些已经记不得的网络延迟之类的问题，所以没玩多久。后来有了国服，好像是首冲活动，拿了个榴弹，然后大家组队刷一个本，只要站在顶部不停射榴弹就好了，也有一种朴素的快乐，不太记得为什么退坑了。后来又试了下steam上的warframe（第一次应该是直接从官网下的？），发现老图依然是组不到人，再度弃坑。所以这类网游根深蒂固的问题就是新鲜血液的匮乏，如果没有新的服务器，在度过开荒期后很难找到相同进度的玩家共同游戏，进而在新玩家减少和新玩家入坑难中恶性循环。<br>大晚上的不知道为什么突然写了一串和暴雪关系也不大的东西，先睡了等以后哪天想到了再说说酒馆战旗，星际2和新守望的故事吧，虽然以我的懒癌性格来说很可能就此断更。不管如何，暴雪在游戏史上可以说是伟大的，可惜没能跟上时代的步伐，总是慢了几个节拍。自走棋的引入倒是成功的，但后来想要引入战令，结果因为角色稀少，装饰部位也少，导致炉石战令和守望战令都没太多好评，只能把酒馆的4选1强行塞进战令导致风评进一步受损，而守望的多年停更换来的付费模式改变也更让人质疑暴雪出品必属精品的说法，毕竟游戏内容的变化很难说够得上几年的工作量，而画饼的PVE国服也等不到了（但就被视为PVE预告的万圣节副本和过去几乎没大变化来说，很难相信新PVE能拿得出相当于一个新模式的游戏内容）。然后重置版也谈不上成功，也许赚了不少钱但更像是挥霍ip以及对未来的透支。也许现在暴雪的存活之道也只在于曾经的情怀，而缺少了创作的激情吧。</p>
+          <p>第一次接触暴雪的游戏，大概是在高中的时候。太过久远的记忆记不清楚了，翻了一下消费记录，第一次购买风暴英雄的英雄是在2014年年末，距今已经接近8年了。<br />
+<img src="../images/2014%E5%B9%B4.png" alt="'第一次接触暴雪'" /><br />
+炉石也是差不多那时候开始接触，但买卡包没记录在交易记录里，也就没法追溯具体的时间了，而且那时候连银行卡都没，什么都消费不了，炉石只能组组蓝白卡组，很难讲有什么乐趣，其实也没留下太多印象。但风暴是不涉及氪金变强的，虽然也有英雄的限制，但风暴大胆的英雄设计让很多英雄都有自己独特的乐趣，比如阿巴瑟，奔波儿灞，阿兹莫丹，在没有装备限制的情况下，出现了很多其他MOBA不可能出现的英雄。<br />
+暗黑破坏神2我在初中（甚至小学？）的时候就接触过了，但第一次接触的时候似乎没什么耐心，而且也不被允许玩太久电脑，所以并没怎么通关，但那时候几乎就奠定了我对游戏“职业”的偏好。首选的是德鲁伊、死灵法师这样的召唤系，其次是法师。不过暗黑并没真正养成我对刷子游戏的喜好，哪怕后来我能通关了也仅局限于尝试不同角色从零到通关的过程，而对通关后刷刷刷的热情极低。这种类型的游戏，暗黑3，无主之地，全境封锁，outriders，命运，基本都只处于通关后封箱的状态。暗黑3通关过两三个职业，之后在不同赛季反复下过几次，但都坚持不下去赛季内容，基本下几次图就又删了。无主2和3都通过，包括后来的小缇娜，我甚至都只单职业通关。全境2倒是玩了挺久，还建了个excel统计装备，刷了几套不错的搭配，DLC也玩了，但育碧的一连串操作确实很打击热情，让本就很虚无的游戏装备更添了一份虚无感，之后就再没关注过了。outriders的本体我也玩了差不多160小时，甚至录了人生第一份游戏攻略视频，2000+1500的播放大概对一个从没发过视频的人来说处于一个不高不低的状态吧，不过我本来也只是录着玩的所以也不太在乎这个。但出DLC后看到那和本体差不多的价格，再回想起全境2重刷的痛苦经历，也不打算继续尝试了。而命运2对于一个在它登录steam后才了解到的人来说，剧情实在太没有代入感，我现在甚至一丁点相关的剧情都想不起来，只记得几个凯德几号之类的人名。而且许多实用装备直接和PVP或者高重复度PVE挂钩，对于不想无止境地投入时间的人来说也很劝退，所以只玩了它在steam上的第一个赛季，后来哪怕多次在steam首页推销新DLC也没关注。说到命运2想起了前面没提到的warframe，大概下过下次，从国际服到国服到国际服，第一次下了后一脸懵逼，老图组不到，可能还有一些已经记不得的网络延迟之类的问题，所以没玩多久。后来有了国服，好像是首冲活动，拿了个榴弹，然后大家组队刷一个本，只要站在顶部不停射榴弹就好了，也有一种朴素的快乐，不太记得为什么退坑了。后来又试了下steam上的warframe（第一次应该是直接从官网下的？），发现老图依然是组不到人，再度弃坑。所以这类网游根深蒂固的问题就是新鲜血液的匮乏，如果没有新的服务器，在度过开荒期后很难找到相同进度的玩家共同游戏，进而在新玩家减少和新玩家入坑难中恶性循环。<br />
+大晚上的不知道为什么突然写了一串和暴雪关系也不大的东西，先睡了等以后哪天想到了再说说酒馆战旗，星际2和新守望的故事吧，虽然以我的懒癌性格来说很可能就此断更。不管如何，暴雪在游戏史上可以说是伟大的，可惜没能跟上时代的步伐，总是慢了几个节拍。自走棋的引入倒是成功的，但后来想要引入战令，结果因为角色稀少，装饰部位也少，导致炉石战令和守望战令都没太多好评，只能把酒馆的4选1强行塞进战令导致风评进一步受损，而守望的多年停更换来的付费模式改变也更让人质疑暴雪出品必属精品的说法，毕竟游戏内容的变化很难说够得上几年的工作量，而画饼的PVE国服也等不到了（但就被视为PVE预告的万圣节副本和过去几乎没大变化来说，很难相信新PVE能拿得出相当于一个新模式的游戏内容）。然后重置版也谈不上成功，也许赚了不少钱但更像是挥霍ip以及对未来的透支。也许现在暴雪的存活之道也只在于曾经的情怀，而缺少了创作的激情吧。</p>
 
       
     </div>

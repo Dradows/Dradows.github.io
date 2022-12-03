@@ -379,26 +379,26 @@ td {
 .toggle .toggle-line:not(:first-child) {
   margin-top: 4px;
 }
-.toggle.toggle-arrow .toggle-line:first-child {
+.toggle.toggle-arrow :first-child {
   left: 50%;
   top: 2px;
   transform: rotate(45deg);
   width: 50%;
 }
-.toggle.toggle-arrow .toggle-line:last-child {
+.toggle.toggle-arrow :last-child {
   left: 50%;
   top: -2px;
   transform: rotate(-45deg);
   width: 50%;
 }
-.toggle.toggle-close .toggle-line:nth-child(2) {
+.toggle.toggle-close :nth-child(2) {
   opacity: 0;
 }
-.toggle.toggle-close .toggle-line:first-child {
+.toggle.toggle-close :first-child {
   top: 6px;
   transform: rotate(45deg);
 }
-.toggle.toggle-close .toggle-line:last-child {
+.toggle.toggle-close :last-child {
   top: -6px;
   transform: rotate(-45deg);
 }
@@ -705,7 +705,7 @@ pre code {
 .post-body .note {
   border-radius: 3px;
   margin-bottom: 20px;
-  padding: 1em 1em 0;
+  padding: 1em;
   position: relative;
   border: 1px solid #eee;
   border-left-width: 5px;
@@ -725,6 +725,12 @@ pre code {
   border-bottom: initial;
   margin: 0;
   padding-top: 0;
+}
+.post-body .note :first-child {
+  margin-top: 0;
+}
+.post-body .note :last-child {
+  margin-bottom: 0;
 }
 .post-body .note.default {
   border-left-color: #777;
@@ -1291,27 +1297,27 @@ pre code {
   background: #87daff;
 }
 @media (any-hover: hover) {
-  body:not(.sidebar-active) .sidebar-toggle:hover .toggle-line:first-child {
+  body:not(.sidebar-active) .sidebar-toggle:hover :first-child {
     left: 50%;
     top: 2px;
     transform: rotate(45deg);
     width: 50%;
   }
-  body:not(.sidebar-active) .sidebar-toggle:hover .toggle-line:last-child {
+  body:not(.sidebar-active) .sidebar-toggle:hover :last-child {
     left: 50%;
     top: -2px;
     transform: rotate(-45deg);
     width: 50%;
   }
 }
-.sidebar-active .sidebar-toggle .toggle-line:nth-child(2) {
+.sidebar-active .sidebar-toggle :nth-child(2) {
   opacity: 0;
 }
-.sidebar-active .sidebar-toggle .toggle-line:first-child {
+.sidebar-active .sidebar-toggle :first-child {
   top: 6px;
   transform: rotate(45deg);
 }
-.sidebar-active .sidebar-toggle .toggle-line:last-child {
+.sidebar-active .sidebar-toggle :last-child {
   top: -6px;
   transform: rotate(-45deg);
 }
@@ -2488,7 +2494,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #94beff;
+  background: #baff9a;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
