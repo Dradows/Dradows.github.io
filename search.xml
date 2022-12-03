@@ -616,6 +616,27 @@
     <title>linux指令</title>
     <url>/2022/12/03/linux%E6%8C%87%E4%BB%A4/</url>
     <content><![CDATA[<h2 id="查看-centos-版本"><a href="#查看-centos-版本" class="headerlink" title="查看 centos 版本"></a>查看 centos 版本</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> /etc/redhat-release</span><br></pre></td></tr></table></figure>
+
+<h2 id="查看对应端口进程"><a href="#查看对应端口进程" class="headerlink" title="查看对应端口进程"></a>查看对应端口进程</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">netstat -tunpl | grep 端口号</span><br></pre></td></tr></table></figure>
+
+<h2 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a>解压缩</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar –xvf file.tar</span><br></pre></td></tr></table></figure>
+
+<p>参数：</p>
+<ul>
+<li><code>-x</code> 解压</li>
+<li><code>-v</code> 显示过程</li>
+<li><code>-f</code> 后接文件名</li>
+<li><code>-z</code> 解压<code>.gz</code>文件</li>
+<li><code>-Z</code> 解压<code>.Z</code>文件</li>
+<li><code>-j</code> 解压<code>.bz2</code>文件</li>
+</ul>
+<p><code>unzip</code> 解压<code>.zip</code>文件<br><code>unrar</code> 解压<code>.rar</code>文件</p>
+<h2 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h2><ul>
+<li><code>which</code> 搜索可执行文件。</li>
+<li><code>whereis</code> 比 <code>which</code> 搜索更多文件类型。</li>
+<li><code>locate</code> 通过数据库索引查找，更快但有延迟，可通过<code>updatedb</code>更新索引。</li>
+<li><code>find / -name filename</code> 更慢，可搜索指令目录。</li>
+</ul>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -647,7 +668,7 @@
 </ol>
 <h2 id="sabaki"><a href="#sabaki" class="headerlink" title="sabaki"></a><a href="https://github.com/SabakiHQ/Sabaki">sabaki</a></h2><ol>
 <li><a href="https://github.com/SabakiHQ/Sabaki/releases/">release</a>中下载发行包。</li>
-<li>打开引擎侧边栏，添加引擎</li>
+<li>打开引擎侧边栏，添加引擎,参数为<code>gtp -model &#39;model.bin&#39; -config &#39;gtp.cfg&#39;</code></li>
 </ol>
 ]]></content>
       <categories>
