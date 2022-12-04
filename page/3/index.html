@@ -251,8 +251,7 @@
     <div class="post-body" itemprop="articleBody">
           <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g express-generator</span><br><span class="line">express --view=pug appName</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd appName</span><br><span class="line">pnpm install</span><br></pre></td></tr></table></figure>
-<p><code>package.json</code>中添加pm2配置项</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&quot;script&quot;: &quot;bin/www&quot;,</span><br><span class="line">&quot;watch&quot;: false,</span><br><span class="line">&quot;ignore_watch&quot;: [</span><br><span class="line">  &quot;.git&quot;</span><br><span class="line">],</span><br><span class="line">&quot;log_date_format&quot;: &quot;YYYY-MM-DD HH:mm:ss&quot;,</span><br><span class="line">&quot;error_file&quot;: &quot;err.log&quot;,</span><br><span class="line">&quot;out_file&quot;: &quot;out.log&quot;,</span><br></pre></td></tr></table></figure>
+<p><code>package.json</code>中添加pm2配置项 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&quot;script&quot;: &quot;bin/www&quot;,</span><br><span class="line">&quot;watch&quot;: false,</span><br><span class="line">&quot;ignore_watch&quot;: [</span><br><span class="line">  &quot;.git&quot;</span><br><span class="line">],</span><br><span class="line">&quot;log_date_format&quot;: &quot;YYYY-MM-DD HH:mm:ss&quot;,</span><br><span class="line">&quot;error_file&quot;: &quot;err.log&quot;,</span><br><span class="line">&quot;out_file&quot;: &quot;out.log&quot;,</span><br></pre></td></tr></table></figure></p>
 <p><code>pm2 start package.json</code></p>
 
       
@@ -345,7 +344,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p><code>ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</code></p>
+          <p><code>ssh-keygen -t ed25519 -C "your_email@example.com"</code></p>
 <p>windows存储在<code>c:/user/userName/.ssh</code></p>
 
       
@@ -516,6 +515,7 @@
     
     <div class="post-body" itemprop="articleBody">
           
+
       
     </div>
 
@@ -774,8 +774,9 @@
     
     <div class="post-body" itemprop="articleBody">
           <blockquote>
-<p>铭印（英语：imprinting），又称印记、印迹、印随或印痕。在行为生物学中指的是一种不可逆的学习模式：通常在一段比较短的，由基因决定的时期里（敏感时期），环境的刺激会被长久地植入个体的行为中，后来看来就好像先天习得的一样。本能理论认为，铭印是通过学习，而掌握了钥匙刺激而形成的现象。<br />
-后代铭印（Filial imprinting）让幼体学会辨认母亲。某些生物出生以后会紧跟着它第一眼见到的较大的可移动的物体而走。印痕作用一旦发生，就很难改变。由于生物出生后，第一眼看到的物体通常是其母亲，所以生物的这种行为可以使得生物幼体出生后不易认错它们的母亲，从而得到母亲的保护。如果生物幼体第一眼看到的不是它的母亲，它可以跟随任何较大的物体移动，甚至是非生命的物体。</p>
+<p>铭印（英语：imprinting），又称印记、印迹、印随或印痕。在行为生物学中指的是一种不可逆的学习模式：通常在一段比较短的，由基因决定的时期里（敏感时期），环境的刺激会被长久地植入个体的行为中，后来看来就好像先天习得的一样。本能理论认为，铭印是通过学习，而掌握了钥匙刺激而形成的现象。
+后代铭印（Filial
+imprinting）让幼体学会辨认母亲。某些生物出生以后会紧跟着它第一眼见到的较大的可移动的物体而走。印痕作用一旦发生，就很难改变。由于生物出生后，第一眼看到的物体通常是其母亲，所以生物的这种行为可以使得生物幼体出生后不易认错它们的母亲，从而得到母亲的保护。如果生物幼体第一眼看到的不是它的母亲，它可以跟随任何较大的物体移动，甚至是非生命的物体。</p>
 </blockquote>
 <p>人在懵懂时期遇到的第一个异类，或许也会被奉为圭臬。</p>
 
@@ -1131,7 +1132,8 @@
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.3/katex.min.css" integrity="sha256-NJNVfEC6jfEt62wQMafLNT2eI6BaWONXbpkSEVAs3+8=" crossorigin="anonymous">
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 
