@@ -367,7 +367,7 @@
 <p>查看窗口对应进程，可以定位垃圾软件</p>
 <h1 id="pandoc"><a class="markdownIt-Anchor" href="#pandoc"></a> <a href="https://pandoc.org/">pandoc</a></h1>
 <p>将 markdown 文件转化为 word 文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pandoc **.md -o **.docx</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pandoc **.md -o **.docx</span><br></pre></td></tr></table></figure>
 <h1 id="fira-code"><a class="markdownIt-Anchor" href="#fira-code"></a> <a href="https://github.com/tonsky/FiraCode/blob/master/README_CN.md">Fira Code</a></h1>
 <p>字体</p>
 <h1 id="dracula"><a class="markdownIt-Anchor" href="#dracula"></a> <a href="https://draculatheme.com/">Dracula</a></h1>
@@ -775,7 +775,9 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
   <entry>
     <title>PANTONE年度代表色</title>
     <url>/2022/12/05/PANTONE%E5%B9%B4%E5%BA%A6%E4%BB%A3%E8%A1%A8%E8%89%B2/</url>
-    <content><![CDATA[<table>
+    <content><![CDATA[<p>统计了 2000 年至 2022 年的 PANTONE 年度代表色。</p>
+<span id="more"></span>
+<table>
 <thead>
 <tr>
 <th>年份</th>
@@ -821,28 +823,122 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <td>#5F4B8B</td>
 <td><div style="height:100px;width:100px;background: #5F4B8B;"></div></td>
 </tr>
+<tr>
+<td>2017</td>
+<td>草木绿</td>
+<td>#88B04B</td>
+<td><div style="height:100px;width:100px;background: #88B04B;"></div></td>
+</tr>
+<tr>
+<td>2016</td>
+<td>宁静粉蓝</td>
+<td>#92A8D1</td>
+<td><div style="height:100px;width:100px;background: #92A8D1;"></div></td>
+</tr>
+<tr>
+<td>2016</td>
+<td>玫瑰石英粉红</td>
+<td>#F7CAC9</td>
+<td><div style="height:100px;width:100px;background: #F7CAC9;"></div></td>
+</tr>
+<tr>
+<td>2015</td>
+<td>玛莎拉酒红</td>
+<td>#955251</td>
+<td><div style="height:100px;width:100px;background: #955251;"></div></td>
+</tr>
+<tr>
+<td>2014</td>
+<td>兰花紫</td>
+<td>#B163A3</td>
+<td><div style="height:100px;width:100px;background: #B163A3;"></div></td>
+</tr>
+<tr>
+<td>2013</td>
+<td>翡翠绿</td>
+<td>#009473</td>
+<td><div style="height:100px;width:100px;background: #009473;"></div></td>
+</tr>
+<tr>
+<td>2012</td>
+<td>探戈橘</td>
+<td>#DD4124</td>
+<td><div style="height:100px;width:100px;background: #DD4124;"></div></td>
+</tr>
+<tr>
+<td>2011</td>
+<td>忍冬红</td>
+<td>#D94F70</td>
+<td><div style="height:100px;width:100px;background: #D94F70;"></div></td>
+</tr>
+<tr>
+<td>2010</td>
+<td>松石绿</td>
+<td>#45B5AA</td>
+<td><div style="height:100px;width:100px;background: #45B5AA;"></div></td>
+</tr>
+<tr>
+<td>2009</td>
+<td>含羞草黄</td>
+<td>#F0C05A</td>
+<td><div style="height:100px;width:100px;background: #F0C05A;"></div></td>
+</tr>
+<tr>
+<td>2008</td>
+<td>鸢尾蓝</td>
+<td>#5A5B9F</td>
+<td><div style="height:100px;width:100px;background: #5A5B9F;"></div></td>
+</tr>
+<tr>
+<td>2007</td>
+<td>辣椒红</td>
+<td>#9B1B30</td>
+<td><div style="height:100px;width:100px;background: #9B1B30;"></div></td>
+</tr>
+<tr>
+<td>2006</td>
+<td>沙色金币</td>
+<td>#DECDBE</td>
+<td><div style="height:100px;width:100px;background: #DECDBE;"></div></td>
+</tr>
+<tr>
+<td>2005</td>
+<td>蓝色绿松石</td>
+<td>#53B0AE</td>
+<td><div style="height:100px;width:100px;background: #53B0AE;"></div></td>
+</tr>
+<tr>
+<td>2004</td>
+<td>虎皮百合橘</td>
+<td>#E2583E</td>
+<td><div style="height:100px;width:100px;background: #E2583E;"></div></td>
+</tr>
+<tr>
+<td>2003</td>
+<td>水天蓝色</td>
+<td>#7BC4C4</td>
+<td><div style="height:100px;width:100px;background: #7BC4C4;"></div></td>
+</tr>
+<tr>
+<td>2002</td>
+<td>正红色</td>
+<td>#BF1932</td>
+<td><div style="height:100px;width:100px;background: #BF1932;"></div></td>
+</tr>
+<tr>
+<td>2001</td>
+<td>紫红玫瑰</td>
+<td>#C74375</td>
+<td><div style="height:100px;width:100px;background: #C74375;"></div></td>
+</tr>
+<tr>
+<td>2000</td>
+<td>蔚蓝色</td>
+<td>#9BB7D4</td>
+<td><div style="height:100px;width:100px;background: #9BB7D4;"></div></td>
+</tr>
 </tbody>
 </table>
-<span id="more"></span>
-<p>| 2017 | 草木绿 | #88B04B | <div style="height:100px;width:100px;background: #88B04B;"></div> |<br />
-| 2016 | 宁静粉蓝 | #92A8D1 | <div style="height:100px;width:100px;background: #92A8D1;"></div> |<br />
-| 2016 | 玫瑰石英粉红 | #F7CAC9 | <div style="height:100px;width:100px;background: #F7CAC9;"></div> |<br />
-| 2015 | 玛莎拉酒红 | #955251 | <div style="height:100px;width:100px;background: #955251;"></div> |<br />
-| 2014 | 兰花紫 | #B163A3 | <div style="height:100px;width:100px;background: #B163A3;"></div> |<br />
-| 2013 | 翡翠绿 | #009473 | <div style="height:100px;width:100px;background: #009473;"></div> |<br />
-| 2012 | 探戈橘 | #DD4124 | <div style="height:100px;width:100px;background: #DD4124;"></div> |<br />
-| 2011 | 忍冬红 | #D94F70 | <div style="height:100px;width:100px;background: #D94F70;"></div> |<br />
-| 2010 | 松石绿 | #45B5AA | <div style="height:100px;width:100px;background: #45B5AA;"></div> |<br />
-| 2009 | 含羞草黄 | #F0C05A | <div style="height:100px;width:100px;background: #F0C05A;"></div> |<br />
-| 2008 | 鸢尾蓝 | #5A5B9F | <div style="height:100px;width:100px;background: #5A5B9F;"></div> |<br />
-| 2007 | 辣椒红 | #9B1B30 | <div style="height:100px;width:100px;background: #9B1B30;"></div> |<br />
-| 2006 | 沙色金币 | #DECDBE | <div style="height:100px;width:100px;background: #DECDBE;"></div> |<br />
-| 2005 | 蓝色绿松石 | #53B0AE | <div style="height:100px;width:100px;background: #53B0AE;"></div> |<br />
-| 2004 | 虎皮百合橘 | #E2583E | <div style="height:100px;width:100px;background: #E2583E;"></div> |<br />
-| 2003 | 水天蓝色 | #7BC4C4 | <div style="height:100px;width:100px;background: #7BC4C4;"></div> |<br />
-| 2002 | 正红色 | #BF1932 | <div style="height:100px;width:100px;background: #BF1932;"></div> |<br />
-| 2001 | 紫红玫瑰 | #C74375 | <div style="height:100px;width:100px;background: #C74375;"></div> |<br />
-| 2000 | 蔚蓝色 | #9BB7D4 | <div style="height:100px;width:100px;background: #9BB7D4;"></div> |</p>
 ]]></content>
       <categories>
         <category>技术</category>
