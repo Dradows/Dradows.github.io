@@ -555,8 +555,8 @@
 <p><a href="https://dradows.github.io/">内容</a></p>
 <hr />
 <h2 id="图像"><a class="markdownIt-Anchor" href="#图像"></a> 图像</h2>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">内容</span>](<span class="link">../images/演示图.png</span>)</span><br></pre></td></tr></table></figure>
-<p><img src="../images/%E6%BC%94%E7%A4%BA%E5%9B%BE.png" alt="内容" /></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">内容</span>](<span class="link">images/演示图.png</span>)</span><br></pre></td></tr></table></figure>
+<p><img src="images/%E6%BC%94%E7%A4%BA%E5%9B%BE.png" alt="内容" /></p>
 <hr />
 <h2 id="列表"><a class="markdownIt-Anchor" href="#列表"></a> 列表</h2>
 <h3 id="无序列表"><a class="markdownIt-Anchor" href="#无序列表"></a> 无序列表</h3>
