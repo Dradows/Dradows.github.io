@@ -856,13 +856,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <td>2012</td>
 <td>探戈橘</td>
 <td>#DD4124</td>
-<td>&lt;div style=&quot;height:100px;</td>
-</tr>
-<tr>
-<td>width:100px;background: #DD4124;&quot;&gt;</div></td>
-<td></td>
-<td></td>
-<td></td>
+<td><div style="height:100px;width:100px;background: #DD4124;"></div></td>
 </tr>
 <tr>
 <td>2011</td>
