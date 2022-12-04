@@ -548,8 +548,7 @@
   <entry>
     <title>markdown基本语法</title>
     <url>/2022/12/03/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<hr />
-<h2 id="标题"><a class="markdownIt-Anchor" href="#标题"></a> 标题</h2>
+    <content><![CDATA[<h2 id="标题"><a class="markdownIt-Anchor" href="#标题"></a> 标题</h2>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## H2</span></span><br><span class="line"></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### H4</span></span><br></pre></td></tr></table></figure>
 <h2 id="h2"><a class="markdownIt-Anchor" href="#h2"></a> H2</h2>
 <h3 id="h3"><a class="markdownIt-Anchor" href="#h3"></a> H3</h3>
