@@ -579,6 +579,29 @@
 <li>第二行</li>
 <li>第三行</li>
 </ol>
+<h3 id="多级列表"><a class="markdownIt-Anchor" href="#多级列表"></a> 多级列表</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 第一行</span><br><span class="line"><span class="bullet">  -</span> 第一行第一行</span><br><span class="line"><span class="bullet">  -</span> 第一行第二行</span><br><span class="line"><span class="bullet">-</span> 第二行</span><br><span class="line"><span class="bullet">  -</span> 第二行第一行</span><br><span class="line"><span class="bullet">  -</span> 第二行第二行</span><br></pre></td></tr></table></figure>
+<ul>
+<li>第一行
+<ul>
+<li>第一行第一行</li>
+<li>第一行第二行</li>
+</ul>
+</li>
+<li>第二行
+<ul>
+<li>第二行第一行</li>
+<li>第二行第二行</li>
+</ul>
+</li>
+</ul>
+<h3 id="任务列表"><a class="markdownIt-Anchor" href="#任务列表"></a> 任务列表</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> [x] 第一行</span><br><span class="line"><span class="bullet">-</span> [ ] 第二行</span><br><span class="line"><span class="bullet">-</span> [ ] 第三行</span><br></pre></td></tr></table></figure>
+<ul>
+<li>[x] 第一行</li>
+<li>[ ] 第二行</li>
+<li>[ ] 第三行</li>
+</ul>
 <hr />
 <h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
 <h3 id="行内代码"><a class="markdownIt-Anchor" href="#行内代码"></a> 行内代码</h3>
@@ -608,6 +631,41 @@ H400000v40H845.2724
 s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
 c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
 M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08390500000000001em;"><span></span></span></span></span></span></span></span></span></span></p>
+<h2 id="表格"><a class="markdownIt-Anchor" href="#表格"></a> 表格</h2>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">| 居左 | 居中 | 居右 |</span><br><span class="line">| :--- | :--: | ---: |</span><br><span class="line">| 1    |  2   |    3 |</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">居左</th>
+<th style="text-align:center">居中</th>
+<th style="text-align:right">居右</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">文本</td>
+<td style="text-align:center">文本</td>
+<td style="text-align:right">文本</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="文本特性"><a class="markdownIt-Anchor" href="#文本特性"></a> 文本特性</h2>
+<h3 id="高亮"><a class="markdownIt-Anchor" href="#高亮"></a> 高亮</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">==高亮==</span><br></pre></td></tr></table></figure>
+<p><mark>高亮</mark></p>
+<h3 id="倾斜"><a class="markdownIt-Anchor" href="#倾斜"></a> 倾斜</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">_倾斜_</span></span><br></pre></td></tr></table></figure>
+<p><em>倾斜</em></p>
+<h3 id="加粗"><a class="markdownIt-Anchor" href="#加粗"></a> 加粗</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**加粗**</span></span><br></pre></td></tr></table></figure>
+<p><strong>加粗</strong></p>
+<h3 id="倾斜加粗"><a class="markdownIt-Anchor" href="#倾斜加粗"></a> 倾斜&amp;加粗</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">_倾斜&amp;加粗_</span>**</span></span><br></pre></td></tr></table></figure>
+<p><strong><em>倾斜&amp;加粗</em></strong></p>
+<h3 id="删除线"><a class="markdownIt-Anchor" href="#删除线"></a> 删除线</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
+<p><s>删除线</s></p>
 ]]></content>
       <categories>
         <category>技术</category>
