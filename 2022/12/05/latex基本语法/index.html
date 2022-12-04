@@ -19,15 +19,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"dradows.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.14.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="空格 12345678$a\!b$$ab$$a\,b$$a\:b$$a\;b$$a\ b$$a\quad b$$a\qquad b$ \(a\!b\) \(ab\) \(a\,b\) \(a\:b\) \(a\;b\) \(a\ b\) \(a\quad b\) \(a\qquad b\) \(a\qquad b\)">
+    <meta name="description" content="空格 12345678$$a\!b$$$$ab$$$$a\,b$$$$a\:b$$$$a\;b$$$$a\ b$$$$a\quad b$$$$a\qquad b$$ \[a\!b\] \[ab\] \[a\,b\] \[a\:b\] \[a\;b\] \[a\ b\] \[a\quad b\] \[a\qquad b\]">
 <meta property="og:type" content="article">
 <meta property="og:title" content="latex基本语法">
 <meta property="og:url" content="https://dradows.github.io/2022/12/05/latex%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/index.html">
 <meta property="og:site_name" content="失所">
-<meta property="og:description" content="空格 12345678$a\!b$$ab$$a\,b$$a\:b$$a\;b$$a\ b$$a\quad b$$a\qquad b$ \(a\!b\) \(ab\) \(a\,b\) \(a\:b\) \(a\;b\) \(a\ b\) \(a\quad b\) \(a\qquad b\) \(a\qquad b\)">
+<meta property="og:description" content="空格 12345678$$a\!b$$$$ab$$$$a\,b$$$$a\:b$$$$a\;b$$$$a\ b$$$$a\quad b$$$$a\qquad b$$ \[a\!b\] \[ab\] \[a\,b\] \[a\:b\] \[a\;b\] \[a\ b\] \[a\quad b\] \[a\qquad b\]">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-04T19:37:35.000Z">
-<meta property="article:modified_time" content="2022-12-04T20:59:31.397Z">
+<meta property="article:modified_time" content="2022-12-04T21:12:01.189Z">
 <meta property="article:author" content="青垒">
 <meta name="twitter:card" content="summary">
 
@@ -220,7 +220,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-12-05 03:37:35 / 修改时间：04:59:31" itemprop="dateCreated datePublished" datetime="2022-12-05T03:37:35+08:00">2022-12-05</time>
+      <time title="创建时间：2022-12-05 03:37:35 / 修改时间：05:12:01" itemprop="dateCreated datePublished" datetime="2022-12-05T03:37:35+08:00">2022-12-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -250,27 +250,26 @@
     
     <div class="post-body" itemprop="articleBody">
         <h2 id="空格">空格</h2>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span>a<span class="keyword">\!</span>b<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span>ab<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span>a<span class="keyword">\,</span>b<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span>a<span class="keyword">\:</span>b<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span>a<span class="keyword">\;</span>b<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span>a<span class="keyword">\ </span>b<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span>a<span class="keyword">\quad</span> b<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span>a<span class="keyword">\qquad</span> b<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
-<p><span class="math inline">\(a\!b\)</span> <span
-class="math inline">\(ab\)</span> <span
-class="math inline">\(a\,b\)</span> <span
-class="math inline">\(a\:b\)</span> <span
-class="math inline">\(a\;b\)</span> <span class="math inline">\(a\
-b\)</span> <span class="math inline">\(a\quad b\)</span> <span
-class="math inline">\(a\qquad b\)</span> <span
-class="math inline">\(a\qquad b\)</span></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span>a<span class="keyword">\!</span>b<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span>ab<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span>a<span class="keyword">\,</span>b<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span>a<span class="keyword">\:</span>b<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span>a<span class="keyword">\;</span>b<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span>a<span class="keyword">\ </span>b<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span>a<span class="keyword">\quad</span> b<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span>a<span class="keyword">\qquad</span> b<span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[a\!b\]</span> <span
+class="math display">\[ab\]</span> <span
+class="math display">\[a\,b\]</span> <span
+class="math display">\[a\:b\]</span> <span
+class="math display">\[a\;b\]</span> <span class="math display">\[a\
+b\]</span> <span class="math display">\[a\quad b\]</span> <span
+class="math display">\[a\qquad b\]</span></p>
 <span id="more"></span>
 <h2 id="上下标">上下标</h2>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span>H<span class="built_in">_</span>2O<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span>x<span class="built_in">^</span>2+y<span class="built_in">^</span>2=1<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
-<p><span class="math inline">\(H_2O\)</span> <span
-class="math inline">\(x^2+y^2=1\)</span></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span>H<span class="built_in">_</span>2O<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span>x<span class="built_in">^</span>2+y<span class="built_in">^</span>2=1<span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[H_2O\]</span> <span
+class="math display">\[x^2+y^2=1\]</span></p>
 <h2 id="分数">分数</h2>
 <figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\frac</span>&#123;1&#125;&#123;2&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
 <p><span class="math inline">\(\frac{1}{2}\)</span></p>
 <h2 id="根号">根号</h2>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\sqrt</span>&#123;2&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\sqrt</span>[3]&#123;2&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
-<p><span class="math inline">\(\sqrt{2}\)</span> <span
-class="math inline">\(\sqrt[3]{2}\)</span></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span><span class="keyword">\sqrt</span>&#123;2&#125;<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span><span class="keyword">\sqrt</span>[3]&#123;2&#125;<span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[\sqrt{2}\]</span> <span
+class="math display">\[\sqrt[3]{2}\]</span></p>
 <h2 id="累计求和">累计求和</h2>
 <figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\sum</span><span class="built_in">_</span>&#123;i=1&#125;<span class="built_in">^</span>&#123;n&#125;&#123;a<span class="built_in">_</span>i&#125;=0<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
 <p><span class="math inline">\(\sum_{i=1}^{n}{a_i}=0\)</span></p>
@@ -278,19 +277,19 @@ class="math inline">\(\sqrt[3]{2}\)</span></p>
 <figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\int</span><span class="built_in">_</span>&#123;a&#125;<span class="built_in">^</span>&#123;b&#125;&#123;f(x)dx&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
 <p><span class="math inline">\(\int_{a}^{b}{f(x)dx}\)</span></p>
 <h2 id="上下横线">上下横线</h2>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\overline</span>&#123;AB&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\underline</span>&#123;AB&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\overbrace</span>&#123;a+b+<span class="keyword">\cdots</span>+z&#125;<span class="built_in">^</span>&#123;26&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\underbrace</span>&#123;a+b+<span class="keyword">\cdots</span>+z&#125;<span class="built_in">_</span>&#123;26&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
-<p><span class="math inline">\(\overline{AB}\)</span> <span
-class="math inline">\(\underline{AB}\)</span> <span
-class="math inline">\(\overbrace{a+b+\cdots+z}^{26}\)</span> <span
-class="math inline">\(\underbrace{a+b+\cdots+z}_{26}\)</span></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span><span class="keyword">\overline</span>&#123;AB&#125;<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span><span class="keyword">\underline</span>&#123;AB&#125;<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span><span class="keyword">\overbrace</span>&#123;a+b+<span class="keyword">\cdots</span>+z&#125;<span class="built_in">^</span>&#123;26&#125;<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span><span class="keyword">\underbrace</span>&#123;a+b+<span class="keyword">\cdots</span>+z&#125;<span class="built_in">_</span>&#123;26&#125;<span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[\overline{AB}\]</span> <span
+class="math display">\[\underline{AB}\]</span> <span
+class="math display">\[\overbrace{a+b+\cdots+z}^{26}\]</span> <span
+class="math display">\[\underbrace{a+b+\cdots+z}_{26}\]</span></p>
 <h2 id="取整">取整</h2>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\lfloor</span> x <span class="keyword">\rfloor</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\lceil</span> x <span class="keyword">\rceil</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
-<p><span class="math inline">\(\lfloor x \rfloor\)</span> <span
-class="math inline">\(\lceil x \rceil\)</span></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span><span class="keyword">\lfloor</span> x <span class="keyword">\rfloor</span><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span><span class="keyword">\lceil</span> x <span class="keyword">\rceil</span><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[\lfloor x \rfloor\]</span> <span
+class="math display">\[\lceil x \rceil\]</span></p>
 <h2 id="向量">向量</h2>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\vec</span>&#123;A&#125;<span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\overrightarrow</span>&#123;AB&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
-<p><span class="math inline">\(\vec{A}\)</span> <span
-class="math inline">\(\overrightarrow{AB}\)</span></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span><span class="keyword">\vec</span>&#123;A&#125;<span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span><span class="keyword">\overrightarrow</span>&#123;AB&#125;<span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[\vec{A}\]</span> <span
+class="math display">\[\overrightarrow{AB}\]</span></p>
 <h2 id="矩阵">矩阵</h2>
 <figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\begin</span>&#123;bmatrix&#125;1<span class="built_in">&amp;</span>2<span class="keyword">\\</span>3<span class="built_in">&amp;</span>4<span class="keyword">\end</span>&#123;bmatrix&#125;<span class="built_in">$</span></span><br></pre></td></tr></table></figure>
 <p><span
@@ -325,21 +324,11 @@ x+y&amp;=\sqrt{2}
 \end{aligned}
 \]</span></p>
 <h2 id="自动编号">自动编号</h2>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">f(x)=x<span class="built_in">^</span>2</span><br><span class="line"><span class="keyword">\end</span>&#123;equation&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;subequations&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">g(x)=<span class="keyword">\sqrt</span>&#123;x&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;equation&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">g(x)=<span class="keyword">\frac</span>&#123;1&#125;&#123;x&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;equation&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;subequations&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">f(x)=x<span class="built_in">^</span>2</span><br><span class="line"><span class="keyword">\end</span>&#123;equation&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p><span class="math display">\[
 \begin{equation}
 f(x)=x^2
 \end{equation}
-\]</span></p>
-<p><span class="math display">\[
-\begin{subequations}
-\begin{equation}
-g(x)=\sqrt{x}
-\end{equation}
-\begin{equation}
-g(x)=\frac{1}{x}
-\end{equation}
-\end{subequations}
 \]</span></p>
 <h2 id="对齐自动编号">对齐&amp;自动编号</h2>
 <figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;align&#125;</span><br><span class="line">a<span class="built_in">_</span>1<span class="built_in">&amp;</span>=1<span class="keyword">\\</span></span><br><span class="line">a<span class="built_in">_</span>&#123;n+1&#125;<span class="built_in">&amp;</span>=a<span class="built_in">_</span>n+1</span><br><span class="line"><span class="keyword">\end</span>&#123;align&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
