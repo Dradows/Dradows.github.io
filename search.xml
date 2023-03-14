@@ -2006,7 +2006,42 @@ design，hook为ahook。数据库为mongodb。</p>
   <entry>
     <title>pip加速</title>
     <url>/2023/03/14/pip%E5%8A%A0%E9%80%9F/</url>
-    <content><![CDATA[
+    <content><![CDATA[<h2 id="设置源">设置源</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip config set global.index-url http://pypi.mirrors.ustc.edu.cn/simple/</span><br></pre></td></tr></table></figure>
+<p>设置源的时候也会如
+<code>Writing to C:\Users\XXXXX\AppData\Roaming\pip\pip.ini</code>显示配置文件位置，所以想要手动更改配置文件的话也可以借此查看位置。</p>
+<h2 id="查看源">查看源</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip config list</span><br></pre></td></tr></table></figure>
+<h2 id="源列表">源列表</h2>
+<table>
+<thead>
+<tr class="header">
+<th>组织</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>中科大</td>
+<td>http://pypi.mirrors.ustc.edu.cn/simple/</td>
+</tr>
+<tr class="even">
+<td>清华大学</td>
+<td>https://pypi.tuna.tsinghua.edu.cn/simple/</td>
+</tr>
+<tr class="odd">
+<td>中国科技大学</td>
+<td>https://pypi.mirrors.ustc.edu.cn/simple/</td>
+</tr>
+<tr class="even">
+<td>阿里云</td>
+<td>http://mirrors.aliyun.com/pypi/simple/</td>
+</tr>
+</tbody>
+</table>
 ]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
   </entry>
 </search>
