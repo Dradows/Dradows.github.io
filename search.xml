@@ -2009,7 +2009,7 @@ design，hook为ahook。数据库为mongodb。</p>
     <content><![CDATA[<h2 id="设置源">设置源</h2>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip config set global.index-url http://pypi.mirrors.ustc.edu.cn/simple/</span><br></pre></td></tr></table></figure>
 <p>设置源的时候也会如
-<code>Writing to C:\Users\XXXXX\AppData\Roaming\pip\pip.ini</code>显示配置文件位置，所以想要手动更改配置文件的话也可以借此查看位置。</p>
+<code>Writing to C:\Users\XXXXX\AppData\Roaming\pip\pip.ini</code>显示配置文件位置，所以想要手动更改配置文件的话也可以借此查看位置。<span id="more"></span></p>
 <h2 id="查看源">查看源</h2>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip config list</span><br></pre></td></tr></table></figure>
 <h2 id="源列表">源列表</h2>
