@@ -576,6 +576,22 @@ rwxrwxrwx。</p>
 <li>在输出中查找包含"error"的行，同时输出不匹配的行： command | grep -v
 "error"</li>
 </ol>
+<h2 id="文本流编辑">文本流编辑</h2>
+<p>sed指令是一种流编辑器，用于对文件或文本进行编辑和转换。它是Unix和类Unix操作系统中常见的工具之一。</p>
+<p>sed指令的基本用法是将输入流（通常是文件）的每一行交给一个脚本进行处理，然后将处理结果输出到标准输出中，也可以直接修改输入文件。脚本由一条或多条指令组成。</p>
+<p>sed指令支持的指令包括：</p>
+<p>1.替换指令（s）：用于查找并替换文本。</p>
+<p>2.删除指令（d）：用于删除指定的行或行范围。</p>
+<p>3.输出指令（p）：用于将指定的行或行范围输出到标准输出中。</p>
+<p>4.追加指令（a）：用于在指定行后面追加文本。</p>
+<p>5.插入指令（i）：用于在指定行前面插入文本。</p>
+<p>6.变换指令（y）：用于将文本中的字符按照指定的映射规则进行转换。</p>
+<p>sed指令的语法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sed [-n] [-e] &#x27;脚本&#x27; 文件名</span><br></pre></td></tr></table></figure>
+<p>其中，-n选项表示只输出经过处理的行，-e选项用于添加一条脚本指令。脚本由单引号引起来，可以包含多条指令。</p>
+<p>例如，下面是一个将文件中hello替换成world的例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ sed -e &#x27;s/hello/world/&#x27; file.txt</span><br></pre></td></tr></table></figure>
+<p>sed指令还可以通过正则表达式进行匹配，可以灵活地处理文本。</p>
 <h2 id="汇总">汇总</h2>
 <p>cd：切换目录 ls：列出目录下的文件和文件夹 pwd：显示当前目录的路径
 rm：删除文件或目录 cp：复制文件或目录 mv：移动或重命名文件或目录
@@ -591,7 +607,8 @@ ssh：远程登录到另一台计算机。</p>
         <category>技术</category>
       </categories>
       <tags>
-        <tag>linux, chatgpt</tag>
+        <tag>linux</tag>
+        <tag>chatgpt</tag>
       </tags>
   </entry>
   <entry>
