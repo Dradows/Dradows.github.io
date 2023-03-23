@@ -148,7 +148,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">77</span>
+          <span class="site-state-item-count">78</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -175,6 +175,129 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dradows.github.io/2023/03/18/github%E6%8F%90%E4%BA%A4pr/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="青垒">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="失所">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 失所">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/03/18/github%E6%8F%90%E4%BA%A4pr/" class="post-title-link" itemprop="url">github提交pr</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-03-18 01:05:48 / 修改时间：01:14:39" itemprop="dateCreated datePublished" datetime="2023-03-18T01:05:48+08:00">2023-03-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2023/03/18/github%E6%8F%90%E4%BA%A4pr/" class="post-meta-item leancloud_visitors" data-flag-title="github提交pr" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>提交 Pull Request (PR) 可以通过以下步骤进行：</p>
+<ol type="1">
+<li><p>首先，你需要在 GitHub 上 Fork 你想要提交 PR
+的仓库。这将会在你的账户下创建一个仓库的副本。</p></li>
+<li><p>接着，从你的仓库中拉取最新的代码，确保你的仓库与源仓库同步：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/your-username/repo-name.git</span><br><span class="line"><span class="built_in">cd</span> repo-name</span><br><span class="line">git checkout main</span><br><span class="line">git fetch upstream</span><br><span class="line">git merge upstream/main</span><br></pre></td></tr></table></figure></li>
+<li><p>然后，在你的本地仓库中创建一个新分支，并在该分支上进行修改：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b <span class="keyword">new</span>-feature-branch</span><br></pre></td></tr></table></figure></li>
+<li><p>修改代码后，将其添加、提交并推送到你的远程分支：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span> .</span><br><span class="line">git <span class="keyword">commit</span> <span class="operator">-</span>m &quot;Added new feature&quot;</span><br><span class="line">git push origin <span class="keyword">new</span><span class="operator">-</span>feature<span class="operator">-</span>branch</span><br></pre></td></tr></table></figure></li>
+<li><p>在 GitHub 上打开源仓库，点击 "New pull request"
+按钮，选择你的新分支作为 "compare" 分支，选择 "main" 作为 "base"
+分支，并填写 PR 描述信息。</p></li>
+<li><p>最后，点击 "Create pull request" 按钮即可提交 PR。</p></li>
+</ol>
+<p>提交 PR
+后，源仓库的维护者将会审核你的代码，并在必要时提出修改意见。如果一切顺利，你的代码将被合并到源仓库中。</p>
+<p>如果你直接 clone 的代码并在本地进行了修改，而没有 fork
+原仓库并创建自己的仓库，那么你需要创建一个分支来存储你的修改，然后将该分支推送到远程仓库，并从该分支创建
+Pull Request。</p>
+<p>下面是具体的步骤：</p>
+<ol type="1">
+<li><p>在本地仓库中创建一个新的分支，并在该分支上进行修改。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b <span class="keyword">new</span>-branch-name</span><br></pre></td></tr></table></figure></li>
+<li><p>在新分支上提交你的修改。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">add</span> .</span><br><span class="line">git <span class="keyword">commit</span> <span class="operator">-</span>m &quot;Commit message&quot;</span><br></pre></td></tr></table></figure></li>
+<li><p>推送新分支到远程仓库中。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin <span class="keyword">new</span>-branch-name</span><br></pre></td></tr></table></figure></li>
+<li><p>在 GitHub 上打开原仓库，并切换到新创建的分支。</p></li>
+<li><p>点击 "New pull request"
+按钮，将你的修改与目标分支进行比较。</p></li>
+<li><p>填写 Pull Request 的描述信息，并提交 PR。</p></li>
+</ol>
+<p>等待维护者审核并合并你的修改。</p>
+<p>需要注意的是，如果原仓库的主分支发生了变化，你需要将其更新到你的本地仓库和分支中。可以使用以下命令将主分支的最新更改合并到你的当前分支和远程分支中：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">fetch</span> origin</span><br><span class="line">git <span class="keyword">merge</span> origin<span class="operator">/</span>main</span><br><span class="line">git push origin <span class="keyword">new</span><span class="operator">-</span>branch<span class="operator">-</span>name</span><br></pre></td></tr></table></figure>
+<p>这样可以确保你的修改是基于最新的代码，并提高你的 Pull Request
+被接受的概率。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1176,92 +1299,6 @@ style="text-align: center;">http://mirrors.aliyun.com/pypi/simple/</td>
             </div>
           <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://dradows.github.io/2022/12/29/%E6%96%B0%E5%BB%BAnextjs%E9%A1%B9%E7%9B%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="青垒">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="失所">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 失所">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/29/%E6%96%B0%E5%BB%BAnextjs%E9%A1%B9%E7%9B%AE/" class="post-title-link" itemprop="url">新建nextjs项目</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2022-12-29 20:16:33 / 修改时间：21:13:45" itemprop="dateCreated datePublished" datetime="2022-12-29T20:16:33+08:00">2022-12-29</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
-        </span>
-    </span>
-
-  
-    <span id="/2022/12/29/%E6%96%B0%E5%BB%BAnextjs%E9%A1%B9%E7%9B%AE/" class="post-meta-item leancloud_visitors" data-flag-title="新建nextjs项目" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx create-next-app@latest</span><br></pre></td></tr></table></figure>
-
       
     </div>
 

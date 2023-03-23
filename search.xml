@@ -536,12 +536,62 @@ href="https://www.pypy.org/">pypy</a>编译</h2>
 <code>updatedb</code>更新索引。</li>
 <li><code>find / -name filename</code> 更慢，可搜索指令目录。</li>
 </ul>
+<h2 id="查看-cpu">查看 cpu</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cat /proc/cpuinfo</span><br></pre></td></tr></table></figure>
+<h2 id="修改权限">修改权限</h2>
+<ol type="1">
+<li><p>绝对模式：使用数字来指定文件或目录的权限，包含三个数字，每个数字代表一组权限（所有者、所属组和其他用户）。如下指令将
+file 的权限设置为所有用户都可以读（4）、写（2）和执行（1），即
+rwxrwxrwx。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chmod 777 file</span><br></pre></td></tr></table></figure></li>
+<li><p>相对模式：使用符号来指定文件或目录的权限，包含三个符号，每个符号代表一组权限（所有者、所属组和其他用户）。如下指令将
+file 的权限设置为所有用户都可以读（r）、写（w）和执行（x），即
+rwxrwxrwx。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chmod ugo+rwx file</span><br></pre></td></tr></table></figure>
+<p>其中，<code>u</code>代表所有者，<code>g</code>代表所属组，<code>o</code>代表其他用户，<code>a</code>代表所有用户，<code>+</code>代表添加权限，<code>-</code>代表删除权限，<code>=</code>代表设置权限。</p>
+<p>并且可以如下通过逗号间隔的方式指定不同用户的权限相对变更。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chmod u-w,g-rwx,o-rwx file</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="修改拥有者">修改拥有者</h2>
+<p>命令格式： chown [选项] 用户名 [文件名]</p>
+<p>常见选项： -R：递归处理，允许同时改变该目录下所有子目录和文件的拥有者
+-c：仅在文件的拥有者真正变化时显示信息 -v：执行时显示详细的处理信息</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chown user01 a.txt</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chown -Rv user02 test/</span><br></pre></td></tr></table></figure>
+<h2 id="输出匹配行">输出匹配行</h2>
+<p>grep 是在 Linux/Unix
+操作系统中常用的命令之一，其功能为在文件或输出中查找指定的文本模式，并输出匹配的行。</p>
+<p>全称<em>Global regular expression</em> and <em>print</em>。</p>
+<p>命令格式： grep [选项] 模式 [文件名]</p>
+<p>常见选项： -c：仅输出匹配的行数 -i：忽略字母大小写 -n：输出匹配的行号
+-r：递归搜索指定目录及其子目录下的所有文件 -v：仅输出不匹配的行</p>
+<p>示例：</p>
+<ol type="1">
+<li>在文件 a.txt 中查找包含"hello"的行： grep "hello" a.txt</li>
+<li>在文件 b.txt 中查找以"world"结尾的行，同时忽略字母大小写： grep -i
+"world$" b.txt</li>
+<li>在目录 test
+及其子目录下的所有文件中查找包含"test"的行，同时输出匹配的行号： grep
+-rn "test" test/</li>
+<li>在输出中查找包含"error"的行，同时输出不匹配的行： command | grep -v
+"error"</li>
+</ol>
+<h2 id="汇总">汇总</h2>
+<p>cd：切换目录 ls：列出目录下的文件和文件夹 pwd：显示当前目录的路径
+rm：删除文件或目录 cp：复制文件或目录 mv：移动或重命名文件或目录
+mkdir：创建一个新的目录 touch：创建一个新文件或更新已有文件的时间戳
+cat：显示文件内容 grep：在文件中查找特定文本
+top：显示系统的运行情况和进程信息 ps：查看系统进程
+chmod：更改文件或目录的权限 chown：更改文件或目录的所有者和组
+tar：打包和解压缩文件和目录 sudo：以管理员身份运行指令
+ping：测试网络连接 curl：下载网站的数据 wget：下载网站的文件
+ssh：远程登录到另一台计算机。</p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
-        <tag>linux</tag>
+        <tag>linux, chatgpt</tag>
       </tags>
   </entry>
   <entry>
@@ -2209,6 +2259,52 @@ style="text-align: center;">http://mirrors.aliyun.com/pypi/simple/</td>
 ]]></content>
       <categories>
         <category>闲话</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>github提交pr</title>
+    <url>/2023/03/18/github%E6%8F%90%E4%BA%A4pr/</url>
+    <content><![CDATA[<p>提交 Pull Request (PR) 可以通过以下步骤进行：</p>
+<ol type="1">
+<li><p>首先，你需要在 GitHub 上 Fork 你想要提交 PR
+的仓库。这将会在你的账户下创建一个仓库的副本。</p></li>
+<li><p>接着，从你的仓库中拉取最新的代码，确保你的仓库与源仓库同步：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/your-username/repo-name.git</span><br><span class="line"><span class="built_in">cd</span> repo-name</span><br><span class="line">git checkout main</span><br><span class="line">git fetch upstream</span><br><span class="line">git merge upstream/main</span><br></pre></td></tr></table></figure></li>
+<li><p>然后，在你的本地仓库中创建一个新分支，并在该分支上进行修改：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">git checkout -b <span class="keyword">new</span>-feature-branch</span><br></pre></td></tr></table></figure></li>
+<li><p>修改代码后，将其添加、提交并推送到你的远程分支：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">add</span> .</span><br><span class="line">git <span class="keyword">commit</span> <span class="operator">-</span>m &quot;Added new feature&quot;</span><br><span class="line">git push origin <span class="keyword">new</span><span class="operator">-</span>feature<span class="operator">-</span>branch</span><br></pre></td></tr></table></figure></li>
+<li><p>在 GitHub 上打开源仓库，点击 "New pull request"
+按钮，选择你的新分支作为 "compare" 分支，选择 "main" 作为 "base"
+分支，并填写 PR 描述信息。</p></li>
+<li><p>最后，点击 "Create pull request" 按钮即可提交 PR。</p></li>
+</ol>
+<p>提交 PR
+后，源仓库的维护者将会审核你的代码，并在必要时提出修改意见。如果一切顺利，你的代码将被合并到源仓库中。</p>
+<p>如果你直接 clone 的代码并在本地进行了修改，而没有 fork
+原仓库并创建自己的仓库，那么你需要创建一个分支来存储你的修改，然后将该分支推送到远程仓库，并从该分支创建
+Pull Request。</p>
+<p>下面是具体的步骤：</p>
+<ol type="1">
+<li><p>在本地仓库中创建一个新的分支，并在该分支上进行修改。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">git checkout -b <span class="keyword">new</span>-branch-name</span><br></pre></td></tr></table></figure></li>
+<li><p>在新分支上提交你的修改。</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">add</span> .</span><br><span class="line">git <span class="keyword">commit</span> <span class="operator">-</span>m &quot;Commit message&quot;</span><br></pre></td></tr></table></figure></li>
+<li><p>推送新分支到远程仓库中。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">git push origin <span class="keyword">new</span>-branch-name</span><br></pre></td></tr></table></figure></li>
+<li><p>在 GitHub 上打开原仓库，并切换到新创建的分支。</p></li>
+<li><p>点击 "New pull request"
+按钮，将你的修改与目标分支进行比较。</p></li>
+<li><p>填写 Pull Request 的描述信息，并提交 PR。</p></li>
+</ol>
+<p>等待维护者审核并合并你的修改。</p>
+<p>需要注意的是，如果原仓库的主分支发生了变化，你需要将其更新到你的本地仓库和分支中。可以使用以下命令将主分支的最新更改合并到你的当前分支和远程分支中：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">fetch</span> origin</span><br><span class="line">git <span class="keyword">merge</span> origin<span class="operator">/</span>main</span><br><span class="line">git push origin <span class="keyword">new</span><span class="operator">-</span>branch<span class="operator">-</span>name</span><br></pre></td></tr></table></figure>
+<p>这样可以确保你的修改是基于最新的代码，并提高你的 Pull Request
+被接受的概率。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
       </categories>
   </entry>
 </search>

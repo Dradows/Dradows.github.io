@@ -27,9 +27,9 @@
 <meta property="og:description" content="查看 centos 版本 1cat &#x2F;etc&#x2F;redhat-release">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-02T22:34:35.000Z">
-<meta property="article:modified_time" content="2022-12-29T13:14:13.779Z">
+<meta property="article:modified_time" content="2023-03-23T19:45:27.948Z">
 <meta property="article:author" content="青垒">
-<meta property="article:tag" content="linux">
+<meta property="article:tag" content="linux, chatgpt">
 <meta name="twitter:card" content="summary">
 
 
@@ -141,7 +141,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B-centos-%E7%89%88%E6%9C%AC"><span class="nav-number">1.</span> <span class="nav-text">查看 centos 版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%AF%B9%E5%BA%94%E7%AB%AF%E5%8F%A3%E8%BF%9B%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">查看对应端口进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%8E%8B%E7%BC%A9"><span class="nav-number">3.</span> <span class="nav-text">解压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2"><span class="nav-number">4.</span> <span class="nav-text">搜索</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B-centos-%E7%89%88%E6%9C%AC"><span class="nav-number">1.</span> <span class="nav-text">查看 centos 版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%AF%B9%E5%BA%94%E7%AB%AF%E5%8F%A3%E8%BF%9B%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">查看对应端口进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%8E%8B%E7%BC%A9"><span class="nav-number">3.</span> <span class="nav-text">解压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2"><span class="nav-number">4.</span> <span class="nav-text">搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B-cpu"><span class="nav-number">5.</span> <span class="nav-text">查看 cpu</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%9D%83%E9%99%90"><span class="nav-number">6.</span> <span class="nav-text">修改权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%8B%A5%E6%9C%89%E8%80%85"><span class="nav-number">7.</span> <span class="nav-text">修改拥有者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E5%8C%B9%E9%85%8D%E8%A1%8C"><span class="nav-number">8.</span> <span class="nav-text">输出匹配行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B1%87%E6%80%BB"><span class="nav-number">9.</span> <span class="nav-text">汇总</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -154,7 +154,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">77</span>
+          <span class="site-state-item-count">78</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -227,7 +227,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-12-29 21:14:13" itemprop="dateModified" datetime="2022-12-29T21:14:13+08:00">2022-12-29</time>
+      <time title="修改时间：2023-03-24 03:45:27" itemprop="dateModified" datetime="2023-03-24T03:45:27+08:00">2023-03-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -282,6 +282,56 @@
 <code>updatedb</code>更新索引。</li>
 <li><code>find / -name filename</code> 更慢，可搜索指令目录。</li>
 </ul>
+<h2 id="查看-cpu">查看 cpu</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /proc/cpuinfo</span><br></pre></td></tr></table></figure>
+<h2 id="修改权限">修改权限</h2>
+<ol type="1">
+<li><p>绝对模式：使用数字来指定文件或目录的权限，包含三个数字，每个数字代表一组权限（所有者、所属组和其他用户）。如下指令将
+file 的权限设置为所有用户都可以读（4）、写（2）和执行（1），即
+rwxrwxrwx。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 file</span><br></pre></td></tr></table></figure></li>
+<li><p>相对模式：使用符号来指定文件或目录的权限，包含三个符号，每个符号代表一组权限（所有者、所属组和其他用户）。如下指令将
+file 的权限设置为所有用户都可以读（r）、写（w）和执行（x），即
+rwxrwxrwx。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod ugo+rwx file</span><br></pre></td></tr></table></figure>
+<p>其中，<code>u</code>代表所有者，<code>g</code>代表所属组，<code>o</code>代表其他用户，<code>a</code>代表所有用户，<code>+</code>代表添加权限，<code>-</code>代表删除权限，<code>=</code>代表设置权限。</p>
+<p>并且可以如下通过逗号间隔的方式指定不同用户的权限相对变更。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod u-w,g-rwx,o-rwx file</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="修改拥有者">修改拥有者</h2>
+<p>命令格式： chown [选项] 用户名 [文件名]</p>
+<p>常见选项： -R：递归处理，允许同时改变该目录下所有子目录和文件的拥有者
+-c：仅在文件的拥有者真正变化时显示信息 -v：执行时显示详细的处理信息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown user01 a.txt</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown -Rv user02 test/</span><br></pre></td></tr></table></figure>
+<h2 id="输出匹配行">输出匹配行</h2>
+<p>grep 是在 Linux/Unix
+操作系统中常用的命令之一，其功能为在文件或输出中查找指定的文本模式，并输出匹配的行。</p>
+<p>全称<em>Global regular expression</em> and <em>print</em>。</p>
+<p>命令格式： grep [选项] 模式 [文件名]</p>
+<p>常见选项： -c：仅输出匹配的行数 -i：忽略字母大小写 -n：输出匹配的行号
+-r：递归搜索指定目录及其子目录下的所有文件 -v：仅输出不匹配的行</p>
+<p>示例：</p>
+<ol type="1">
+<li>在文件 a.txt 中查找包含"hello"的行： grep "hello" a.txt</li>
+<li>在文件 b.txt 中查找以"world"结尾的行，同时忽略字母大小写： grep -i
+"world$" b.txt</li>
+<li>在目录 test
+及其子目录下的所有文件中查找包含"test"的行，同时输出匹配的行号： grep
+-rn "test" test/</li>
+<li>在输出中查找包含"error"的行，同时输出不匹配的行： command | grep -v
+"error"</li>
+</ol>
+<h2 id="汇总">汇总</h2>
+<p>cd：切换目录 ls：列出目录下的文件和文件夹 pwd：显示当前目录的路径
+rm：删除文件或目录 cp：复制文件或目录 mv：移动或重命名文件或目录
+mkdir：创建一个新的目录 touch：创建一个新文件或更新已有文件的时间戳
+cat：显示文件内容 grep：在文件中查找特定文本
+top：显示系统的运行情况和进程信息 ps：查看系统进程
+chmod：更改文件或目录的权限 chown：更改文件或目录的所有者和组
+tar：打包和解压缩文件和目录 sudo：以管理员身份运行指令
+ping：测试网络连接 curl：下载网站的数据 wget：下载网站的文件
+ssh：远程登录到另一台计算机。</p>
 
     </div>
 
@@ -291,7 +341,7 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/linux/" rel="tag"># linux</a>
+              <a href="/tags/linux-chatgpt/" rel="tag"># linux, chatgpt</a>
           </div>
 
         
