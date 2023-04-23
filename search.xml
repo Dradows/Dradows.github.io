@@ -2097,7 +2097,8 @@ design，hook为ahook。数据库为mongodb。</p>
     <title>云天明</title>
     <url>/2023/03/13/%E4%BA%91%E5%A4%A9%E6%98%8E/</url>
     <content><![CDATA[<p>我不知该用你还是她，你写给他人时用的是你，但我所写的东西大概你永远不会看到，并且更多的还是写给我自己，所以还是用她吧。</p>
-<p>我像是一种弱化许多后的云天明，我没尝过草与水的混合，没有从天而降的500万，也没送过她星星。<code>&lt;!--more--&gt;</code></p>
+<p>我像是一种弱化许多后的云天明，我没尝过草与水的混合，没有从天而降的500万，也没送过她星星。</p>
+<span id="more"></span>
 <p>她像是稍有不同的程心，她也散发着阳光，但她喜欢诉说胜过喜欢倾听，她没忽略我但也不会专门通知我，她也许曾感知过我曾有某个脆弱脆弱之处，但不会试图潜入我的内心，更不会有某种清晰的影像。</p>
 <p>本想写一些记忆，但突然却觉得极其无趣。也许明天或后天我会记录一些。我该记录一些，只有写下来，才能对这段记忆盖棺定论，才能坚定地舍弃。</p>
 <blockquote>
@@ -2176,7 +2177,8 @@ design，hook为ahook。数据库为mongodb。</p>
     <content><![CDATA[<h2 id="设置源">设置源</h2>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip config set global.index-url http://pypi.mirrors.ustc.edu.cn/simple/</span><br></pre></td></tr></table></figure>
 <p>设置源的时候也会如
-<code>Writing to C:\Users\XXXXX\AppData\Roaming\pip\pip.ini</code>显示配置文件位置，所以想要手动更改配置文件的话也可以借此查看位置。<code>&lt;!--more--&gt;</code></p>
+<code>Writing to C:\Users\XXXXX\AppData\Roaming\pip\pip.ini</code>显示配置文件位置，所以想要手动更改配置文件的话也可以借此查看位置。</p>
+<span id="more"></span>
 <h2 id="查看源">查看源</h2>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip config list</span><br></pre></td></tr></table></figure>
 <h2 id="源列表">源列表</h2>
@@ -2228,6 +2230,7 @@ style="text-align: center;">http://mirrors.aliyun.com/pypi/simple/</td>
     <title>ai笑话合集</title>
     <url>/2023/03/16/ai%E7%AC%91%E8%AF%9D%E5%90%88%E9%9B%86/</url>
     <content><![CDATA[<p>用的prompt是“请讲一个笑话”。以下内容未经筛选，包含部分恐怖、歧视、黄色、太监、霸凌、弱智、无趣元素，以及极微量幽默感，请谨慎观看。</p>
+<span id="more"></span>
 <h2 id="chatgpt3.5">ChatGPT3.5</h2>
 <blockquote>
 <p>有一天，小明去医院看病，医生告诉他需要进行手术。小明十分害怕，就问医生：“这个手术安全吗？”</p>
@@ -2390,6 +2393,7 @@ style="text-align: center;">http://mirrors.aliyun.com/pypi/simple/</td>
 <li><p>首先，你需要在 GitHub 上 Fork 你想要提交 PR
 的仓库。这将会在你的账户下创建一个仓库的副本。</p></li>
 <li><p>接着，从你的仓库中拉取最新的代码，确保你的仓库与源仓库同步：</p>
+<span id="more"></span>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/your-username/repo-name.git</span><br><span class="line"><span class="built_in">cd</span> repo-name</span><br><span class="line">git checkout main</span><br><span class="line">git fetch upstream</span><br><span class="line">git merge upstream/main</span><br></pre></td></tr></table></figure></li>
 <li><p>然后，在你的本地仓库中创建一个新分支，并在该分支上进行修改：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">git checkout -b <span class="keyword">new</span>-feature-branch</span><br></pre></td></tr></table></figure></li>
@@ -2438,20 +2442,6 @@ Pull Request。</p>
       </categories>
   </entry>
   <entry>
-    <title>20230420</title>
-    <url>/2023/04/21/20230420/</url>
-    <content><![CDATA[<p>之前在测试B站直播，没经验用的屏幕获取，然后手贱去扫了几眼qq群，虽然一个看我直播的人都没，但还是被系统检测到不适宜的图像。一开始只是断开连接，过了一会重新连上了，结果去群里说了一句，又出现不适宜的文字，结果直接封了一年。所以之前我对B站直播封禁的认知是，要么只封一会，要么就封一年。19号下午，去看她的直播，发现是封禁状态，睡前再去看，发现还是封禁状态，那时我以为是封了一年，觉得自己这种无意义的自我纠结终于以一种意料外的方式快速终结，甚至想去做一次正式的告别，想要去最后阐述一下自己的心境。但20号再去看时，解封了。</p>
-<p>虽然没有去说的契机了，往后也许也不会有，但还是想记录下自己的幻想。</p>
-<blockquote>
-<p>你的直播间被封了很久吗？</p>
-<p>（诸如是啊之类的回答，如果还存在的话。也可能是你都删好友了还来干什么之类的话）</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>闲话</category>
-      </categories>
-  </entry>
-  <entry>
     <title>20230414</title>
     <url>/2023/04/14/20230414/</url>
     <content><![CDATA[<p>我想要爱，一种无法拥有也无法失去的爱，就像一轮永远正悬在头顶的月亮，我知晓它不会离去，却永远无法触及。</p>
@@ -2480,24 +2470,12 @@ OneNote 里。现在无所谓了，重新复制那些文字如下：</p>
       </categories>
   </entry>
   <entry>
-    <title>纸凋</title>
-    <url>/2023/04/18/%E7%BA%B8%E5%87%8B/</url>
-    <content><![CDATA[<p>我想了两天，想用一种更文学的方式来阐述自己的某种情感，比如将纸的凋零喻作花的凋零，来表达爱的逝去，又比如将纸雕命作谐音纸凋，来阐述一种宿命般的悲怆，但我似乎想明白了自己不会有勇气将这些文字放到其他地方，那又何必用这些画蛇添足般的文字还遮遮掩掩呢？所需要做的应该只有记录吧。</p>
-<p>我对这个世界大概仍只是一个懵懂的孩童，对于许多自己未曾经历的事，也许我会告诉自己应当如何会是如何，但真正经历后才发现那完全不是一回事。之后大概我会在公开的平台里写一篇题为《内心与计算机》的文章，我羡慕卢梭以及胡正勇于揭露自己内心的勇气（当然还有更多不羡慕的方面）。其实对于现在这个博客，我本来是将其视为一种半公开的平台的，甚至隐约记得自己曾在谷歌上添加过sitemap，所以虽然可能一个人都不会来看，涉及到自己或他人的隐私的地方还是努力去脱敏。但可能是和以前的博客或者其他什么网站记混了？或者重新部署后没有再次添加sitemap？总之现在在谷歌上不管是搜用户名还是某篇博文的内容，都已经搜不到这个博客了，所以以后写的内容可能不会再脱敏了？</p>
-<p>写这篇文章的目的，大概是彻底和这一段时间的记忆做一次更彻底的告别吧，希望可以成功吧。不过我也知道一定可以告别的，无非长短，但以我现在的心态来说不管怎么样的事大概至多两三年都能完成忘却，然后只以看客的心态去回忆吧。</p>
-<p>她在谈及自己父亲的时候，曾说如果他一直那样坏下去，那她反而能好受一些。如果她也一直保持那时的态度，大概我也会好受一些。现在？现在她对我来说几乎分裂成了两个形象，我分不清孰真孰假，也不那么想分清了。我只确信一点，我只是一个过客，无论在何处。</p>
-<p>当天，或者次天？我将纸雕灯送给了一个陌生人，我本想以这种方式施放出自己那部分压抑的内心，但纵使我习惯了切割开他人，但还未熟练地习得切割开自己的心。某种思潮依旧在我心中不断萦绕，也许要数周、数月去让它逐渐平息，而我此刻敲下的这些文字，则是某种不寄予厚望的咒语，去抹除。</p>
-]]></content>
-      <categories>
-        <category>闲话</category>
-      </categories>
-  </entry>
-  <entry>
     <title>心与计算机</title>
     <url>/2023/04/19/%E5%BF%83%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%9C%BA/</url>
     <content><![CDATA[<p>（这篇文章敲到一半的时候电脑突然重启了，鉴于没开什么耗资源的软件，也没出现任何蓝屏之类的状况，不得不怀疑是触发了
 win11 的某种重启机制）</p>
-<p>不记得确切日期，但大概是本科的时候读过卢梭的忏悔录。其实也没有读太多，连第一部都没读完，只记得他幼年时的生活也已经算是颠沛，但他对自己的内心的一些坦率的表露仍让我记忆深刻。对于自传，其实我一向是没什么兴趣的，不管是本人所写还是代笔，所谓自传多数时候不过是对自身的一种粉饰，然后牵强附会地把某些成功依附在一些看似相关其实不然，但又极有噱头的事情上。忏悔录的序言中也讲述了卢梭对这种事情的看法，引文如下：</p>
+<p>不记得确切日期，但大概是本科的时候读过卢梭的忏悔录。其实也没有读太多，连第一部都没读完，只记得他幼年时的生活也已经算是颠沛，但他对自己的内心的一些坦率的表露仍让我记忆深刻。对于自传，其实我一向是没什么兴趣的，不管是本人所写还是代笔，所谓自传多数时候不过是对自身的一种粉饰，然后牵强附会地把某些成功依附在一些看似相关其实不然，但又极有噱头的事情上。忏悔录的序言中也讲述了卢梭对这种事情的看法，引文如下：
+<span id="more"></span></p>
 <blockquote>
 <p>只有本人，没有人能写出他的一生。他的内心活动、他的真实的生活只有他本人才知道，然而在写的过程中他却把它掩饰起来，他以写他的一生为名而实际上在为自己辩解，他把自己写成他愿意给人看到的那样，就是一点也不像他本人的实际情况。最坦率的人所做的，充其量不过是他们所说的话还是真的，但是他们有所保留。这就是在说谎。他们没有说出来的话竟会如此改变他们假意供认的事，以致当他们说出一部分真事时也等于什么都没有说。</p>
 </blockquote>
@@ -2600,6 +2578,15 @@ le donne，e studia la matematica（丢开女人，研究数学去吧）。”</
 ]]></content>
       <categories>
         <category>杂谈</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>20230423</title>
+    <url>/2023/04/23/20230423/</url>
+    <content><![CDATA[<p>好像越来越空了。删了最近几篇没写完的博客，其实想了想又觉得没什么好记录的，如果一件事注定会被遗忘，那强行用文字来留存它的意义是什么呢？尤其是那些不想记住的事情。如果以后想怀旧了再去_drafts里看看那堆没写完的垃圾吧。</p>
+]]></content>
+      <categories>
+        <category>闲话</category>
       </categories>
   </entry>
 </search>
