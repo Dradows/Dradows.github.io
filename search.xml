@@ -2713,4 +2713,14 @@ Runner</a></h2>
     <content><![CDATA[
 ]]></content>
   </entry>
+  <entry>
+    <title>页面不使用缓存刷新</title>
+    <url>/2024/03/15/%E9%A1%B5%E9%9D%A2%E4%B8%8D%E4%BD%BF%E7%94%A8%E7%BC%93%E5%AD%98%E5%88%B7%E6%96%B0/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Shift + F5</span><br><span class="line">Ctrl + Shift + R</span><br></pre></td></tr></table></figure>
+<p>博客配了半天主题，结果重新部署后刷新半天还是没变化，结果是记错了不使用缓存刷新的指令，按成<code>Ctrl + F5</code>了</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
 </search>
