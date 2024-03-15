@@ -368,6 +368,16 @@ Code</a></h1>
 <p>字体</p>
 <h1 id="dracula"><a href="https://draculatheme.com/">Dracula</a></h1>
 <p>主题</p>
+<h1 id="marktext"><a
+href="https://github.com/marktext/marktext">MarkText</a></h1>
+<p>markdown编辑器</p>
+<h1 id="pixpin"><a href="https://pixpinapp.com/">PixPin</a></h1>
+<p>截图软件</p>
+<h1 id="mobaxterm"><a
+href="https://mobaxterm.mobatek.net/">MobaXTerm</a></h1>
+<p>ssh终端</p>
+<h1 id="ditto"><a href="https://ditto-cp.sourceforge.io/">Ditto</a></h1>
+<p>剪贴板软件</p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -2665,6 +2675,51 @@ href="http://music.163.com/song?id=357263">http://music.163.com/song?id=357263</
 ]]></content>
       <categories>
         <category>闲话</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>vscode插件</title>
+    <url>/2024/03/15/vscode%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="database-client"><a
+href="https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2">Database
+Client</a></h2>
+<p>数据库插件</p>
+<h2 id="cursor-align"><a
+href="https://marketplace.visualstudio.com/items?itemName=yo1dog.cursor-align">Cursor
+Align</a></h2>
+<p>按多指针对齐</p>
+<h2 id="increment-selection"><a
+href="https://marketplace.visualstudio.com/items?itemName=albymor.increment-selection">Increment
+Selection</a></h2>
+<p>在多指针位置插入递增数字</p>
+<h2 id="rainbow-csv"><a
+href="https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv">Rainbow
+CSV</a></h2>
+<p>将csv不同列进行染色</p>
+<h2 id="change-case"><a
+href="https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case">change-case</a></h2>
+<p>将选择的片段转化为大写/小写/驼峰等格式</p>
+<h2 id="dracula-official"><a
+href="https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula">Dracula
+Official</a></h2>
+<p>主题</p>
+<h2 id="code-runner"><a
+href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner">Code
+Runner</a></h2>
+<p><code>ctrl + alt + n</code>一键运行各类语言文件</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>最后纪元</title>
+    <url>/2024/02/26/%E6%9C%80%E5%90%8E%E7%BA%AA%E5%85%83/</url>
+    <content><![CDATA[<p>《暴雪》这篇博客中有提到过对刷子游戏的一些看法，有些时候刷装备让人觉得痛苦而不是快乐。最后纪元做出了一个有趣的尝试，加入一个过滤器系统，可以自定义显示哪些装备，比如只显示弓不显示剑，只显示有指定词缀的装备等等，这可以直接把那些必然不需要的装备直接排除，使得刷子游戏里的挑选环节大大简化，但对于剩下的那些可能有用的装备，仍然需要反复挑选出最优的一件。
+不同群体在刷子游戏中感受到的乐趣可能各有不同，就我而言诸多乐趣中最主要的部分是不断增强以及多种build的尝试。但很多刷子游戏却把着重点放置于词条的随机性，这使得“不断增强”的乐趣削弱，可能出现长时间的游玩都没能提升强度的情况。并且，刷子游戏基本都对洗点做出限制，有些是象征性地收点金币，有些甚至不提供洗点的途径或者限制洗点的次数。</p>
+]]></content>
+      <categories>
+        <category>后感</category>
       </categories>
   </entry>
 </search>
