@@ -2861,6 +2861,7 @@ src="/images/瞎画艺术家/6.jpg" alt="image" /></p>
 <span id="more"></span>
 <p>战斗方面做的有待进步，就连小怪都人均快慢刀，初见基本很难做到完美防御，不如直接硬防然后反击回血。然后教堂那图稍微有点恶心，要踩木头，还有远程怪干扰有可能被下去，还有转轮挡路，加上离复活点还远，稍微拉了下血压，其他倒还好。这游戏我应该会通关，只要后面没太恶心的怪或地图。</p>
 <p>哦另外，前两首唱片也都还挺好听的。</p>
+<p>24个小时（大概包括几小时挂机）后通关了，不错的游戏，就是现在版本的战斗不太有挑战性，各种boss基本一次就能过，不知道初代版本是有多难才会让大家怨声载道。</p>
 ]]></content>
       <categories>
         <category>后感</category>
@@ -2868,6 +2869,31 @@ src="/images/瞎画艺术家/6.jpg" alt="image" /></p>
       <tags>
         <tag>游戏</tag>
         <tag>xbox</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>公司edge配置</title>
+    <url>/2024/04/07/%E5%85%AC%E5%8F%B8edge%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>公司电脑的edge有几个问题</p>
+<ol type="1">
+<li><p>关闭浏览器后密码自动清除</p></li>
+<li><p>点击下载后延迟弹出下载栏</p></li>
+<li><p><code>ctrl + c</code>复制偶尔会不生效。</p></li>
+</ol>
+<p>之前是换火狐试了一段时间，这几个问题倒是都解决了，但有个网站必须用chromium内核才能访问，还是准备换回edge，不然浏览器来回切有点麻烦。</p>
+<h2 id="保存密码">保存密码</h2>
+<p>删除密码和浏览器内的设置无关，应该是通关删除用户文件实现的，所以换个路径就好了。</p>
+<p>捅过注册表，在<code>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft</code>添加<code>Edge</code>项，在<code>Edge</code>项添加字符串参数<code>UserDataDir</code>为另一路径<code>D:\Edge\</code>即可。</p>
+<h2 id="取消下载延迟">取消下载延迟</h2>
+<p>直接在设置中搜索<code>Microsoft Defender Smartscreen</code>取消即可。</p>
+<h2 id="复制失效">复制失效</h2>
+<p>升了个新版本，目前好像没出现过了，要是碰到了再说。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>edge</tag>
       </tags>
   </entry>
 </search>
