@@ -2886,6 +2886,7 @@ href="https://eggnsemulator.com/nintendo-switch-roms/">eggnsemulator</a></h2>
 <span id="more"></span>
 <p>战斗方面做的有待进步，就连小怪都人均快慢刀，初见基本很难做到完美防御，不如直接硬防然后反击回血。然后教堂那图稍微有点恶心，要踩木头，还有远程怪干扰有可能被下去，还有转轮挡路，加上离复活点还远，稍微拉了下血压，其他倒还好。这游戏我应该会通关，只要后面没太恶心的怪或地图。</p>
 <p>哦另外，前两首唱片也都还挺好听的。</p>
+<p>24个小时（大概包括几小时挂机）后通关了，不错的游戏，就是现在版本的战斗不太有挑战性，各种boss基本一次就能过，不知道初代版本是有多难才会让大家怨声载道。</p>
 ]]></content>
       <categories>
         <category>后感</category>
@@ -2893,6 +2894,206 @@ href="https://eggnsemulator.com/nintendo-switch-roms/">eggnsemulator</a></h2>
       <tags>
         <tag>游戏</tag>
         <tag>xbox</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用正则表达式</title>
+    <url>/2024/04/15/%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
+    <content><![CDATA[<p>参考 <a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions">正则表达式
+- JavaScript | MDN (mozilla.org)</a></p>
+<table>
+<colgroup>
+<col style="width: 54%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-caret"><code>^</code></a></td>
+<td>匹配输入的开始。如果多行标志被设置为
+true，那么也匹配换行符后紧跟的位置。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-dollar"><code>$</code></a></td>
+<td>匹配输入的结束。如果多行标志被设置为
+true，那么也匹配换行符前的位置。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-asterisk"><code>*</code></a></td>
+<td>匹配前一个表达式 0 次或多次。等价于 <code>&#123;0,&#125;</code>。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-plus"><code>+</code></a></td>
+<td>匹配前面一个表达式 1 次或者多次。等价于 <code>&#123;1,&#125;</code>。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-questionmark"><code>?</code></a></td>
+<td>匹配前面一个表达式 0 次或者 1 次。等价于 <code>&#123;0,1&#125;</code>。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-dot"><code>.</code></a></td>
+<td>（小数点）默认匹配除换行符之外的任何单个字符。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-capturing-parentheses"><code>(x)</code></a></td>
+<td>像下面的例子展示的那样，它会匹配 'x'
+并且记住匹配项。其中括号被称为<em>捕获括号</em>。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-non-capturing-parentheses"><code>(?:x)</code></a></td>
+<td>匹配 'x' 但是不记住匹配项。这种括号叫作<em>非捕获括号</em> 。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-or"><code>x\|y</code></a></td>
+<td>匹配‘x’或者‘y’。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-quantifier"><code>&#123;n&#125;</code></a></td>
+<td>n 是一个正整数，匹配了前面一个字符刚好出现了 n 次。<br>比如， /a{2}/
+不会匹配“candy”中的'a',但是会匹配“caandy”中所有的
+a，以及“caaandy”中的前两个'a'。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-quantifier"><code>&#123;n,&#125;</code></a></td>
+<td>n 是一个正整数，匹配前一个字符至少出现了 n 次。例如，/a{2,}/ 匹配
+"aa", "aaaa" 和 "aaaaa" 但是不匹配 "a"。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-quantifier-range"><code>&#123;n,m&#125;</code></a></td>
+<td>n 和 m 都是整数。匹配前面的字符至少 n 次，最多 m 次。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-character-set"><code>[xyz]</code></a></td>
+<td>一个字符集合。匹配方括号中的任意字符，包括<a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Grammar_and_types">转义序列</a>。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-negated-character-set"><code>[^xyz]</code></a></td>
+<td>一个反向字符集。也就是说， 它匹配任何没有包含在方括号中的字符。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-word-boundary"><code>\b</code></a></td>
+<td>匹配一个词的边界。<br/></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-digit"><code>\d</code></a></td>
+<td>匹配一个数字。等价于 <code>[0-9]</code>。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-white-space"><code>\s</code></a></td>
+<td>匹配一个空白字符，包括空格、制表符、换页符和换行符。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-word"><code>\w</code></a></td>
+<td>匹配一个单字字符（字母、数字或者下划线）。等价于 <code>[A-Za-z0-9_]</code>。例如，<code>/\w/</code> 匹配
+"apple," 中的 'a'，"$5.28,"中的 '5' 和 "3D." 中的 '3'。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-backreference"><code>\1</code></a></td>
+<td>在正则表达式中，它返回最后的第 n 个子捕获匹配的子字符串。</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 66%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec"><code>exec</code></a></td>
+<td>一个在字符串中执行查找匹配的 RegExp
+方法，它返回一个数组（未匹配到则返回 null）。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test"><code>test</code></a></td>
+<td>一个在字符串中测试是否匹配的 RegExp 方法，它返回 true 或
+false。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/match"><code>match</code></a></td>
+<td>一个在字符串中执行查找匹配的 String
+方法，它返回一个数组，在未匹配到时会返回 null。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll"><code>matchAll</code></a></td>
+<td>一个在字符串中执行查找所有匹配的 String
+方法，它返回一个迭代器（iterator）。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/search"><code>search</code></a></td>
+<td>一个在字符串中测试匹配的 String
+方法，它返回匹配到的位置索引，或者在失败时返回 -1。</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace"><code>replace</code></a></td>
+<td>一个在字符串中执行查找匹配的 String
+方法，并且使用替换字符串替换掉匹配到的子字符串。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a
+href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/split"><code>split</code></a></td>
+<td>一个使用正则表达式或者一个固定字符串分隔一个字符串，并将分隔后的子字符串存储到数组中的 <code>String</code> 方法。</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>正则表达式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>艾尔登法环</title>
+    <url>/2024/04/14/%E8%89%BE%E5%B0%94%E7%99%BB%E6%B3%95%E7%8E%AF/</url>
+    <content><![CDATA[<p>玩完匹诺曹后想起了艾尔登法环一直没通关，今天重新体验了几分钟，已经有点接受不了了。首先双持的话没防御，只能闪避，闪避又很笨重，战斗方面的体验并不算很好，而且开荒的时候就是猎犬长牙，今天进游戏看到双持大曲，有种熟悉又无聊的感觉。</p>
+<p>超大地图也让回坑的时候充满迷茫，自己现在越来越难接受“开放世界”了。开放世界对玩家来说意味着什么呢？可以游玩更多的时间吗？比起游玩一个空洞、重复的长耗时开放世界，我更愿意游玩两三个精心设计的线性游戏。至于艾尔登法环算不算空洞？在加点和强化材料的双重限制下，我玩了几十小时还在用开局几小时就能拿到的武器，即使想使用其他武器也没有足够资源，而剧情也云遮雾绕，并没太多吸引人的点，那探索的意义到底是什么呢？</p>
+]]></content>
+      <categories>
+        <category>后感</category>
+      </categories>
+      <tags>
+        <tag>游戏</tag>
+        <tag>steam</tag>
       </tags>
   </entry>
 </search>
