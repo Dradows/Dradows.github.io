@@ -409,6 +409,12 @@ href="https://mobaxterm.mobatek.net/">MobaXTerm</a></h2>
 <p>剪贴板软件</p>
 <h2 id="ventoy"><a href="https://www.ventoy.net/cn/">Ventoy</a></h2>
 <p>U盘启动盘制作</p>
+<h2 id="hotkeydetective"><a
+href="https://github.com/ITachiLab/hotkey-detective">HotkeyDetective</a></h2>
+<p>检测快捷键被什么软件占用</p>
+<h2 id="ecopaste"><a
+href="https://github.com/EcoPasteHub/EcoPaste">EcoPaste</a></h2>
+<p>剪贴板软件，界面比Ditto现代一点</p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -2949,8 +2955,7 @@ href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expr
 <tr class="odd">
 <td style="text-align: center;"><a
 href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_expressions#special-capturing-parentheses"><code>(x)</code></a></td>
-<td>像下面的例子展示的那样，它会匹配 'x'
-并且记住匹配项。其中括号被称为<em>捕获括号</em>。</td>
+<td>它会匹配 'x' 并且记住匹配项。其中括号被称为<em>捕获括号</em>。</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a
@@ -3095,5 +3100,161 @@ href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_O
         <tag>游戏</tag>
         <tag>steam</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>陌路狂刀</title>
+    <url>/2024/04/16/%E9%99%8C%E8%B7%AF%E7%8B%82%E5%88%80/</url>
+    <content><![CDATA[<p>武侠爽片，不同角色和兵器还是有点特点的，当然各种反物理也是必不可少的一环。就是情节实在太弱，为什么要屠城没交代，主角在屠城里扮演什么角色也只有只鳞片甲，最后主角一人杀穿到最终BOSS前更是堪称科幻，有这能力当初还怕救不了一城人吗。</p>
+]]></content>
+      <categories>
+        <category>后感</category>
+      </categories>
+      <tags>
+        <tag>电影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>哈迪斯2</title>
+    <url>/2024/05/12/%E5%93%88%E8%BF%AA%E6%96%AF2/</url>
+    <content><![CDATA[<p>好评率和一代一样特别高，但我玩起来不是很喜欢。局内成长太受限，锤子有着普攻/特攻两次攻击，也就说有没合适的锤子就差了一倍的输出，然后就是祝福也有着接近100%的倍率，有两个合适的锤子+一个合适的祝福几乎就占了全部的局内成长，除此之外可能只有多一条命之类的祝福有比较明显的效果，以及对于速攻流派，雷神和猎神有个附加伤害也还行，法阵如果运气好叠了三四个祝福的话勉强能当一个辅助输出手段，总得来说无用的房间和祝福太多，可能整局四幕下来，只有六七个强化是感知明显的，其他几乎全是可有可无的。相对的局外成长又过于漫长，玩起来总有一种不爽快的感觉。</p>
+]]></content>
+      <categories>
+        <category>后感</category>
+      </categories>
+      <tags>
+        <tag>游戏</tag>
+        <tag>steam</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鸡械绿洲</title>
+    <url>/2024/05/12/%E9%B8%A1%E6%A2%B0%E7%BB%BF%E6%B4%B2/</url>
+    <content><![CDATA[<p>肉鸽塔防比较少见，这个玩起来勉强还行。但有些地方还是不行，首先肉鸽味还是不太足，天赋强化什么的太保守，而且基本都是纯数值，有点无聊。塔的强化太多共用加成了，有些缺少区分度，平衡也不太行，就目前解锁了的那些塔来看，感觉巢穴蚂蚁流比起其他要强一大截，召唤流不被塔的攻击范围限制，可以超多塔集火boss，还能拆超远矿。</p>
+]]></content>
+      <categories>
+        <category>后感</category>
+      </categories>
+      <tags>
+        <tag>游戏</tag>
+        <tag>steam</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>夏洛特的烦恼</title>
+    <url>/2024/05/21/%E5%A4%8F%E6%B4%9B%E7%89%B9%E7%9A%84%E7%83%A6%E6%81%BC/</url>
+    <content><![CDATA[<p>第二次看话剧。爱文忆出了新的套票，于是次数+4。话剧的大体内容跟电影一致，添加了更多“流行”元素。但老实说有些元素稍微有点突兀，比如蔡徐坤、罗刹海市，这些内容并没有很好地和故事本身融合起来，如果用比较激烈的措辞进行评价的话就是“烂梗”，纯粹为了提起而提起，有点像一个随意的小品而不像一个精心设计的演出。不过其实我也没那么多意见，毕竟我也不是冲着什么高雅艺术去的，只是并不觉得这些好笑。
+由于看过电影，所以整体下来没什么惊喜，笑点大部分都还有印象，算是四平八稳地看完了。</p>
+<p><img src="/images/夏洛特的烦恼/1.jpg" alt="image" /> <span id="more"></span> <img
+src="/images/夏洛特的烦恼/2.jpg" alt="image" /> <img
+src="/images/夏洛特的烦恼/3.jpg" alt="image" /> <img
+src="/images/夏洛特的烦恼/4.jpg" alt="image" /> <img
+src="/images/夏洛特的烦恼/5.jpg" alt="image" /> <img
+src="/images/夏洛特的烦恼/6.jpg" alt="image" /></p>
+]]></content>
+      <categories>
+        <category>后感</category>
+      </categories>
+      <tags>
+        <tag>话剧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>笔</title>
+    <url>/2024/07/07/%E7%AC%94/</url>
+    <content><![CDATA[<p>虽然写字丑，不过挺喜欢买各种笔的，本科时候最贵买过lamy2000和白金3776教堂蓝，但那时候写不了几个字，另外可能想买点其他电子产品，所以最后都出掉了。最近喜欢买一些一些十块左右的按动笔，十块是因为太便宜一般不单卖，二三十块这个价位的笔又比较少。按动笔是因为方便，不用折腾笔盖，也不担心丢。大概列一下最近买的笔吧，只是记录自己的使用体验，不排除笔的品控或个人的书写习惯影响，不作为选购意见。</p>
+<h4 id="施耐德-fave-仙鹤配色-5.34">施耐德 FAVE 仙鹤配色 ￥5.34</h4>
+<p>一开始是在官店看到的FAVE蓝色配色，图便宜就去搜了下第三方店铺发现了仙鹤配色，感觉比蓝色的好看点，不过白色+金色也不算是我喜欢的配色，但便宜就买一支试试吧，毕竟施耐德也经常听人提起但还没买过一支。至于手感，等到手后评价。</p>
+<span id="more"></span>
+<h4 id="三菱-m5-ks-31.76">三菱 M5-KS ￥31.76</h4>
+<p>出于某种我自己都不记得了的原因，买了一支自动铅笔，用着还行，但自动旋转感觉有点不够用的感觉，还是容易写字不均匀，另外需要一直按压也挺影响写字的。</p>
+<h4 id="三菱-m5-5000-369.8">三菱 M5 5000 ￥369.8</h4>
+<p>比起上面的，多了自动出芯，到手后简单研究了下原理，当笔芯和套筒齐平后，继续写字就会让套筒回退一部分，然后抬起后套筒会带着笔芯一起回弹，于是笔芯就相当于一直保留有和套筒一致的长度了，但不知道为什么，久置一段时间后笔芯会多出一截，不排除是误触按钮的可能。旋转角度和上面的一致，但写起来感觉均匀度好一些，不确定是不是心理因素。另外铅笔的黑度还是有点低，写起来看得不如中性笔清楚，所以最近也没怎么用了，可能换个种类的笔芯会好一点？</p>
+<h4 id="末匠-a1-磨砂黑-无笔夹-102.81">末匠 A1 磨砂黑 无笔夹
+￥102.81</h4>
+<p>因为按动买的，但放一段时间后就断墨，甚至会所有墨都蒸发没，可能和用的蓝黑色墨水也有关系吧，也不怎么用了。</p>
+<h4 id="得力-自然流体-居岩川-4.51">得力 自然流体 居岩川 ￥4.51</h4>
+<p>冲着颜值买的，但笔尖晃动有点严重，不管是落笔还是动笔时都有一种极其明显的不稳定感，作为一支笔感觉有点不合格。排除掉笔尖晃动的话整体还行，有基本的速干能力，纸质良好时也没什么断墨。笔握有限位，用起来不算舒服，不排除是我握笔姿势有问题。</p>
+<h4 id="百乐-juice-up-自己的静谧时光-9.22">百乐 Juice up 自己的静谧时光
+￥9.22</h4>
+<p>在公司，没什么印象，明天试下再写。</p>
+<h4 id="点石-时空仓-6.69">点石 时空仓 ￥6.69</h4>
+<p>最近用的最多的笔，感觉没什么缺点，笔夹夹在我那个线圈笔记本的线圈上是最稳的，颜值常规。</p>
+<h4 id="点石-硬核时空仓-14.38">点石 硬核时空仓 ￥14.38</h4>
+<p>写起来有点过于滑了，不是很喜欢这种感觉，也许和纸质也有关系。</p>
+<h4 id="kaco-菁点-墨蓝色-3.69">kaco 菁点 墨蓝色 ￥3.69</h4>
+<p>在公司，没什么印象，明天试下再写。</p>
+<h4 id="三菱-小浓芯-海月-8">三菱 小浓芯 海月 ￥8</h4>
+<p>断墨极其严重，不可用，也许和0.38有点关系。</p>
+<h4 id="斑马-太空舱-灰色-9.06">斑马 太空舱 灰色 ￥9.06</h4>
+<p>写起来没什么毛病，但笔夹在线圈上夹的不稳。还有些其他配色好像挺好看的，如果没现在这支的话可能会买支其他配色的。</p>
+]]></content>
+      <categories>
+        <category>后感</category>
+      </categories>
+      <tags>
+        <tag>购物</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>双城之战2</title>
+    <url>/2024/11/24/%E5%8F%8C%E5%9F%8E%E4%B9%8B%E6%88%982/</url>
+    <content><![CDATA[<p>我很讨厌任何作品里的平行宇宙的设定，除非这就是作品的主题本身（即使是这类也少有能诠释好这个设定的）。也许编剧觉得一万个不同的可能性同时发生会很酷，
+但在我看来这纯粹是消费观众的情感。当一切都留有余地，一切都还有可能，那现在的行为又有什么意义呢？这种背景下无法产生真正厚重的情绪。
+而当主题从个体转向了某种更宏大且更神秘的奇幻设定后，也更难引起观众的共鸣。</p>
+]]></content>
+      <categories>
+        <category>后感</category>
+      </categories>
+      <tags>
+        <tag>动漫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>显示器</title>
+    <url>/2024/12/15/%E6%98%BE%E7%A4%BA%E5%99%A8/</url>
+    <content><![CDATA[<p>一直以来都秉持着1080p够用的概念，但双十一的时候突然觉得什么电子产品都不买的话总像是错过了什么，于是购物欲起来后选择更新了下显示器，买了雷鸟U8
+2025款。</p>
+<p>4k+miniled，在没有比对的日常使用情景下，倒不会明显觉得觉得换4k有什么提升，但如果看一个同时有1080p和4k资源的视频时，还是能明显感觉到两者的差距的。至于游戏，买了新显示器后还没玩过新3A，试了下老游戏和网游，4070在开了DLSS和不开高光追的情况下倒是基本完全够用。</p>
+<p>至于HDR，看视频的时候比对有HDR和无HDR，甚至只是调整背光等级也能感受到明显的差距，在体验后，无HDR甚至低背光等级都有种难以忍受的发灰感。不过miniled在某些场景下还是能感受到显著的光晕，甚至有点影响日常使用，所以不看HDR视频的时候还是调低背光等级比较好。鉴于看电影和电视剧时我更倾向于关灯，也许OLED其实是更好的选择，但现在OLED基本还没有4k
+27寸的版本，如果明后年有硬件上的突破，并且价格还能接受的话可以考虑换一下。</p>
+]]></content>
+      <categories>
+        <category>闲话</category>
+      </categories>
+      <tags>
+        <tag>购物</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>神秘问题</title>
+    <url>/2024/12/15/%E7%A5%9E%E7%A7%98%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>网页上突然出现了鼠标点击后出现的那种闪烁竖线，但并不是可输入区域，甚至可能是字幕区域，搜了一下发现是edge的无障碍。</p>
+<figure>
+<img src="/images/神秘问题/光标1.jpg" alt="光标1" />
+<figcaption aria-hidden="true">光标1</figcaption>
+</figure>
+<figure>
+<img src="/images/神秘问题/光标1.jpg" alt="光标2" />
+<figcaption aria-hidden="true">光标2</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>神秘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>空气猫草</title>
+    <url>/2025/01/19/%E7%A9%BA%E6%B0%94%E7%8C%AB%E8%8D%89/</url>
+    <content><![CDATA[<p>有时会看向与自己无关的角落。</p>
+<p>我不担心什么无效社交，而是一切社交似乎都显得多余。人类让我困惑，当以群体去划分时，似乎还能隐约去判断他们如何，但当这个群体越发细微，直至细微到个体时，我反而对此一无所知。世上没有任何一个人，我可以斩钉截铁地去评价他是怎样一个人，每个人都像是一个黑洞，一切的秘密都在视界中，与外界的表现隔绝开。</p>
+<p>我也不知道自己到底想写些什么，只是突然又看向了角落。许多杂乱的思绪在脑海里流过，想在键盘上敲打时却不知从何处起头，然后也就流过去了。我有些想你，又好像没那么想你。我有些迷失，又觉得终点没那么遥远。</p>
+<p>文字能在互联网上存在多久？脑海中也未留下几件想要记住的事情。</p>
+]]></content>
+      <categories>
+        <category>闲话</category>
+      </categories>
   </entry>
 </search>
