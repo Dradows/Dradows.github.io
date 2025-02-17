@@ -494,7 +494,7 @@ ip
 <h2 id="git-checkout-获取其他分支的某一文件">git checkout
 获取其他分支的某一文件</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout &lt;目标分支名&gt; -- &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="git-show-查看">git show 查看</h2>
+<h2 id="git-show-查看提交的变更内容">git show 查看提交的变更内容</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git show (--name-only) (--name-status) &lt;commit&gt; -- &lt;file&gt;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
