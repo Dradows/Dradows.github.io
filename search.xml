@@ -487,12 +487,15 @@ ip
     <url>/2022/11/26/git%E6%93%8D%E4%BD%9C/</url>
     <content><![CDATA[<h2 id="git-clone修改文件后创立分支">git clone修改文件后创立分支</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch dev</span><br><span class="line">git checkout dev</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;init&quot;</span></span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
 <h2 id="git-diff-比较不同分支的同一文件">git diff
 比较不同分支的同一文件</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git diff &lt;分支1&gt; &lt;分支2&gt; -- &lt;文件路径&gt;</span><br><span class="line">git diff &lt;其他分支&gt; -- &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="git-checkout-获取其他分支的某一文件">git checkout
 获取其他分支的某一文件</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout &lt;目标分支名&gt; -- &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="git-show-查看">git show 查看</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git show (--name-only) (--name-status) &lt;commit&gt; -- &lt;file&gt;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术</category>
