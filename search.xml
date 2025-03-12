@@ -366,9 +366,11 @@ href="https://www.jam-software.com/treesize_free?ca=1">TreeSize</a></h2>
 <p>查看磁盘空间分布，更快更稳定</p>
 <h2 id="listary"><a href="https://www.listary.com/">Listary</a></h2>
 <p>文件快速索引</p>
+<h2 id="peazip"><a href="https://peazip.github.io/">PeaZip</a></h2>
+<p>开源解压缩软件</p>
 <h2 id="bandizip"><a
-href="https://www.bandisoft.com/bandizip/">Bandizip</a></h2>
-<p>解压缩</p>
+href="https://www.bandisoft.com/bandizip/"><del>Bandizip</del></a></h2>
+<p><del>解压缩。最新版本有弹窗广告了，不再推荐。</del></p>
 <span id="more"></span>
 <h2 id="process-explorer"><a
 href="https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer">Process
@@ -470,6 +472,12 @@ ip
     <url>/2022/11/26/git%E6%93%8D%E4%BD%9C/</url>
     <content><![CDATA[<h2 id="git-clone修改文件后创立分支">git clone修改文件后创立分支</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch dev</span><br><span class="line">git checkout dev</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;init&quot;</span></span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+<h2 id="git-diff-比较不同分支的同一文件">git diff
+比较不同分支的同一文件</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git diff &lt;分支1&gt; &lt;分支2&gt; -- &lt;文件路径&gt;</span><br><span class="line">git diff &lt;其他分支&gt; -- &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="git-checkout-获取其他分支的某一文件">git checkout
+获取其他分支的某一文件</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout &lt;目标分支名&gt; -- &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -3271,5 +3279,31 @@ src="/images/夏洛特的烦恼/6.jpg" alt="image" /></p>
       <categories>
         <category>闲话</category>
       </categories>
+  </entry>
+  <entry>
+    <title>git基本指令</title>
+    <url>/2025/02/14/git-commands/</url>
+    <content><![CDATA[<h1 id="git-常用命令整理">Git 常用命令整理</h1>
+<h2 id="基础配置">基础配置</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 设置用户信息</span></span><br><span class="line">git config --global user.name <span class="string">&quot;你的名字&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的邮箱&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看配置信息</span></span><br><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+<h2 id="基本操作">基本操作</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化仓库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看状态</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加文件到暂存区</span></span><br><span class="line">git add &lt;文件名&gt;</span><br><span class="line">git add .  <span class="comment"># 添加所有文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交更改</span></span><br><span class="line">git commit -m <span class="string">&quot;提交说明&quot;</span></span><br><span class="line">git commit -am <span class="string">&quot;提交说明&quot;</span>  <span class="comment"># 合并add和commit操作</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看提交历史</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line">git <span class="built_in">log</span> --oneline  <span class="comment"># 简洁显示</span></span><br></pre></td></tr></table></figure>
+<h2 id="分支管理">分支管理</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建分支</span></span><br><span class="line">git branch &lt;分支名&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout &lt;分支名&gt;</span><br><span class="line">git switch &lt;分支名&gt;  <span class="comment"># 新版本Git推荐使用</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建并切换分支</span></span><br><span class="line">git checkout -b &lt;分支名&gt;</span><br><span class="line">git switch -c &lt;分支名&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 合并分支</span></span><br><span class="line">git merge &lt;分支名&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除分支</span></span><br><span class="line">git branch -d &lt;分支名&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="远程仓库操作">远程仓库操作</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> &lt;仓库地址&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加远程仓库</span></span><br><span class="line">git remote add origin &lt;仓库地址&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin &lt;分支名&gt;</span><br><span class="line">git push -u origin &lt;分支名&gt;  <span class="comment"># 首次推送并建立关联</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 拉取远程更新</span></span><br><span class="line">git pull origin &lt;分支名&gt;</span><br><span class="line">git fetch origin  <span class="comment"># 仅下载不合并</span></span><br></pre></td></tr></table></figure>
+<h2 id="撤销与回退">撤销与回退</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 撤销工作区修改</span></span><br><span class="line">git checkout -- &lt;文件名&gt;</span><br><span class="line">git restore &lt;文件名&gt;  <span class="comment"># 新版本Git推荐使用</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 撤销暂存区修改</span></span><br><span class="line">git reset HEAD &lt;文件名&gt;</span><br><span class="line">git restore --staged &lt;文件名&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回退版本</span></span><br><span class="line">git reset --hard HEAD^  <span class="comment"># 回退到上一个版本</span></span><br><span class="line">git reset --hard &lt;commit_id&gt;  <span class="comment"># 回退到指定版本</span></span><br></pre></td></tr></table></figure>
+<h2 id="标签管理">标签管理</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建标签</span></span><br><span class="line">git tag &lt;标签名&gt;</span><br><span class="line">git tag -a &lt;标签名&gt; -m <span class="string">&quot;标签说明&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看标签</span></span><br><span class="line">git tag</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除标签</span></span><br><span class="line">git tag -d &lt;标签名&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="临时存储">临时存储</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 储存当前工作</span></span><br><span class="line">git stash</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看储存列表</span></span><br><span class="line">git stash list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 恢复储存</span></span><br><span class="line">git stash pop  <span class="comment"># 恢复并删除储存</span></span><br><span class="line">git stash apply  <span class="comment"># 仅恢复不删除</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+      </tags>
   </entry>
 </search>
