@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dradows.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="秋招不是很顺利，原因可能有投的晚了、HC 少、准备不够充足。之前面试题目也是零散地看，看到多少算多少，现在准备稍微总结一下，也方便之后复习。 语言 面向对象编程的主要特点 面向对象编程（Object-Oriented Programming, OOP）是一种编程范式，它将程序设计中的对象作为程序的基本单元，通过对象之间的交互来实现程序的功能。 面向对象编程的主要特点包括： 封装：将数据和操作数据的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试题目">
+<meta property="og:url" content="https://dradows.github.io/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/index.html">
+<meta property="og:site_name" content="厄息">
+<meta property="og:description" content="秋招不是很顺利，原因可能有投的晚了、HC 少、准备不够充足。之前面试题目也是零散地看，看到多少算多少，现在准备稍微总结一下，也方便之后复习。 语言 面向对象编程的主要特点 面向对象编程（Object-Oriented Programming, OOP）是一种编程范式，它将程序设计中的对象作为程序的基本单元，通过对象之间的交互来实现程序的功能。 面向对象编程的主要特点包括： 封装：将数据和操作数据的">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-12-09T02:37:01.000Z">
+<meta property="article:modified_time" content="2025-09-02T16:17:36.419Z">
+<meta property="article:author" content="符川">
+<meta property="article:tag" content="chatgpt">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://dradows.github.io/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dradows.github.io/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/","path":"面试题目/","title":"面试题目"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>面试题目 | 厄息</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">厄息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%BB%E8%A6%81%E7%89%B9%E7%82%B9"><span class="nav-number">1.1.</span> <span class="nav-text">面向对象编程的主要特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88"><span class="nav-number">1.2.</span> <span class="nav-text">智能指针</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E6%80%81%E7%9A%84%E4%BC%98%E7%82%B9"><span class="nav-number">1.3.</span> <span class="nav-text">多态的优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E6%80%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.4.</span> <span class="nav-text">多态怎么实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">1.5.</span> <span class="nav-text">创建一个对象的详细过程是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-%E5%86%85%E5%AD%98%E5%9B%9E%E6%94%B6"><span class="nav-number">1.6.</span> <span class="nav-text">C++ 内存回收</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c%E5%88%86%E4%B8%BA%E5%93%AA%E4%BA%9B%E5%AD%98%E5%82%A8%E5%8C%BA"><span class="nav-number">1.7.</span> <span class="nav-text">C++分为哪些存储区？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-%E4%B8%AD%E7%9A%84%E8%99%9A%E5%87%BD%E6%95%B0"><span class="nav-number">1.8.</span> <span class="nav-text">C++ 中的虚函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%99%9A%E5%87%BD%E6%95%B0%E6%98%AF%E5%A6%82%E4%BD%95%E8%B0%83%E7%94%A8%E7%9A%84"><span class="nav-number">1.9.</span> <span class="nav-text">虚函数是如何调用的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%87%E9%92%88%E5%92%8C%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.10.</span> <span class="nav-text">指针和引用的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89%E6%8C%87%E9%92%88%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%98%E8%A6%81%E7%94%A8%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="nav-number">1.11.</span> <span class="nav-text">有指针为什么还要用迭代器？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c%E6%9C%89%E5%93%AA%E4%BA%9B%E5%86%85%E5%AD%98%E7%9B%B8%E5%85%B3%E7%9A%84%E5%87%BD%E6%95%B0"><span class="nav-number">1.12.</span> <span class="nav-text">c++有哪些内存相关的函数？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C"><span class="nav-number">2.</span> <span class="nav-text">计算机网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%A9%E5%86%99"><span class="nav-number">2.1.</span> <span class="nav-text">缩写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E6%9C%89%E5%93%AA%E5%87%A0%E5%B1%82"><span class="nav-number">2.2.</span> <span class="nav-text">网络有哪几层？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tcp%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B"><span class="nav-number">2.3.</span> <span class="nav-text">TCP四次挥手</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tcp-%E5%92%8C-udp-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">2.4.</span> <span class="nav-text">TCP 和 UDP 的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tcp-%E6%80%8E%E4%B9%88%E4%BF%9D%E8%AF%81%E5%8F%AF%E9%9D%A0%E6%80%A7"><span class="nav-number">2.5.</span> <span class="nav-text">TCP 怎么保证可靠性？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E8%BE%93%E5%85%A5%E7%BD%91%E7%AB%99%E5%88%B0%E8%AE%BF%E9%97%AE%E9%A1%B5%E9%9D%A2%E7%BB%8F%E5%8E%86%E4%BA%86%E5%93%AA%E4%BA%9B%E8%BF%87%E7%A8%8B"><span class="nav-number">2.6.</span> <span class="nav-text">从输入网站到访问页面经历了哪些过程？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cookie-%E5%92%8C-session-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">2.7.</span> <span class="nav-text">cookie 和 session 的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#session%E5%92%8Ccookie%E6%80%8E%E4%B9%88%E5%8D%8F%E4%BD%9C"><span class="nav-number">2.8.</span> <span class="nav-text">session和cookie怎么协作？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%B2%98%E5%8C%85"><span class="nav-number">2.9.</span> <span class="nav-text">什么是粘包？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dns-%E7%94%A8%E7%9A%84%E6%98%AF-tcp-%E8%BF%98%E6%98%AF-udp"><span class="nav-number">2.10.</span> <span class="nav-text">DNS 用的是 TCP 还是 UDP？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dns%E8%A7%A3%E6%9E%90%E8%BF%87%E7%A8%8B"><span class="nav-number">2.11.</span> <span class="nav-text">DNS解析过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http-%E4%BD%BF%E7%94%A8-tcp-%E8%BF%98%E6%98%AF-udp"><span class="nav-number">2.12.</span> <span class="nav-text">HTTP 使用 TCP 还是 UDP？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http-%E5%92%8C-https-%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">2.13.</span> <span class="nav-text">HTTP 和 HTTPS 的区别是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#https-%E6%98%AF%E6%80%8E%E4%B9%88%E5%8A%A0%E5%AF%86%E7%9A%84"><span class="nav-number">2.14.</span> <span class="nav-text">HTTPS 是怎么加密的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http%E6%98%AF%E6%80%8E%E4%B9%88%E8%BF%9E%E6%8E%A5%E7%9A%84"><span class="nav-number">2.15.</span> <span class="nav-text">HTTP是怎么连接的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http%E7%8A%B6%E6%80%81%E7%A0%81"><span class="nav-number">2.16.</span> <span class="nav-text">HTTP状态码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%85%B7%E4%BD%93%E6%98%AF%E6%80%8E%E4%B9%88%E4%BC%A0%E8%BE%93http%E5%8D%8F%E8%AE%AE%E7%9A%84"><span class="nav-number">2.17.</span> <span class="nav-text">服务端具体是怎么传输http协议的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arp%E5%8D%8F%E8%AE%AE"><span class="nav-number">2.18.</span> <span class="nav-text">ARP协议</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="nav-number">3.</span> <span class="nav-text">操作系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%94%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.1.</span> <span class="nav-text">锁有哪些类型？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B9%90%E8%A7%82%E9%94%81%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0"><span class="nav-number">3.2.</span> <span class="nav-text">乐观锁怎么实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%AD%BB%E9%94%81"><span class="nav-number">3.3.</span> <span class="nav-text">什么是死锁？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">3.4.</span> <span class="nav-text">进程和线程的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%8E%E4%B9%88%E7%A1%AE%E4%BF%9D%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8"><span class="nav-number">3.5.</span> <span class="nav-text">怎么确保多线程安全？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E9%80%9A%E4%BF%A1%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E5%BC%8F"><span class="nav-number">3.6.</span> <span class="nav-text">进程同步&#x2F;通信有哪些方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E9%80%9A%E4%BF%A1%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E5%BC%8F"><span class="nav-number">3.7.</span> <span class="nav-text">线程同步&#x2F;通信有哪些方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%88%E5%92%8C%E5%A0%86%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">3.8.</span> <span class="nav-text">栈和堆的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E6%88%B7%E6%80%81%E5%92%8C%E5%86%85%E6%A0%B8%E6%80%81%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">3.9.</span> <span class="nav-text">用户态和内核态的区别是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E5%88%86%E6%AE%B5%E5%92%8C%E5%88%86%E9%A1%B5"><span class="nav-number">3.10.</span> <span class="nav-text">虚拟内存分段和分页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">4.</span> <span class="nav-text">数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95%E5%92%8C%E9%9D%9E%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">4.1.</span> <span class="nav-text">聚簇索引和非聚簇索引的区别是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E7%89%B9%E7%82%B9%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">4.2.</span> <span class="nav-text">非关系型数据库的特点是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B4%A2%E5%BC%95"><span class="nav-number">4.3.</span> <span class="nav-text">简介数据库索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b%E6%A0%91%E5%92%8C-b-%E6%A0%91%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">4.4.</span> <span class="nav-text">B+树和 B 树的区别是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8B%E5%8A%A1%E5%9B%9B%E5%A4%A7%E7%89%B9%E5%BE%81"><span class="nav-number">4.5.</span> <span class="nav-text">事务四大特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB"><span class="nav-number">4.6.</span> <span class="nav-text">事务的隔离级别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%AB%AF"><span class="nav-number">5.</span> <span class="nav-text">前端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#js%E6%9C%89%E5%93%AA%E4%BA%9B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">5.1.</span> <span class="nav-text">JS有哪些数据类型？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#es6%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B0%E7%89%B9%E6%80%A7"><span class="nav-number">5.2.</span> <span class="nav-text">ES6有哪些新特性？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%AA%E5%BC%82%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%92%8C%E6%A0%87%E5%87%86%E7%9B%92%E6%A8%A1%E5%9E%8B"><span class="nav-number">5.3.</span> <span class="nav-text">怪异盒模型和标准盒模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#get%E5%92%8Cpost%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">5.4.</span> <span class="nav-text">GET和POST的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#const%E7%9A%84%E5%A5%BD%E5%A4%84"><span class="nav-number">5.5.</span> <span class="nav-text">const的好处</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"><span class="nav-number">5.6.</span> <span class="nav-text">元素垂直居中</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">符川</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">113</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dradows.github.io/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="符川">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="厄息">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="面试题目 | 厄息">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          面试题目
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-12-09 02:37:01" itemprop="dateCreated datePublished" datetime="2022-12-09T02:37:01+00:00">2022-12-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-09-02 16:17:36" itemprop="dateModified" datetime="2025-09-02T16:17:36+00:00">2025-09-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE/" class="post-meta-item leancloud_visitors" data-flag-title="面试题目" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>秋招不是很顺利，原因可能有投的晚了、HC
+少、准备不够充足。之前面试题目也是零散地看，看到多少算多少，现在准备稍微总结一下，也方便之后复习。</p>
+<h2 id="语言">语言</h2>
+<h3 id="面向对象编程的主要特点">面向对象编程的主要特点</h3>
+<p>面向对象编程（Object-Oriented Programming,
+OOP）是一种编程范式，它将程序设计中的对象作为程序的基本单元，通过对象之间的交互来实现程序的功能。</p>
+<p>面向对象编程的主要特点包括：</p>
+<p><strong>封装</strong>：将数据和操作数据的方法封装在一起，形成一个独立的对象。通过封装可以隐藏对象内部的实现细节，使对象的外部只能通过规定的接口来访问对象。</p>
+<p><strong>继承</strong>：一个类可以从另一个类继承属性和方法，从而减少代码的重复编写。通过继承可以形成类之间的层次结构，使类可以共享公共属性和方法，同时保留自身的特殊属性和方法。</p>
+<p><strong>多态</strong>：同一个操作作用于不同的对象，可以有不同的解释，产生不同的执行结果。通过多态可以使程序具有更高的灵活性和适应性，可以在运行时动态地选择执行的方法。</p>
+<p><strong>抽象</strong>：将现实世界的事物抽象成程序中的对象，通过对象之间的交互来实现程序的功能。通过抽象可以将程序中的对象与实际的事物进行映射，使程序的设计更加清晰、简洁、可读。</p>
+<p>总之，面向对象编程的主要特点是封装、继承、多态和抽象，它将程序设计中的对象作为程序的基本单元，通过对象之间的交互来实现程序的功能。</p>
+<h3 id="智能指针">智能指针</h3>
+<p>智能指针是一种用于资源管理的C++类，在内存管理方面提供自动化和安全性。智能指针管理的资源可以是动态分配的内存、文件、网络连接或任何需要释放或关闭的资源。它通过使用引用计数或其他内部算法来追踪资源的使用情况，并在没有任何活动对象指向该资源时自动释放或关闭它。智能指针的常见类型包括unique_ptr，shared_ptr和weak_ptr。</p>
+<span id="more"></span>
+<h3 id="多态的优点">多态的优点</h3>
+<p>多态的优点包括：</p>
+<ul>
+<li>代码简洁：多态可以使用一个统一的接口来操作不同的对象，避免了对每个对象的特定操作的代码重复。这样，可以缩减代码的数量，使得代码更加简洁。</li>
+<li>代码可重用：多态可以实现对象的动态绑定，可以在运行时根据不同的对象来调用不同的方法。这样，可以使用一个统一的代码来操作不同的对象，使得代码更加可重用。</li>
+<li>代码可扩展：多态可以实现对象的动态绑定，可以在运行时根据不同的对象来调用不同的方法。这样，可以更容易地扩展代码，添加新的对象和方法，提高代码的灵活性和可扩展性。</li>
+<li>代码可维护：多态可以使用一个统一的接口来操作不同的对象，避免了对每个对象的特定操作的代码重复。这样，如果要修改或更新代码，只需要修改或更新统一的接口，就可以应用到所有的对象上。这样，可以减少代码的维护难度，提高代码的稳定性和安全性。</li>
+</ul>
+<h3 id="多态怎么实现">多态怎么实现</h3>
+<p>ChatGPT上的标准回答是虚函数，面试的时候也这么回答了，结果面试官问还能怎么实现，瞬间就傻了。面试结束后网上搜了一下，结果也都是说虚函数的，这下更傻了。</p>
+<h3
+id="创建一个对象的详细过程是什么">创建一个对象的详细过程是什么？</h3>
+<p>创建一个对象的过程包括以下步骤：</p>
+<ol type="1">
+<li>定义类，该类描述了新对象的属性和行为。</li>
+<li>使用关键字 new 分配内存空间来存储新对象。</li>
+<li>调用类的构造函数来初始化新创建的对象。</li>
+<li>返回新创建的对象的引用。</li>
+</ol>
+<h3 id="c-内存回收">C++ 内存回收</h3>
+<p>在
+C++中，内存回收可以通过使用析构函数来实现。析构函数是一种特殊的成员函数，它在对象生命周期结束时被调用。析构函数通常用来释放对象所占用的内存空间和释放其他资源，从而实现内存回收。
+在 C++11 中，你还可以使用类似于 Java 的垃圾回收机制来实现内存回收。C++11
+引入了新的关键字
+delete，它可以用来释放动态分配的内存空间，而无需手动编写析构函数。</p>
+<h3 id="c分为哪些存储区">C++分为哪些存储区？</h3>
+<ol type="1">
+<li>栈（stack）：存储编译时可确定大小的局部变量，例如函数参数和局部变量。</li>
+<li>堆（heap）：存储程序运行时动态分配的内存。</li>
+<li>全局/静态区（global/static
+area）：存储程序运行期间静态分配的全局变量和静态变量。</li>
+<li>常量区（constant area）：存储程序中定义的常量。</li>
+<li>代码区（code segment）：存储程序的可执行代码。</li>
+</ol>
+<h3 id="c-中的虚函数">C++ 中的虚函数</h3>
+<p>在
+C++中，虚函数是一种特殊的成员函数，它可以被子类重写，从而在运行时多态地调用不同的函数版本。</p>
+<p>例如，如果你有一个基类 <code>Animal</code>，它有一个虚函数
+<code>make_sound</code>，你可以定义一个子类 <code>Dog</code>
+来重写这个函数，从而输出不同的声音：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">make_sound</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;I am an animal.&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> : <span class="keyword">public</span> Animal</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">// 重写基类的make_sound函数</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">make_sound</span><span class="params">()</span> <span class="keyword">override</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;Woof!&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Animal animal;</span><br><span class="line">    Dog dog;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 调用基类的make_sound函数</span></span><br><span class="line">    animal.<span class="built_in">make_sound</span>();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 调用子类的make_sound函数</span></span><br><span class="line">    dog.<span class="built_in">make_sound</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在上面的例子中，<code>Animal</code>类有一个虚函数
+<code>make_sound</code>，它输出默认的声音。然后，<code>Dog</code>类继承了
+<code>Animal</code>类，并重写了
+<code>make_sound</code>函数，使它输出不同的声音。最后，在
+<code>main</code>函数中，我们可以看到，虽然 <code>animal</code>和
+<code>dog</code>都是 <code>Animal</code>类型的对象，但是通过多态，调用
+<code>make_sound</code>函数时，实际上会调用不同的函数版本，从而产生不同的输出结果。</p>
+<p>总之，虚函数是
+C++中实现多态的重要手段，它可以让我们在运行时多态地调用不同的函数版本。虚函数的定义方式与普通的成员函数类似，只需在函数的声明前添加关键字
+<code>virtual</code>即可。在子类中重写基类的虚函数时，需要使用
+<code>override</code>关键字来声明这个函数是重写基类的虚函数。</p>
+<p>在
+C++中，纯虚函数是一种特殊的虚函数，它只有声明没有实现。纯虚函数的声明方式与普通的虚函数类似，只需在函数的声明中添加关键字=
+0 即可。</p>
+<p>例如，如果你有一个基类 <code>Shape</code>，它有一个纯虚函数
+<code>get_area</code>，那么你需要在这个函数的声明中添加关键字=
+0，表示这是一个纯虚函数。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Shape</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">// 声明get_area函数是纯虚函数</span></span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="type">double</span> <span class="title">get_area</span><span class="params">()</span> </span>= <span class="number">0</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="虚函数是如何调用的">虚函数是如何调用的？</h3>
+<p>虚函数是在 C++
+语言中实现动态多态的一种重要方式。在运行时，虚函数的调用是通过一种叫做虚函数表（virtual
+function table，简称 vtable）的机制来实现的。</p>
+<p>虚函数表是一种存储虚函数指针的数据结构，它位于类的实例中。每一个虚函数都会在类中分配一个槽（slot），存储该虚函数的指针。当虚函数被调用时，程序会根据虚函数表中该虚函数的槽位置，调用对应的指针。</p>
+<p>例如，假设我们有如下的类定义：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Base</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">foo</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">bar</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Derived</span> : <span class="keyword">public</span> Base</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">foo</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">bar</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>那么这个类的实例会包含一个虚函数表，如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">+------------+</span><br><span class="line">| vtable     |</span><br><span class="line">+------------+</span><br><span class="line">| pointer    | -----&gt; &amp;Derived::foo</span><br><span class="line">+------------+</span><br><span class="line">| pointer    | -----&gt; &amp;Derived::bar</span><br><span class="line">+------------+</span><br></pre></td></tr></table></figure>
+<p>这个虚函数表中存储了两个指针，分别指向 <code>Derived</code>
+类中重写的 <code>foo</code> 和 <code>bar</code>
+虚函数。在调用虚函数时，程序会根据虚函数表中的槽位置来调用对应的指针。</p>
+<p>例如，如果我们调用 <code>foo</code>
+函数，那么程序会根据虚函数表中的第一个槽位置，调用
+<code>Derived::foo</code> 指针指向的函数，即
+<code>Derived</code>类中重写的 <code>foo</code>函数。如果我们调用
+<code>bar</code>函数，那么程序会根据虚函数表中的第二个槽位置，调用
+<code>&amp;Derived::bar</code>指针指向的函数，即
+<code>Derived</code>类中重写的 <code>bar</code> 函数。</p>
+<p>这就是 C++
+语言中虚函数在运行时如何调用的原理。通过虚函数表这种机制，我们可以在编译时无法确定函数调用具体执行哪个函数的情况下，在运行时根据实际的类型来决定函数的调用，从而实现动态多态的效果。</p>
+<h3 id="指针和引用的区别">指针和引用的区别</h3>
+<p>指针和引用都是
+C++中常用的概念，它们都可以用来保存对象的地址，并通过地址来访问对象的值。但它们有以下几点区别：</p>
+<p>指针是一种独立的类型，它可以用来保存任意对象的地址，可以通过解引用操作符（*）来访问对象的值。引用是一种类型别名，它只能用来保存某个特定类型的对象的地址，可以直接使用变量名来访问对象的值。
+指针是可以赋值和改变的，它可以在任意时刻指向不同的对象。引用是一旦被绑定到某个对象后就不能改变，它一直指向绑定的对象。
+指针可以指向空，表示不指向任何对象，这时访问指针就会导致错误。引用必须绑定到一个对象上，如果没有绑定就访问引用就会导致错误。
+指针可以通过取址操作符（&amp;）来取得某个对象的地址。但引用不能通过取址操作符来取得地址，因为它本身就是对象的别名。
+总的来说，指针和引用都是用来保存对象地址的重要概念，但它们有一些不同之处。指针是一种独立的类型，它可以指向任何对象，并且可以在任意时刻改变指向的对象。引用是一种类型别名，它只能用来保存某个特定类型的对象的地址，并且一旦被绑定后就不能改变。</p>
+<p>开发者在使用指针和引用时需要根据实际情况选择合适的机制。如果需要指向不同的对象，或者指向空，那么就应该使用指针；如果只需要绑定到某个特定的对象，并且不需要改变指向的对象，那么就应该使用引用。</p>
+<p>另外，开发者在使用指针和引用时还需要注意访问对象的正确性，避免访问非法或空指针导致的程序错误。通过编写正确的代码，判断指针或引用是否为空，以及在使用指针或引用访问对象时加以控制，可以避免指针或引用带来的错误。</p>
+<p>此外，在使用指针或引用时，还应该注意内存管理问题。指针可以通过指向不同的内存块来管理内存，但也容易导致内存泄漏或重复释放。而引用只能指向一块内存，不能用来管理内存，但可以避免内存泄漏和重复释放的错误。</p>
+<p>总的来说，指针和引用都是
+C++中重要的概念，它们都可以用来保存对象的地址，并通过地址访问对象的值。开发者在使用指针和引用时应该根据实际情况选择合适的机制，并正确管理内存，避免出现错误。</p>
+<h3 id="有指针为什么还要用迭代器">有指针为什么还要用迭代器？</h3>
+<p>指针和迭代器都是用来遍历容器中的元素的工具。指针是 C++
+语言中的基本数据类型，它提供了一种直接访问内存中的某个位置的方式，可以用来遍历容器中的元素。迭代器则是一种封装了指针的对象，它提供了更加简单、便捷和安全的方式来遍历容器中的元素。</p>
+<p>使用指针遍历容器中的元素可以实现比较低层次、高效的遍历方式，但它也有一些局限性。例如，指针不支持运算符重载，不能通过编译器的类型检查，容易造成内存泄漏和段错误等问题。因此，在开发
+C++ 程序时，一般不会直接使用指针来遍历容器中的元素，而是使用迭代器。</p>
+<p>迭代器与指针的本质区别在于，迭代器是一个对象，它封装了指针，并提供了更多的操作方法。例如，迭代器支持运算符重载，可以通过编译器的类型检查来保证代码的正确性。此外，迭代器还可以通过定义不同的迭代器类型来支持不同的容器，从而实现容器无关的遍历。这些特性使得迭代器更加简单、便捷和安全，是
+C++ 程序开发中常用的工具。</p>
+<p>总的来说，指针和迭代器都可以用来遍历容器中的元素，但指针更像是一个底层的工具，它的使用较为麻烦，不太安全。而迭代器则是一个高层次的工具，它封装了指针的操作，提供了更加简单、便捷和安全的方式来遍历容器中的元素。此外，迭代器还支持运算符重载和容器无关的遍历。</p>
+<h3 id="c有哪些内存相关的函数">c++有哪些内存相关的函数？</h3>
+<p>C++提供了一系列与内存相关的函数，包括动态内存分配、内存复制、内存比较等等。以下列举一些常用的内存相关函数：</p>
+<ol type="1">
+<li>动态内存分配</li>
+</ol>
+<p>（1）new/delete运算符：用于动态地分配和释放内存。new运算符分配内存，并调用对象的构造函数，而delete运算符则释放内存，并调用对象的析构函数。</p>
+<p>（2）malloc/free函数：用于动态地分配和释放内存。malloc函数分配内存，但不会调用对象的构造函数，而free函数则释放内存，但不会调用对象的析构函数。</p>
+<ol start="2" type="1">
+<li>内存复制</li>
+</ol>
+<p>（1）memcpy函数：用于将一个源内存地址的数据复制到一个目标地址的内存空间。以下是该函数的用法：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span>* <span class="title">memcpy</span><span class="params">(<span class="type">void</span>* dest, <span class="type">const</span> <span class="type">void</span>* src, <span class="type">size_t</span> count)</span></span>;</span><br></pre></td></tr></table></figure>
+<p>（2）memmove函数：与memcpy函数功能相似，但是memmove函数是对重叠内存空间进行复制，可以保证复制的正确性。以下是该函数的用法：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span>* <span class="title">memmove</span><span class="params">(<span class="type">void</span>* dest, <span class="type">const</span> <span class="type">void</span>* src, <span class="type">size_t</span> count)</span></span>;</span><br></pre></td></tr></table></figure>
+<ol start="3" type="1">
+<li>内存比较</li>
+</ol>
+<p>（1）memcmp函数：用于比较两个内存区域的大小。以下是该函数的用法：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">memcmp</span><span class="params">(<span class="type">const</span> <span class="type">void</span>* ptr1, <span class="type">const</span> <span class="type">void</span>* ptr2, <span class="type">size_t</span> num)</span></span>;</span><br></pre></td></tr></table></figure>
+<p>（2）strcmp函数：比较两个字符串是否相等。以下是该函数的用法：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">strcmp</span><span class="params">(<span class="type">const</span> <span class="type">char</span>* str1, <span class="type">const</span> <span class="type">char</span>* str2)</span></span>;</span><br></pre></td></tr></table></figure>
+<ol start="4" type="1">
+<li>其他函数</li>
+</ol>
+<p>（1）memset函数：用于将一个内存区域设置为指定的值。以下是该函数的用法：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span>* <span class="title">memset</span><span class="params">(<span class="type">void</span>* dest, <span class="type">int</span> ch, <span class="type">size_t</span> count)</span></span>;</span><br></pre></td></tr></table></figure>
+<p>（2）alloca函数：在函数栈内部动态地分配内存。以下是该函数的用法：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span>* <span class="title">alloca</span><span class="params">(<span class="type">size_t</span> size)</span></span>;</span><br></pre></td></tr></table></figure>
+<p>需要注意的是，对内存的不当使用可能会导致内存泄漏和其他不良后果。在使用内存相关函数时，一定要正确地分配和释放内存，避免出现错误。</p>
+<h2 id="计算机网络">计算机网络</h2>
+<h3 id="缩写">缩写</h3>
+<ul>
+<li>RTT（Round-Trip Time）：RTT
+是指一个数据包从发送方发送到接收方接收的时间。它包括数据包在网络中传送的时间和接收方处理数据包的时间。</li>
+<li>MSS（Maximum Segment Size）：MSS
+是指一个数据包最大的传输单元。它是指在不分段的情况下，一个数据包能够传输的最大字节数。</li>
+<li>TTL（Time-To-Live）：TTL
+是指一个数据包能够在网络中传送的最大生存时间。它是用来防止数据包在网络中无限循环的一种机制。</li>
+</ul>
+<h3 id="网络有哪几层">网络有哪几层？</h3>
+<ol type="1">
+<li><strong>应用层</strong>：应用层是计算机网络中最顶层的层，它主要负责处理用户的应用程序，提供用户的网络服务，例如文件传输、电子邮件、远程登录等。HTTP协议、FTP协议、SMTP协议等。</li>
+<li><strong>表示层</strong>：规定了如何表示数据，使得不同的计算机能够理解。ASCII编码、Unicode编码。</li>
+<li><strong>会话层</strong>：规定了如何在两台计算机之间建立和维护会话。远程过程调用（RPC）协议等。</li>
+<li><strong>传输层</strong>：传输层主要负责为应用层提供可靠的数据传输服务，确保数据能够在网络中正确传输。TCP协议、UDP协议等</li>
+<li><strong>网络层</strong>：网络层主要负责为各个计算机之间的数据传输提供通信路径，并为其他层提供网络寻址服务。IP协议、ICMP协议、IGMP协议等</li>
+<li><strong>数据链路层</strong>：数据链路层主要负责在同一个网络中的相邻计算机之间传递数据，并为其他层提供物理地址寻址服务。以太网、无线局域网、帧中继等。</li>
+<li><strong>物理层</strong>：物理层主要负责通过电线或无线信号来传递数据。它主要规定了数据传输的电气、功能和过程特性，以及与网络设备如集线器、网卡、路由器等之间的接口。</li>
+</ol>
+<!--more-->
+<h3 id="tcp四次挥手">TCP四次挥手</h3>
+<p>在TCP/IP网络中，当两台主机之间的连接断开时，通常会使用四次挥手来完成连接的正常关闭。四次挥手过程如下：</p>
+<ol type="1">
+<li>主机A发送一个FIN给主机B，表示它想要关闭连接。</li>
+<li>主机B收到FIN后，发送一个ACK给主机A，表示它已经收到了FIN。</li>
+<li>主机B也发送一个FIN给主机A，表示它也想要关闭连接。</li>
+<li>主机A收到FIN后，发送一个ACK给主机B，表示连接关闭完成。</li>
+</ol>
+<p>在第一次挥手之后，主机A已经不能再发送数据给主机B了，但是主机B可能还有一些数据要发送给主机A。为了给主机B足够的时间发送数据，在第二次挥手之后，主机B会等待一段时间才会发送FIN给主机A。这段时间就是2MSL（最大报文段生存期），通常为2分钟。</p>
+<p>在等待2MSL的这段时间里，如果主机A有数据要发送给主机B，主机A可以发送一个RST给主机B，表示它希望立即关闭连接，而不用等待2MSL。</p>
+<h3 id="tcp-和-udp-的区别">TCP 和 UDP 的区别？</h3>
+<p>TCP 和 UDP
+是计算机网络中常用的两种协议，它们之间有一些区别，主要区别如下：</p>
+<ol type="1">
+<li>传输方式不同。TCP
+是面向连接的协议，它在传输数据之前需要建立连接，并在传输完成后断开连接。UDP
+是无连接的协议，它不需要建立连接，只需要指定源地址和目的地址即可传输数据。</li>
+<li>可靠性不同。TCP
+是一种可靠的协议，它能够保证数据的可靠传输，即使在传输过程中丢失了一些数据包，也能通过重传机制来保证数据的完整性。而
+UDP
+是一种不可靠的协议，它不会尝试保证数据的完整性，如果在传输过程中丢失了一些数据包，那么这些丢失的数据就无法恢复。</li>
+<li>速度不同。TCP
+协议需要在传输数据之前建立连接，并在传输完成后断开连接，这些操作需要一定的时间，因此它的传输速度略慢于
+UDP 协议。而 UDP
+协议不需要建立连接，只需要指定源地址和目的地址，所以它的传输速度略快于
+TCP 协议。另外 TCP 所需资源也更多，TCP 首部需 20
+个字节（不算可选项），UDP 首部字段只需 8 个字节。</li>
+<li>应用场景不同。由于 TCP
+协议提供了可靠的传输，它适用于传输重要数据，例如文件传输、电子邮件传输等。而
+UDP
+协议不提供可靠的传输，它适用于传输一些不是那么重要的数据，例如视频传输、音频传输等。</li>
+</ol>
+<p>总之，TCP 和 UDP
+是计算机网络中常用的两种协议，它们之间的主要区别在于传输方式、可靠性、速度、应用场景等方面。</p>
+<h3 id="tcp-怎么保证可靠性">TCP 怎么保证可靠性？</h3>
+<p>TCP 保证可靠性的方式有：</p>
+<ol type="1">
+<li>序列号：为每个数据包设置序列号，接收方可以根据序列号判断数据包的顺序，如果收到的数据包序列号与预期不符，则说明有数据包丢失，需要重新发送。</li>
+<li>确认机制：接收方收到数据包后会发送确认报文，告知发送方数据包已收到。如果发送方在规定时间内没有收到确认报文，就会重新发送数据包。</li>
+<li>流量控制：发送方会检测接收方的缓存容量，并调整自己的发送速率，避免接收方的缓存溢出。</li>
+<li>拥塞控制：发送方会根据网络的实际情况，调整自己的发送速率，避免拥塞。</li>
+<li>数据重传：如果发送方发现接收方没有收到数据包，会重新发送数据包，直到接收方确认收到为止。</li>
+<li>数据校验：TCP
+使用校验和机制来校验数据。校验和是对数据包中所有字节进行算术运算，并根据运算结果得到一个检验和值。在数据包传输过程中，接收端按照相同的规则计算检验和，并与数据包中的检验和值进行比对，如果相同，则说明数据包在传输过程中没有出现错误。</li>
+</ol>
+<h3
+id="从输入网站到访问页面经历了哪些过程">从输入网站到访问页面经历了哪些过程？</h3>
+<ol type="1">
+<li>用户的浏览器首先会向本地的 hosts 文件中查找该网站的 IP
+地址，如果找到了，则直接将该 IP 地址作为目标地址；如果没有找到，则会向
+DNS 服务器发送域名解析请求，查询该网站的 IP 地址。</li>
+<li>域名系统服务器查询并返回网站的 IP 地址。</li>
+<li>浏览器向网站的 IP 地址发送请求，请求访问网站。</li>
+<li>网站的服务器接收到请求后，返回网站的页面信息。</li>
+<li>浏览器接收到返回的页面信息，并根据页面信息中的指令渲染页面，并向网站服务器请求所需的资源（例如图片、视频、样式表等）。</li>
+<li>网站服务器返回所需的资源，浏览器将资源嵌入页面，最终呈现给用户。</li>
+</ol>
+<h3 id="cookie-和-session-的区别">cookie 和 session 的区别？</h3>
+<p>Cookie 和 Session 是 Web
+应用程序中常用的两种机制，用来保存用户信息和状态。它们有以下一些区别：</p>
+<ol type="1">
+<li>Cookie
+是一种客户端存储机制，它通常存储在用户浏览器中，用来保存用户的一些基本信息和设置。Session
+是一种服务器端存储机制，它通常存储在 Web
+服务器上，用来保存用户的登录信息和会话状态。</li>
+<li>Cookie
+的安全性较低，容易被篡改或拦截，因此不适合存储敏感信息。Session
+的安全性较高，可以通过加密和认证等手段来保证信息的完整性，因此可以用来存储重要的用户信息。</li>
+<li>Cookie 的存储容量有限，每个域名下最多只能存储 4KB
+左右的数据。Session
+的存储容量取决于服务器的内存大小，一般来说可以存储较多的数据。</li>
+<li>Cookie
+的生命周期由客户端控制，可以设置过期时间，浏览器关闭后就会自动销毁。Session
+的生命周期由服务器控制，可以通过配置文件或代码设置超时时间，如果在规定时间内用户没有访问服务器，就会自动销毁。</li>
+</ol>
+<p>总的来说，Cookie 和 Session
+都是用来保存用户信息和状态的重要机制，但它们的工作原理和应用场景不同。Cookie
+更适合存储基本的用户信息和设置，例如语言偏好、主题颜色等；而 Session
+更适合存储重要的用户信息和登录状态，例如用户名、权限级别等。开发者可以根据自己的需求选择合适的机制来保存用户信息和状态。</p>
+<h3 id="session和cookie怎么协作">session和cookie怎么协作？</h3>
+<p>Session和Cookie是Web应用程序中常用的两种用于跟踪用户状态的机制，它们可以协作达到更灵活、更安全的用户状态管理。</p>
+<p>具体的协作流程如下：</p>
+<ol type="1">
+<li>用户访问Web应用程序，Web服务器创建一个Session对象，并为该Session对象生成一个唯一的Session
+ID，将Session ID写入Cookie，发送给客户端。</li>
+<li>客户端浏览器解析Cookie，并将Session
+ID保存在浏览器的Cookie存储器中。</li>
+<li>当用户对Web应用程序进行交互操作时，Web浏览器会将保存的Cookie中的Session
+ID提交给Web服务器。</li>
+<li>服务器检查该Session
+ID是否存在于服务器端的Session对象中，如果存在，则表示该用户之前已经访问过该应用程序，可以获取Session对象中保存的与该用户相关的数据，完成相应的逻辑处理，并将处理结果更新至Session对象中。</li>
+<li>服务器将更新后的Session对象返回给客户端，更新后的Session
+ID也随着响应一起返回。</li>
+<li>客户端浏览器会将响应中的Session ID更新浏览器的Cookie存储器中。</li>
+<li>当用户再次请求时，浏览器会将Cookie中的Session
+ID传递给服务器，服务器根据Session
+ID获取相应的Session对象，然后进行相应的处理。</li>
+</ol>
+<p>通过Session和Cookie的协作，Web应用程序可以跟踪用户状态，记录用户行为，实现个性化的用户体验，同时也保障了用户数据的安全。</p>
+<h3 id="什么是粘包">什么是粘包？</h3>
+<p>粘包是网络通信中常见的一种问题。它指的是多个网络数据包在传输过程中被合并成一个数据包的情况。这种情况可能会导致网络数据包的接收方无法正确地解析和处理数据包，从而影响网络通信的正常运行。</p>
+<p>粘包的原因通常是由于网络协议的不同导致的。例如，在传输层的 TCP
+协议中，数据包是以字节流的形式发送的，而接收方只能在遇到特定的字符（如换行符）时才会把数据包分离。如果两个数据包之间没有换行符，那么接收方就无法正确地分离数据包，就会出现粘包的情况。</p>
+<p>此外，粘包也可能由于网络延迟或丢包导致。例如，如果在网络传输过程中出现延迟或丢包，那么接收方可能会一次性接收多个数据包，导致粘包。</p>
+<p>通常来说，粘包问题可以通过添加特定的分隔符或长度字段来解决。例如，在发送数据包时，可以在每个数据包的末尾添加一个特定的分隔符，比如换行符。接收方收到数据后，可以按照分隔符来分离不同的数据包。</p>
+<p>另一种解决粘包问题的方法是在数据包中添加长度字段。例如，在发送数据包时，可以将每个数据包的长度作为该数据包的第一个字节，然后将该数据包的内容放在后面。接收方收到数据后，可以先读取第一个字节，然后根据该字节的值来读取对应长度的数据，从而分离不同的数据包。</p>
+<p>此外，对于粘包问题，开发者还可以使用网络库来解决。例如，Java
+程序可以使用 Java NIO 库来处理粘包问题，C++ 程序可以使用 boost
+库来处理粘包问题。通过使用这些库，可以让开发者更方便地处理粘包问题，避免出现错误。</p>
+<h3 id="dns-用的是-tcp-还是-udp">DNS 用的是 TCP 还是 UDP？</h3>
+<p>用户的 DNS 用的是 UDP 协议。DNS 是一种基于 UDP
+的应用层协议，用于实现域名和 IP 地址之间的映射。UDP
+提供了面向无连接的数据传输，可以提高 DNS
+的响应速度，同时还可以减小报文的大小，降低网络传输的带宽消耗。但是，由于
+UDP 不提供可靠性保证，因此 DNS 请求和响应报文可能会丢失，需要重发。</p>
+<p>但区域传输（DNS 服务器间同步）的时候使用 TCP。</p>
+<h3 id="dns解析过程">DNS解析过程</h3>
+<p>当用户输入一个域名时，浏览器会先向本地DNS服务器发起查询请求，如果本地DNS服务器没有缓存该域名的解析结果，则会向根DNS服务器发起请求。</p>
+<p>根DNS服务器会返回一个对应顶级域名的DNS服务器地址，本地DNS服务器会再向这个DNS服务器发起请求，以解析域名对应的IP地址。</p>
+<h3 id="http-使用-tcp-还是-udp">HTTP 使用 TCP 还是 UDP？</h3>
+<p>HTTP 采用 TCP 协议，可以保证数据的完整性和可靠性，从而实现浏览器和
+Web 服务器之间的高效通信。</p>
+<h3 id="http-和-https-的区别是什么">HTTP 和 HTTPS 的区别是什么？</h3>
+<p>HTTP 和 HTTPS 的区别主要有以下几点：</p>
+<ol type="1">
+<li>HTTPS 是 HTTP 的安全版本，采用了 SSL/TLS
+加密协议，可以保证数据在传输过程中的安全性。而 HTTP
+没有采用任何加密技术，数据在传输过程中可能会被窃听或篡改。</li>
+<li>HTTPS 使用 443 端口，而 HTTP 使用 80 端口。</li>
+<li>HTTPS 使用证书验证机制，可以验证服务器的身份，避免中间人攻击。而
+HTTP 没有证书验证机制，无法保证服务器的真实性。</li>
+<li>HTTPS 传输的数据量更大，因为它需要额外的加密头信息和证书信息，而
+HTTP 传输的数据量更小。</li>
+<li>HTTPS 的传输速度更慢，因为它需要进行加密和解密，</li>
+</ol>
+<h3 id="https-是怎么加密的">HTTPS 是怎么加密的？</h3>
+<p>HTTPS 通过 SSL/TLS 协议进行加密。</p>
+<p>SSL/TLS 协议是一种应用层加密协议，它在 HTTP
+协议的基础上，增加了安全传输的能力。它通过对称密钥和非对称密钥两种方式进行加密，来保护通信内容不被窃取或篡改。</p>
+<p>对称密钥加密是一种快速的加密方式，它使用同一个密钥进行加密和解密，可以快速的完成数据的加密和解密。但是，由于双方使用的是同一个密钥，因此密钥的安全性非常重要，如果密钥泄露，则会造成安全隐患。</p>
+<p>非对称密钥加密是一种安全的加密方式，它使用公钥和私钥两种密钥，公钥用于加密，私钥用于解密。由于公钥和私钥是独立的，因此可以保证安全性。但是，由于非对称密钥的运算速度较慢，因此不适用于大量数据的加密。</p>
+<p>SSL/TLS
+协议在通信过程中，会先使用非对称密钥进行密钥交换，然后再使用对称密钥进行数据加密和解密。</p>
+<ol type="1">
+<li>首先，客户端向服务器请求连接，服务器会返回一个证书，包含了服务器的公钥和其他信息。</li>
+<li>然后，客户端会使用证书中的公钥，对一个随机数进行加密，并将加密后的随机数发送给服务器。</li>
+<li>接着，服务器使用私钥，对随机数进行解密，并使用该随机数作为对称密钥，对数据进行加密和解密。</li>
+<li>最后，客户端和服务器使用对称密钥进行数据传输，并通过验证码来保证数据的完整性。</li>
+</ol>
+<p>这样，SSL/TLS 协议就可以保证 HTTPS
+通信的安全性，防止通信内容被窃取或篡改。</p>
+<h3 id="http是怎么连接的">HTTP是怎么连接的？</h3>
+<p>HTTP是一种无状态的协议，它的连接是基于请求-响应模型的。</p>
+<p>请求-响应模型是一种通信模型，它规定了客户端和服务器之间的通信方式。客户端发送一个请求，服务器收到请求后，会进行处理，并返回一个响应。</p>
+<p>在HTTP协议中，客户端和服务器之间的通信也是基于请求-响应模型的。当客户端向服务器请求资源时，服务器会收到请求，并返回对应的响应。在响应中，服务器会返回资源的内容和状态码，以告知客户端请求的结果。</p>
+<p>HTTP的连接可以理解为一次请求-响应的过程，客户端发起请求，服务器返回响应，两者之间通过一个网络连接进行通信。</p>
+<p>在连接过程中，客户端和服务器之间会先建立一个TCP连接，然后再进行HTTP通信。在通信过程中，客户端和服务器之间会交换请求和响应报文，并通过请求方法、请求路径、请求头和请求体等内容，来完成数据的交换。</p>
+<p>当通信完成后，客户端和服务器之间的连接就会断开，并释放相关的资源。因为HTTP是无状态的协议，所以每次连接都是独立的，不会保留任何信息。</p>
+<p>下次客户端再发起请求时，服务器会再次建立一个新的连接，并完成新的请求-响应过程。</p>
+<h3 id="http状态码">HTTP状态码</h3>
+<p>HTTP的状态码分为5类，每类状态码都有若干个状态值。</p>
+<ol type="1">
+<li>1xx：消息状态码，表示接收到了请求，正在进一步处理。</li>
+<li>2xx：成功状态码，表示请求已经成功处理。</li>
+<li>3xx：重定向状态码，表示需要进一步的操作才能完成请求。</li>
+<li>4xx：客户端错误状态码，表示客户端发送的请求有误。</li>
+<li>5xx：服务器错误状态码，表示服务器无法完成对请求的处理。</li>
+</ol>
+<p>常见的HTTP状态码包括：</p>
+<ul>
+<li>200 OK：请求成功，返回请求的内容。</li>
+<li>301 Moved Permanently：请求的资源已经永久移动到新的地址。</li>
+<li>302 Found：请求的资源已经暂时移动到新的地址。</li>
+<li>304 Not Modified：请求的资源没有被修改。</li>
+<li>400 Bad Request：客户端请求语法错误，无法解析。</li>
+<li>401 Unauthorized：请求需要用户认证。</li>
+<li>403 Forbidden：服务器拒绝请求。</li>
+<li>404 Not Found：请求的资源不存在。</li>
+<li>500 Internal Server Error：服务器发生错误，无法完成请求。</li>
+<li>502 Bad Gateway：作为网关或代理工作的服务器收到无效的响应。</li>
+<li>503 Service Unavailable：服务器暂时无法处理请求。</li>
+</ul>
+<h3
+id="服务端具体是怎么传输http协议的">服务端具体是怎么传输http协议的？</h3>
+<p>服务端传输HTTP协议的过程可以分为以下几个步骤：</p>
+<ol type="1">
+<li>底层TCP连接建立：客户端通过TCP连接向服务端发起请求，服务端响应并建立TCP连接。</li>
+<li>客户端发送请求：客户端发送HTTP请求给服务端，请求包含HTTP方法、URI、HTTP版本以及一些请求头部信息。</li>
+<li>服务端响应请求：服务端接收到请求后，根据请求信息进行处理并给出响应，响应包含HTTP版本、状态码以及响应头部信息。</li>
+<li>传输报文：客户端和服务端通过TCP连接交换数据，客户端将请求报文通过TCP连接发送到服务端，服务端将响应报文通过TCP连接发送给客户端。</li>
+<li>断开连接：传输完成后，客户端和服务端关闭TCP连接。</li>
+</ol>
+<p>在传输过程中，HTTP协议采用文本协议的方式进行数据传输，传输过程中使用的是ASCII码。具体的传输方式常用的有以下两种：</p>
+<ol type="1">
+<li>短连接方式：客户端发送一次请求，服务端响应一次请求，接着立即关闭TCP连接，这种方式需要频繁地建立、关闭TCP连接，效率较低。</li>
+<li>长连接方式：客户端发送一次请求，服务端响应一次请求，但不关闭TCP连接，这种方式可以在连接上持续发送多次HTTP请求和响应，避免了频繁建立和关闭连接的开销，提高了效率。</li>
+</ol>
+<h3 id="arp协议">ARP协议</h3>
+<p>ARP（Address Resolution
+Protocol）协议是一种用于将IP地址映射为MAC地址的协议。在网络通信中，数据包必须以MAC地址的形式发送到网卡才能被正确地路由到目标地址，而MAC地址是硬件地址，无法直接通过IP地址进行访问。因此，ARP协议的作用是将目标IP地址转换成对应的MAC地址。</p>
+<p>ARP协议的工作过程如下：</p>
+<ol type="1">
+<li>在发送IP数据包之前，发送方先检查本地ARP缓存表（ARP Cache
+Table）中是否已经存在目标IP对应的MAC地址。</li>
+<li>如果ARP缓存中有对应的MAC地址，则直接将数据包发送到目标地址。</li>
+<li>如果ARP缓存中没有对应的MAC地址，则发送方向本地网络广播一个ARP请求（ARP
+Request）消息，请求目标IP地址对应的MAC地址。</li>
+<li>在同一网络中，收到ARP请求的主机会回复一个ARP响应（ARP
+Reply）消息，并将自己的MAC地址发送给发送方。</li>
+<li>发送方收到ARP响应消息后，将目标IP地址和MAC地址保存到ARP缓存中，并使用该MAC地址发送IP数据包。</li>
+</ol>
+<p>需要注意的是，ARP协议只适用于同一网络中的主机之间的通信，如果目标主机不在同一网络中，则需要通过路由器等设备进行处理。</p>
+<h2 id="操作系统">操作系统</h2>
+<h3 id="锁有哪些类型">锁有哪些类型？</h3>
+<p>锁是指在多线程环境下，用来保证数据的完整性和一致性的一种机制。锁有多种类型，常见的锁有互斥锁、读写锁、信号量等。</p>
+<p><strong>互斥锁</strong>：互斥锁是一种最常见的锁，它可以保证在任意时刻，只有一个线程能够访问或操作某个共享资源。互斥锁可以保证同一时刻只有一个线程在运行，避免多个线程之间的数据竞争。</p>
+<p><strong>读写锁</strong>：读写锁是一种特殊的锁，它允许多个线程同时进行读操作，但是写操作必须排队进行。读写锁可以提高程序的并发性，同时也保证了数据的完整性。</p>
+<p><strong>信号量</strong>：信号量是一种特殊的锁，它通过计数器来控制多个线程对共享资源的访问。当线程访问共享资源时，会先将信号量的计数器减一，如果计数器为零，则需要等待其他线程释放信号量；如果计数器不为零，则可以直接访问共享资源。信号量可以控制多个线程对共享资源的并发访问，避免数据竞争。</p>
+<p>总之，锁有互斥锁、读写锁和信号量等不同类型，它们都是用来保证数据的完整性和一致性的重要机制。</p>
+<h3 id="乐观锁怎么实现">乐观锁怎么实现</h3>
+<p>操作系统中的乐观锁是指在多个线程或进程访问共享资源时，不加锁而是在提交数据时再检查是否有冲突的方式来实现的锁机制。</p>
+<p>操作系统中的乐观锁通常需要使用到版本控制机制。例如，对于某个共享资源，可以记录当前的版本号，并在线程或进程开始访问该资源时读取该版本号。在提交数据时，线程或进程会检查当前版本号是否与读取的版本号相同。如果相同，则表明该资源没有被修改，可以提交数据；如果不同，则表明该资源已被修改，提交数据失败，需要重新加载最新的数据再提交。</p>
+<p>操作系统中的乐观锁实现起来相对简单，但如果系统中有大量的写操作，那么乐观锁的性能会大幅下降。因此，在实际应用中，乐观锁通常只用于读多写少的场景，以保证系统的性能。</p>
+<h3 id="什么是死锁">什么是死锁？</h3>
+<p>死锁是指两个或两个以上的进程或线程在执行过程中，由于竞争资源或者由于彼此通信而造成的一种阻塞的现象，若无外力作用，它们将无法推进下去。此时称系统处于死锁状态或系统产生了死锁，这些永远在互相等待的进程称为死锁进程。</p>
+<p>死锁的产生通常是由于进程的资源分配不当或进程间没有很好的沟通机制导致的。例如，假设有两个进程，它们分别需要获取两个资源
+A 和 B，由于资源分配不当，导致进程 1 先获取了 A 资源，进程 2 先获取了 B
+资源，然后进程 1 又需要获取 B 资源，而进程 2 又需要获取 A
+资源。由于这两个进程都无法推进下去，因为它们都在等待对方释放所需要的资源，那么就会产生死锁。</p>
+<p>死锁的产生会导致系统的性能下降，甚至导致系统假死。因此，需要避免死锁的产生。通常，我们可以采用以下几种方式来避免死锁：</p>
+<ol type="1">
+<li>互斥锁加锁时加顺序：在程序中，对互斥锁进行加锁操作时，要求程序按照一定的顺序来加锁，以避免出现互相等待的情况。例如，可以规定每个进程在获取两个互斥锁时，必须先获取其中一个，然后再获取另一个，这样就可以避免出现互相等待的情况。</li>
+<li>引入抢占机制：在程序中，引入抢占机制，允许一个进程抢占另一个进程所占用的资源，以避免出现死锁。例如，当一个进程需要等待另一个进程释放资源时，可以通过抢占机制，强制另一个进程释放资源，然后让该进程继续执行。</li>
+<li>引入信号量机制：在程序中，引入信号量机制，允许进程之间进行同步和通信，以避免出现死锁。例如，当一个进程需要等待另一个进程释放资源时，可以通过信号量机制，让该进程等待另一个进程发出信号，表示资源已经释放，然后该进程才能继续执行。</li>
+</ol>
+<p>通过以上几种方式，我们可以有效避免死锁的产生，提高系统的性能和稳定性。</p>
+<h3 id="进程和线程的区别">进程和线程的区别？</h3>
+<p>进程和线程是计算机系统中两个重要的概念，它们都是用来管理计算机的资源和执行任务的一种逻辑实体。但它们之间也有一些区别，主要区别如下：</p>
+<ol type="1">
+<li>拥有独立的地址空间。进程是计算机系统中的最小执行单位，它拥有独立的地址空间，因此一个进程中的所有操作都不会影响其他进程。而线程是进程的一个实体，它不拥有独立的地址空间，它共享进程中的所有资源。但局部变量（栈）由线程自己独立分配，因此线程之间的局部变量是相互独立的。</li>
+<li>拥有不同的执行流程。进程是计算机系统中的最小执行单位，它拥有自己的执行流程，可以被视为一个独立的程序。而线程是进程的一个实体，它拥有自己的执行流程，但它属于进程的一部分，必须依赖于进程来运行。</li>
+<li>拥有不同的调度方式。进程是计算机系统中的最小执行单位，它的调度是由操作系统负责的，操作系统会根据不同的优先级调度不同的进程。而线程是进程的一个实体，它的调度是由进程负责的，一个进程中的所有线程都有相同的优先级，由进程调度所有线程的执行。</li>
+</ol>
+<p>总之，进程和线程是计算机系统中两个重要的概念，它们的主要区别在于：进程拥有独立的地址空间和执行流程，它的调度由操作系统负责；线程不拥有独立的地址空间和执行流程，它的调度由进程负责。</p>
+<p>在实际应用中，进程和线程都有其重要作用。进程可以用来隔离不同程序之间的资源，避免它们之间的干扰；线程可以用来提高程序的并发性，提高程序的执行效率。</p>
+<p>此外，进程和线程也有自己的优缺点。进程拥有独立的地址空间，可以有效地隔离程序之间的资源，但进程间的通信和同步相对较为困难，会增加系统的开销。线程不拥有独立的地址空间，可以方便地进行通信和同步，但容易引起线程之间的干扰，可能会影响程序的稳定性。因此，在实际应用中，需要根据程序的特点来选择合适的执行方式，既可以使用进程，也可以使用线程。</p>
+<p>总之，进程和线程是计算机系统中两个重要的概念，它们的主要区别在于拥有独立的地址空间和执行流程，它们各有优缺点，可以根据程序的需求来选择使用。</p>
+<h3 id="怎么确保多线程安全">怎么确保多线程安全？</h3>
+<p>多线程安全是指在多线程环境下，对象的状态和行为都能够正确地进行处理，不会被多个线程的并发访问或操作导致状态错误或数据损坏。</p>
+<p>要确保多线程安全，可以采用以下方法：</p>
+<ol type="1">
+<li>加锁。在多线程并发访问或操作同一个对象时，可以使用锁机制来保证数据的完整性和一致性。常用的锁机制包括互斥锁、读写锁、信号量等。</li>
+<li>使用原子操作。对于需要多个步骤完成的操作，可以使用原子操作来保证整个操作的原子性。原子操作是指在多线程环境下，不会被线程调度机制打断的操作。</li>
+<li>使用线程安全的容器。在多线程环境下，可以使用线程安全的容器来存储和管理数据。线程安全的容器可以保证多个线程对容器内部数据的并发访问和操作不会导致数据损坏。</li>
+</ol>
+<p>总之，确保多线程安全需要使用锁机制、原子操作和线程安全的容器等方法，可以保证多线程环境下的数据完整性和一致性。</p>
+<h3 id="进程同步通信有哪些方式">进程同步/通信有哪些方式</h3>
+<p>面试的时候被问到进程同步，也完全没准备，查了一下应该和进程通信的内容差不多。</p>
+<p>进程通信主要有四种方式：管道、消息队列、信号量和共享内存。</p>
+<ol type="1">
+<li>管道（Pipe）是一种半双工通信机制，可以在进程之间进行通信。管道主要有命名管道和匿名管道两种。命名管道可以在文件系统中进行持久化存储，匿名管道仅存在于当前进程内。</li>
+<li>消息队列（Message
+Queue）是一种消息通信机制，可以在进程之间进行通信。消息队列可以通过消息类型来区分不同的消息。</li>
+<li>信号量（Semaphore）是一种同步机制，可以用来控制进程之间的通信。信号量主要用于控制进程访问共享资源的次数。</li>
+<li>共享内存（Shared
+Memory）是一种内存通信机制，可以在进程之间进行通信。共享内存通过内核管理，可以实现高效的进程间通信。</li>
+</ol>
+<h3 id="线程同步通信有哪些方式">线程同步/通信有哪些方式</h3>
+<p>有备无患，这一块也补上，和之前的多线程安全稍有不同？</p>
+<p>线程通信主要有三种方式：管道、消息队列和信号量。</p>
+<ol type="1">
+<li>管道（Pipe）是一种半双工通信机制，可以在线程之间进行通信。管道主要有命名管道和匿名管道两种。命名管道可以在文件系统中进行持久化存储，匿名管道仅存在于当前线程内。</li>
+<li>消息队列（Message
+Queue）是一种消息通信机制，可以在线程之间进行通信。消息队列可以通过消息类型来区分不同的消息。</li>
+<li>信号量（Semaphore）是一种同步机制，可以用来控制线程之间的通信。信号量主要用于控制线程访问共享资源的次数。</li>
+</ol>
+<h3 id="栈和堆的区别">栈和堆的区别</h3>
+<p>栈和堆是计算机编程中常用的两种内存模型，它们之间有一些区别，主要区别如下：</p>
+<ol type="1">
+<li>存储方式不同。栈是一种后进先出（Last In First Out,
+LIFO）的内存模型，它只能在栈顶添加或删除数据，无法在栈底操作数据。堆是一种随机存储的内存模型，它允许程序在任意位置添加或删除数据。</li>
+<li>分配方式不同。栈是由编译器自动分配和释放的内存模型，程序无法直接控制栈的大小和位置，只能在栈顶添加或删除数据。堆是由程序员手动分配和释放的内存模型，程序可以直接控制堆的大小和位置，可以在任意位置添加或删除数据。</li>
+<li>效率不同。由于栈是由编译器自动分配和释放的内存模型，它的分配和释放速度较快，适用于存储短期使用的数据。而堆是由程序员手动分配和释放的内存模型，它的分配和释放速度较慢，适用于存储长期使用的数据。</li>
+<li>内存碎片不同。栈是一种连续存储的内存模型，它分配和释放数据时不会产生内存碎片。而堆是一种非连续存储的内存模型，它分配和释放数据时可能产生内存碎片，需要通过垃圾回收机制来整理堆内存。</li>
+</ol>
+<p>总之，栈和堆是计算机编程中常用的两种内存模型，它们之间的主要区别在于存储方式、分配方式、效率、内存碎片等方面。栈适用于存储短期使用的数据，堆适用于存储长期使用的数据。此外，栈是由编译器自动分配和释放的，堆是由程序员手动分配和释放的。</p>
+<h3 id="用户态和内核态的区别是什么">用户态和内核态的区别是什么？</h3>
+<ol type="1">
+<li>用户态是应用程序的执行状态，内核态是操作系统的执行状态。</li>
+<li>用户态可以访问用户态的内存，内核态可以访问用户态和内核态的内存。</li>
+<li>用户态的进程只能调用用户态的系统调用，内核态的进程可以调用用户态和内核态的系统调用。</li>
+<li>用户态的进程不能直接操作硬件，内核态的进程可以直接操作硬件。</li>
+<li>用户态的进程无法执行特权指令，内核态的进程可以执行特权指令。</li>
+</ol>
+<h3 id="虚拟内存分段和分页">虚拟内存分段和分页</h3>
+<h2 id="数据库">数据库</h2>
+<h3
+id="聚簇索引和非聚簇索引的区别是什么">聚簇索引和非聚簇索引的区别是什么？</h3>
+<p>聚簇索引和非聚簇索引是数据库索引的两种常见类型。它们的区别主要在于索引的组织方式和对表的影响方面。</p>
+<ul>
+<li>聚簇索引是指将索引的数据结构和表的数据结构放在一起，并存储在相同的页中。由于索引和表都存储在同一个地方，因此可以节省存储空间，提高查询效率。但是，如果表的数据量很大，那么索引也会很大，可能会影响系统性能。</li>
+<li>非聚簇索引是指将索引的数据结构和表的数据结构分开存储，索引存储在另外一个位置。由于索引和表是分开存储的，因此可以减小索引的大小，避免影响系统性能。但是，由于索引和表不在同一个地方，因此查询效率会比聚簇索引低。</li>
+</ul>
+<p>总的来说，聚簇索引和非聚簇索引都是用来提高查询效率的重要机制，但它们的实现方式不同。聚簇索引可以节省存储空间，提高查询效率，但对系统性能有一定影响。非聚簇索引可以减小索引的大小，避免对系统性能造成影响，但查询效率不如聚簇索引高。</p>
+<p>通常情况下，数据库会根据表的数据量、索引的大小以及查询的频率等因素来决定使用聚簇索引还是非聚簇索引。如果表的数据量较小，索引的大小也不会很大，并且查询频率较高，那么使用聚簇索引可以提高查询效率。如果表的数据量较大，索引的大小也会很大，并且查询频率较低，那么使用非聚簇索引可以减小索引的大小，避免对系统性能造成影响。</p>
+<h3 id="非关系型数据库的特点是什么">非关系型数据库的特点是什么？</h3>
+<p>非关系型数据库，又称 NoSQL 数据库，是一种不采用关系模型，不使用 SQL
+语言的数据库管理系统。非关系型数据库具有以下优点：</p>
+<ol type="1">
+<li>数据模型灵活：非关系型数据库采用非关系模型，可以支持多种数据模型，如文档型、键值型、图形型等。这些数据模型更加灵活，可以更好地适应复杂的数据结构和业务场景。</li>
+<li>数据一致性弱：非关系型数据库通常采用本地一致性或最终一致性的模型，数据的更新不会阻塞读取操作，可以大大提高系统的并发能力。这样，可以给应用开发人员更多的自由度和灵活性，但也会带来一定的数据不一致的风险。</li>
+<li>数据处理能力强：非关系型数据库通常采用分布式架构，可以通过多台机器并行处理数据，提高系统的性能和处理能力。这样，非关系型数据库可以处理海量数据和高并发请求，适用于大数据分析和实时应用等场景。</li>
+<li>数据集成便捷：非关系型数据库通常采用开放式协议，支持多种编程语言，可以与其他应用系统无缝集成。这样，非关系型数据库可以结合现有的系统，为应用开发提供便捷的数据服务。</li>
+</ol>
+<p>总之，非关系型数据库具有数据模型灵活、数据一致性弱、数据处理能力强、数据集成便捷等优点，适用于处理海量数据、实时应用和大数据分析等场景。</p>
+<h3 id="简介数据库索引">简介数据库索引</h3>
+<p>数据库索引是一种用于提高数据库查询效率的工具，它通常具有以下几个特点：</p>
+<ol type="1">
+<li>索引是针对数据库表中的某一列或者多列建立的，它可以加快对特定列的查询速度。</li>
+<li>索引是一种特殊的数据结构，它通常采用树形结构来存储数据，以便快速查找和排序。</li>
+<li>索引可以加速查询，但会降低插入和更新的速度，因为在插入和更新数据时，需要同时更新索引。</li>
+<li>索引可以提高查询的速度，但是会占用一定的存储空间。因此，在使用索引时，需要权衡索引带来的查询优势和存储空间的消耗。</li>
+<li>索引可以提供单列索引和多列索引两种类型。单列索引只对单个列建立索引，可以提高对特定列的查询效率；多列索引则是对多个列建立索引，可以提高对多个列的查询效率。</li>
+<li>索引也可以提供唯一索引和非唯一索引两种类型。唯一索引确保索引列中的每个值都是唯一的，不会出现重复值；非唯一索引不强制索引列中的值唯一，可以出现重复值。</li>
+</ol>
+<p>总之，数据库索引是一种提高查询效率的工具，它具有针对特定列建立、使用树形结构存储数据、加速查询速度但降低插入和更新速度、占用存储空间、提供单列索引和多列索引、提供唯一索引和非唯一索引等特点。</p>
+<h3 id="b树和-b-树的区别是什么">B+树和 B 树的区别是什么？</h3>
+<p>B+树和 B
+树是两种常用的多路搜索树，它们都是为了提高查询效率而设计的数据结构。B+树和
+B 树之间的主要区别如下：</p>
+<p>每个节点中的键值数量不同。B 树中的每个节点可以包含多个键值，而
+B+树中的每个节点只能包含少数几个键值。</p>
+<p>B+树中的叶子节点有链接。在
+B+树中，除了根节点外，所有的叶子节点都会通过链接相互连接，因此可以方便地遍历所有的叶子节点。而在
+B 树中，叶子节点没有链接，因此不能方便地遍历所有的叶子节点。</p>
+<p>B+树中所有的数据都存储在叶子节点中。在
+B+树中，所有的数据都存储在叶子节点中，因此可以保证数据的顺序性。而在 B
+树中，数据可能存储在非叶子节点中，因此不能保证数据的顺序性。</p>
+<p>总之，B+树和 B
+树之间的主要区别在于：每个节点中的键值数量不同，B+树中的叶子节点有链接，B+树中所有的数据都存储在叶子节点中。</p>
+<h3 id="事务四大特征">事务四大特征</h3>
+<p>事务具有四大特征，分别是：</p>
+<ol type="1">
+<li>原子性（Atomicity）：事务中的所有操作要么全部执行，要么全部不执行。</li>
+<li>一致性（Consistency）：事务必须使数据库从一个一致性状态变成另一个一致性状态。</li>
+<li>隔离性（Isolation）：事务之间不能互相影响，即使在并发执行的情况下，每个事务都要像独立执行一样。</li>
+<li>持久性（Durability）：事务执行完毕之后，对数据库的更改就是永久性的，即使在数据库系统故障的情况下也不会丢失。</li>
+</ol>
+<h3 id="事务的隔离级别">事务的隔离级别</h3>
+<p>事务的隔离级别是指在并发执行事务的情况下，对于同一数据的访问，各个事务之间的隔离程度。</p>
+<p>通常情况下，数据库系统都提供了多种隔离级别，用户可以根据自己的需要选择适当的隔离级别。</p>
+<p>常见的隔离级别包括：</p>
+<ol type="1">
+<li>读未提交（Read
+Uncommitted）：事务可以读取别的事务未提交的数据，存在脏读的风险。</li>
+<li>读已提交（Read
+Committed）：事务只能读取别的事务已经提交的数据，不存在脏读的风险，但是存在不可重复读的风险。</li>
+<li>可重复读（Repeatable
+Read）：事务在同一时间内，多次读取同一数据，每次读取的数据都相同，不存在不可重复读的风险，但是存在幻读的风险。</li>
+<li>串行化（Serializable）：事务串行执行，完全避免了脏读、不可重复读和幻读的风险，但是性能较差。</li>
+</ol>
+<h2 id="前端">前端</h2>
+<h3 id="js有哪些数据类型">JS有哪些数据类型？</h3>
+<p>JavaScript有几种数据类型，包括原始类型（primitive
+types）和对象类型（object types）。</p>
+<p>原始类型包括：</p>
+<ul>
+<li>字符串（string）</li>
+<li>数字（number）</li>
+<li>布尔值（boolean）</li>
+<li>null</li>
+<li>undefined</li>
+</ul>
+<p>对象类型包括：</p>
+<ul>
+<li>对象（object）</li>
+<li>数组（array）</li>
+<li>函数（function）</li>
+</ul>
+<p>JavaScript还有一种特殊的数据类型，叫做符号类型（symbol
+type），它是ECMAScript
+6中引入的新类型。符号类型用于创建独一无二的值。</p>
+<h3 id="es6有哪些新特性">ES6有哪些新特性？</h3>
+<p>ECMAScript 6 (也称为 ES6 或 ECMAScript 2015) 是一个版本的 ECMAScript
+标准。ECMAScript 是 JavaScript 的核心语言规范。</p>
+<p>ES6 新增了很多特性，包括箭头函数、块级作用域、模板字符串、类、Promise
+对象、模块和解构赋值。它还改进了对象字面量语法和添加了对新的数据类型，如
+Set 和 Map，的支持。</p>
+<p>ES6
+还包括许多其他改进，如新的迭代器、生成器、模块加载器和代理（Proxies）等。需要注意的是，并非所有浏览器都支持
+ES6 的所有特性，因此你可能需要使用一些工具，如 Babel 或
+Traceur，来帮助你转换代码以在浏览器中运行。</p>
+<h3 id="怪异盒模型和标准盒模型">怪异盒模型和标准盒模型</h3>
+<p>“怪异盒模型”和“标准盒模型”指的是 HTML 中的盒模型，也就是元素在 HTML
+页面中的布局方式。</p>
+<p>“怪异盒模型”是指默认的盒模型，在这种盒模型下，元素的宽度和高度不包括元素的内边距和边框，因此元素的实际大小会比设定的宽度和高度要大。</p>
+<p>“标准盒模型”则是指将元素的宽度和高度包括内边距和边框在内的盒模型。在这种盒模型下，元素的实际大小与设定的宽度和高度一致。</p>
+<p>前端开发人员可以通过设置 CSS
+样式来控制元素使用怪异盒模型还是标准盒模型。如果要让元素使用标准盒模型，可以在
+CSS 样式中设置 <code>box-sizing: border-box</code>。</p>
+<h3 id="get和post的区别">GET和POST的区别</h3>
+<p>GET 和 POST 是两种常用的 HTTP 请求方法，它们用于向 Web
+服务器请求资源。</p>
+<p>GET 和 POST 的主要区别如下：</p>
+<ul>
+<li>请求的方式不同：GET 使用 URL 传递参数，而 POST
+使用请求主体传递参数。</li>
+<li>参数的有效长度不同：GET 有效长度一般较短，而 POST
+没有长度限制。</li>
+<li>安全性不同：GET 不安全，因为请求参数会显示在 URL
+中，容易被恶意篡改，而 POST 比较安全，因为请求参数不会显示在 URL
+中。</li>
+<li>请求的类型不同：GET 用于获取资源，而 POST
+用于向服务器提交数据。</li>
+</ul>
+<p>通常情况下，GET 用于获取数据，而 POST
+用于提交数据。但实际应用中，这两种方法并没有严格的界限，有时也可以用 GET
+方法提交数据，或者用 POST 方法获取数据。</p>
+<h3 id="const的好处">const的好处</h3>
+<p>在JavaScript中，<code>const</code>声明用于定义常量。常量是指一旦被定义，就不能再次更改的值。与使用
+<code>var</code>或 <code>let</code>声明的变量不同，在使用
+<code>const</code>声明的变量中，您不能再次赋值。</p>
+<p>使用 <code>const</code>声明变量有几个好处：</p>
+<ul>
+<li>可以避免意外更改变量的值，从而提高代码的可靠性。</li>
+<li>在代码中使用
+<code>const</code>声明变量可以让您更容易地了解该变量是否允许被更改。</li>
+<li>在某些情况下，使用
+<code>const</code>可以提高代码的性能。由于JavaScript引擎可以对常量执行额外的优化，因此使用常量可能会更快。</li>
+</ul>
+<h3 id="元素垂直居中">元素垂直居中</h3>
+<p>HTML 元素垂直居中有几种方法，包括使用 CSS 的
+<code>vertical-align</code> 属性，使用 CSS 的
+<code>display:table-cell</code> 和
+<code>vertical-align:middle</code>，使用 CSS 的
+<code>position:absolute</code> 和 <code>top:50%</code>，以及使用 CSS 的
+<code>flexbox</code> 布局。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/chatgpt/" rel="tag"># chatgpt</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/%E8%B1%86%E6%B5%86/" rel="prev" title="豆浆">
+                  <i class="fa fa-angle-left"></i> 豆浆
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/%E9%A1%B9%E7%9B%AE%E7%AE%80%E4%BB%8B/" rel="next" title="项目简介">
+                  项目简介 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">符川</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"lU6d3FysA23TiCI8IjNm8FIq-gzGzoHsz","app_key":"REXsOK3C6lGuzQjH0anf6FGE","server_url":null,"security":false}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>

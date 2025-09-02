@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dradows.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="查看系统文件 查看centos版本 1cat &#x2F;etc&#x2F;redhat-release 查看cpu信息 1cat &#x2F;proc&#x2F;cpuinfo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux指令">
+<meta property="og:url" content="https://dradows.github.io/linux%E6%8C%87%E4%BB%A4/index.html">
+<meta property="og:site_name" content="厄息">
+<meta property="og:description" content="查看系统文件 查看centos版本 1cat &#x2F;etc&#x2F;redhat-release 查看cpu信息 1cat &#x2F;proc&#x2F;cpuinfo">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-12-03T06:34:35.000Z">
+<meta property="article:modified_time" content="2025-09-02T16:17:36.419Z">
+<meta property="article:author" content="符川">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="chatgpt">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://dradows.github.io/linux%E6%8C%87%E4%BB%A4/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dradows.github.io/linux%E6%8C%87%E4%BB%A4/","path":"linux指令/","title":"linux指令"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>linux指令 | 厄息</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">厄息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">查看系统文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8Bcentos%E7%89%88%E6%9C%AC"><span class="nav-number">1.1.</span> <span class="nav-text">查看centos版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8Bcpu%E4%BF%A1%E6%81%AF"><span class="nav-number">1.2.</span> <span class="nav-text">查看cpu信息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%AF%B9%E5%BA%94%E7%AB%AF%E5%8F%A3%E8%BF%9B%E7%A8%8B-netstat"><span class="nav-number">2.</span> <span class="nav-text">查看对应端口进程 netstat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%8E%8B%E7%BC%A9-tarunzipunrar"><span class="nav-number">3.</span> <span class="nav-text">解压缩 tar&#x2F;unzip&#x2F;unrar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2-whichwhereislocatefind"><span class="nav-number">4.</span> <span class="nav-text">搜索 which&#x2F;whereis&#x2F;locate&#x2F;find</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%9D%83%E9%99%90-chmod"><span class="nav-number">5.</span> <span class="nav-text">修改权限 chmod</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%8B%A5%E6%9C%89%E8%80%85-chown"><span class="nav-number">6.</span> <span class="nav-text">修改拥有者 chown</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E5%8C%B9%E9%85%8D%E8%A1%8C-grep"><span class="nav-number">7.</span> <span class="nav-text">输出匹配行 grep</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E6%9C%AC%E6%B5%81%E7%BC%96%E8%BE%91-sed"><span class="nav-number">8.</span> <span class="nav-text">文本流编辑 sed</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%B0%BE%E9%83%A8-tail"><span class="nav-number">9.</span> <span class="nav-text">查看尾部 tail</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%B2%E6%8E%A5-cat"><span class="nav-number">10.</span> <span class="nav-text">串接 cat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6-less"><span class="nav-number">11.</span> <span class="nav-text">查看文件 less</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B1%87%E6%80%BB"><span class="nav-number">12.</span> <span class="nav-text">汇总</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">符川</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">113</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dradows.github.io/linux%E6%8C%87%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="符川">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="厄息">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="linux指令 | 厄息">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          linux指令
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-12-03 06:34:35" itemprop="dateCreated datePublished" datetime="2022-12-03T06:34:35+00:00">2022-12-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-09-02 16:17:36" itemprop="dateModified" datetime="2025-09-02T16:17:36+00:00">2025-09-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/linux%E6%8C%87%E4%BB%A4/" class="post-meta-item leancloud_visitors" data-flag-title="linux指令" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="查看系统文件">查看系统文件</h2>
+<h3 id="查看centos版本">查看centos版本</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> /etc/redhat-release</span><br></pre></td></tr></table></figure>
+<h3 id="查看cpu信息">查看cpu信息</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> /proc/cpuinfo</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h2 id="查看对应端口进程-netstat">查看对应端口进程 netstat</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -tunpl | grep 端口号</span><br></pre></td></tr></table></figure>
+<h2 id="解压缩-tarunzipunrar">解压缩 tar/unzip/unrar</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar –xvf file.tar</span><br></pre></td></tr></table></figure>
+<p>参数：</p>
+<ul>
+<li><code>-x</code> 解压</li>
+<li><code>-v</code> 显示过程</li>
+<li><code>-f</code> 后接文件名</li>
+<li><code>-z</code> 解压 <code>.gz</code>文件</li>
+<li><code>-Z</code> 解压 <code>.Z</code>文件</li>
+<li><code>-j</code> 解压 <code>.bz2</code>文件</li>
+</ul>
+<p><code>unzip</code> 解压 <code>.zip</code>文件 <code>unrar</code> 解压
+<code>.rar</code>文件</p>
+<h2 id="搜索-whichwhereislocatefind">搜索 which/whereis/locate/find</h2>
+<ul>
+<li><code>which</code> 搜索可执行文件。</li>
+<li><code>whereis</code> 比 <code>which</code> 搜索更多文件类型。</li>
+<li><code>locate</code> 通过数据库索引查找，更快但有延迟，可通过
+<code>updatedb</code>更新索引。</li>
+<li><code>find / -name filename</code> 更慢，可搜索指令目录。</li>
+</ul>
+<h2 id="修改权限-chmod">修改权限 chmod</h2>
+<ol type="1">
+<li><p>绝对模式：使用数字来指定文件或目录的权限，包含三个数字，每个数字代表一组权限（所有者、所属组和其他用户）。如下指令将
+file 的权限设置为所有用户都可以读（4）、写（2）和执行（1），即
+rwxrwxrwx。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 file</span><br></pre></td></tr></table></figure></li>
+<li><p>相对模式：使用符号来指定文件或目录的权限，包含三个符号，每个符号代表一组权限（所有者、所属组和其他用户）。如下指令将
+file 的权限设置为所有用户都可以读（r）、写（w）和执行（x），即
+rwxrwxrwx。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod ugo+rwx file</span><br></pre></td></tr></table></figure>
+<p>其中，<code>u</code>代表所有者，<code>g</code>代表所属组，<code>o</code>代表其他用户，<code>a</code>代表所有用户，<code>+</code>代表添加权限，<code>-</code>代表删除权限，<code>=</code>代表设置权限。</p>
+<p>并且可以如下通过逗号间隔的方式指定不同用户的权限相对变更。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod u-w,g-rwx,o-rwx file</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="修改拥有者-chown">修改拥有者 chown</h2>
+<p>命令格式： chown [选项] 用户名 [文件名]</p>
+<p>常见选项： -R：递归处理，允许同时改变该目录下所有子目录和文件的拥有者
+-c：仅在文件的拥有者真正变化时显示信息 -v：执行时显示详细的处理信息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown user01 a.txt</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown -Rv user02 test/</span><br></pre></td></tr></table></figure>
+<h2 id="输出匹配行-grep">输出匹配行 grep</h2>
+<p>grep 是在 Linux/Unix
+操作系统中常用的命令之一，其功能为在文件或输出中查找指定的文本模式，并输出匹配的行。</p>
+<p>全称<em>Global regular expression</em> and <em>print</em>。</p>
+<p>命令格式： grep [选项] 模式 [文件名]</p>
+<p>常见选项： -c：仅输出匹配的行数 -i：忽略字母大小写 -n：输出匹配的行号
+-r：递归搜索指定目录及其子目录下的所有文件 -v：仅输出不匹配的行</p>
+<p>示例：</p>
+<ol type="1">
+<li>在文件 a.txt 中查找包含"hello"的行： grep "hello" a.txt</li>
+<li>在文件 b.txt 中查找以"world"结尾的行，同时忽略字母大小写： grep -i
+"world$" b.txt</li>
+<li>在目录 test
+及其子目录下的所有文件中查找包含"test"的行，同时输出匹配的行号： grep
+-rn "test" test/</li>
+<li>在输出中查找包含"error"的行，同时输出不匹配的行： command | grep -v
+"error"</li>
+</ol>
+<h2 id="文本流编辑-sed">文本流编辑 sed</h2>
+<p>sed 指令是一种流编辑器，用于对文件或文本进行编辑和转换。它是 Unix
+和类 Unix 操作系统中常见的工具之一。</p>
+<p>sed
+指令的基本用法是将输入流（通常是文件）的每一行交给一个脚本进行处理，然后将处理结果输出到标准输出中，也可以直接修改输入文件。脚本由一条或多条指令组成。</p>
+<p>sed 指令支持的指令包括：</p>
+<p>1.替换指令（s）：用于查找并替换文本。</p>
+<p>2.删除指令（d）：用于删除指定的行或行范围。</p>
+<p>3.输出指令（p）：用于将指定的行或行范围输出到标准输出中。</p>
+<p>4.追加指令（a）：用于在指定行后面追加文本。</p>
+<p>5.插入指令（i）：用于在指定行前面插入文本。</p>
+<p>6.变换指令（y）：用于将文本中的字符按照指定的映射规则进行转换。</p>
+<p>sed 指令的语法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed [-n] [-e] &#x27;脚本&#x27; 文件名</span><br></pre></td></tr></table></figure>
+<p>其中，-n 选项表示只输出经过处理的行，-e
+选项用于添加一条脚本指令。脚本由单引号引起来，可以包含多条指令。</p>
+<p>例如，下面是一个将文件中 hello 替换成 world 的例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sed -e &#x27;s/hello/world/&#x27; file.txt</span><br></pre></td></tr></table></figure>
+<p>sed 指令还可以通过正则表达式进行匹配，可以灵活地处理文本。</p>
+<h2 id="查看尾部-tail">查看尾部 tail</h2>
+<p>在Linux中，tail指令是一种用于显示文件尾部内容的命令行工具。它可以快速显示指定文件的后几行内容，通常用于查看日志文件、实时监控文件变化等。</p>
+<p>tail指令有许多不同的选项，用于控制显示的内容。以下是其中的一些常用选项：</p>
+<ul>
+<li>-f ：实时跟踪文件的变化，并将新增内容实时显示出来。</li>
+<li>-n NUM ：仅显示文件末尾的NUM行内容。</li>
+<li>-q ：不显示文件名，仅显示内容。</li>
+<li>-s SEC ：在输出内容之间加入延时，以秒为单位。</li>
+</ul>
+<p>例如，要查看日志文件的最后10行内容并实时跟踪文件变化，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -f -n 10 logfile.txt</span><br></pre></td></tr></table></figure>
+<p>这将在屏幕上实时显示logfile.txt文件的末尾10行内容，并等待新的内容输入。如果有新的内容添加到该文件中，tail将自动更新并显示新增的内容。</p>
+<h2 id="串接-cat">串接 cat</h2>
+<p>在Linux中，cat指令是一种用于连接、显示、复制文本文件内容的命令行工具。它可以将多个文本文件的内容输出到一个文件中，也可以用来创建新文件，或者从一文件复制到另一文件。</p>
+<p>cat指令有许多不同的选项，用于控制输出的形式。以下是其中的一些常用选项：</p>
+<ul>
+<li>-n ：显示行号（在每行前面添加行号）。</li>
+<li>-s ：把连续的多个空行合并为一行。</li>
+<li>-v ：显示不可打印（非 ASCII）字符。</li>
+<li>-A ：同时使用 -v 和 -s 选项。</li>
+</ul>
+<p>例如，要在屏幕上显示文件file.txt的内容，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat file.txt</span><br></pre></td></tr></table></figure>
+<p>也可以通过管道符号将cat指令的输出输入到另一个命令中，以实现更复杂的文本处理任务。例如，要在文件file.txt的每行前面加上行号并将结果输出到新文件newfile.txt中，可以使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat -n file.txt &gt; newfile.txt</span><br></pre></td></tr></table></figure>
+<p>这将将file.txt的内容添加行号后输出到新文件newfile.txt中。</p>
+<p>可以使用Linux中的cat命令创建新文件，步骤如下：</p>
+<ol type="1">
+<li>在命令行中输入以下命令，使用两个大于符号指定输出重定向到一个新文件名：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; newfile.txt</span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>按Enter键开始输入新文件的文本内容，每输入一行按Enter键结束。输入完成后，按Ctrl+D组合键结束文件输入。</li>
+<li>这时就成功创建了一个新文件newfile.txt，可以使用ls命令查看当前目录下的文件列表，找到新创建的文件。</li>
+</ol>
+<p>注意：如果新文件已经存在，将会覆盖原文件内容。因此，在使用cat创建文件时要特别小心，避免误操作导致文件丢失。</p>
+<h2 id="查看文件-less">查看文件 less</h2>
+<p>在Linux中，less指令是一种用于查看文本文件内容的命令行工具。它可以逐页显示文件内容，支持向上或向下翻页、查找关键字、快速跳到文件的开头或结尾等功能，是查看大型文本文件时更好的替代工具。</p>
+<p>less指令的基本语法为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">less [OPTIONS] FILENAME</span><br></pre></td></tr></table></figure>
+<p>其中，FILENAME为要查看的文件路径，OPTIONS为less指令的选项，用于控制
+less 的行为。</p>
+<p>less指令的一些常用选项如下：</p>
+<ul>
+<li>-n ：显示每行所在的行号。</li>
+<li>-i ：忽略查找时的大小写。</li>
+<li>-E ：强制显示到文件的结尾。</li>
+<li>-S ：关闭自动换行，显示长行时不自动折行。</li>
+<li>/pattern ：查找文件中的pattern字符串。</li>
+</ul>
+<p>例如，如果要查看文件 file.txt 的内容，可以输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">less file.txt</span><br></pre></td></tr></table></figure>
+<p>在less界面中，使用上下箭头键来向前和向后翻页，使用空格键向下翻一页，使用b键向上翻一页，使用g键跳至文件开头，使用G键跳至文件结尾，用斜杠
+/ 加关键字来进行文本搜索等。</p>
+<h2 id="汇总">汇总</h2>
+<p>cd：切换目录 ls：列出目录下的文件和文件夹 pwd：显示当前目录的路径
+rm：删除文件或目录 cp：复制文件或目录 mv：移动或重命名文件或目录
+mkdir：创建一个新的目录 touch：创建一个新文件或更新已有文件的时间戳
+cat：显示文件内容 grep：在文件中查找特定文本
+top：显示系统的运行情况和进程信息 ps：查看系统进程
+chmod：更改文件或目录的权限 chown：更改文件或目录的所有者和组
+tar：打包和解压缩文件和目录 sudo：以管理员身份运行指令
+ping：测试网络连接 curl：下载网站的数据 wget：下载网站的文件
+ssh：远程登录到另一台计算机。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/linux/" rel="tag"># linux</a>
+              <a href="/tags/chatgpt/" rel="tag"># chatgpt</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/yum%E5%8A%A0%E9%80%9F/" rel="prev" title="yum加速">
+                  <i class="fa fa-angle-left"></i> yum加速
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" rel="next" title="markdown基本语法">
+                  markdown基本语法 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">符川</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"lU6d3FysA23TiCI8IjNm8FIq-gzGzoHsz","app_key":"REXsOK3C6lGuzQjH0anf6FGE","server_url":null,"security":false}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>

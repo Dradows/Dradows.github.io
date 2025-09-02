@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dradows.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="（这篇文章敲到一半的时候电脑突然重启了，鉴于没开什么耗资源的软件，也没出现任何蓝屏之类的状况，不得不怀疑是触发了 win11 的某种重启机制） 不记得确切日期，但大概是本科的时候读过卢梭的忏悔录。其实也没有读太多，连第一部都没读完，只记得他幼年时的生活也已经算是颠沛，但他对自己的内心的一些坦率的表露仍让我记忆深刻。对于自传，其实我一向是没什么兴趣的，不管是本人所写还是代笔，所谓自传多数时候不过是对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="心与计算机">
+<meta property="og:url" content="https://dradows.github.io/%E5%BF%83%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%9C%BA/index.html">
+<meta property="og:site_name" content="厄息">
+<meta property="og:description" content="（这篇文章敲到一半的时候电脑突然重启了，鉴于没开什么耗资源的软件，也没出现任何蓝屏之类的状况，不得不怀疑是触发了 win11 的某种重启机制） 不记得确切日期，但大概是本科的时候读过卢梭的忏悔录。其实也没有读太多，连第一部都没读完，只记得他幼年时的生活也已经算是颠沛，但他对自己的内心的一些坦率的表露仍让我记忆深刻。对于自传，其实我一向是没什么兴趣的，不管是本人所写还是代笔，所谓自传多数时候不过是对">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-04-19T01:58:50.000Z">
+<meta property="article:modified_time" content="2025-09-02T16:17:36.420Z">
+<meta property="article:author" content="符川">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://dradows.github.io/%E5%BF%83%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%9C%BA/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://dradows.github.io/%E5%BF%83%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%9C%BA/","path":"心与计算机/","title":"心与计算机"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>心与计算机 | 厄息</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">厄息</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">符川</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">113</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dradows.github.io/%E5%BF%83%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%9C%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="符川">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="厄息">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="心与计算机 | 厄息">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          心与计算机
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-04-19 01:58:50" itemprop="dateCreated datePublished" datetime="2023-04-19T01:58:50+00:00">2023-04-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-09-02 16:17:36" itemprop="dateModified" datetime="2025-09-02T16:17:36+00:00">2025-09-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9D%82%E8%B0%88/" itemprop="url" rel="index"><span itemprop="name">杂谈</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/%E5%BF%83%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-meta-item leancloud_visitors" data-flag-title="心与计算机" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>（这篇文章敲到一半的时候电脑突然重启了，鉴于没开什么耗资源的软件，也没出现任何蓝屏之类的状况，不得不怀疑是触发了
+win11 的某种重启机制）</p>
+<p>不记得确切日期，但大概是本科的时候读过卢梭的忏悔录。其实也没有读太多，连第一部都没读完，只记得他幼年时的生活也已经算是颠沛，但他对自己的内心的一些坦率的表露仍让我记忆深刻。对于自传，其实我一向是没什么兴趣的，不管是本人所写还是代笔，所谓自传多数时候不过是对自身的一种粉饰，然后牵强附会地把某些成功依附在一些看似相关其实不然，但又极有噱头的事情上。忏悔录的序言中也讲述了卢梭对这种事情的看法，引文如下：</p>
+<span id="more"></span>
+<blockquote>
+<p>只有本人，没有人能写出他的一生。他的内心活动、他的真实的生活只有他本人才知道，然而在写的过程中他却把它掩饰起来，他以写他的一生为名而实际上在为自己辩解，他把自己写成他愿意给人看到的那样，就是一点也不像他本人的实际情况。最坦率的人所做的，充其量不过是他们所说的话还是真的，但是他们有所保留。这就是在说谎。他们没有说出来的话竟会如此改变他们假意供认的事，以致当他们说出一部分真事时也等于什么都没有说。</p>
+</blockquote>
+<p>初看忏悔录的时候，我也觉得这里面许多描述太过“文学”，更像是未来对过去的一种装点而非记录，但当逐渐看到卢梭所记录的那些事后，我相信这些事件本身足以让人相信文字背后是有着一颗赤诚的心的。</p>
+<p>也许看到卢梭的名字就足以让一些人昏昏欲睡。但纵使是一个对文学、哲学都毫无兴趣的人，也许也能从这部书中找到只言片语的乐趣。他在写下文字时，以一种几乎毫不遮掩的方式记录了自己的性与爱。我未看完全书，今日也只是再粗略扫了下各章，略摘选部分他的情感相关记录如下：</p>
+<ol type="1">
+<li><p>"妈妈"，华伦夫人。</p>
+<blockquote>
+<p>我本来以为她一定是个面目可憎、老态龙钟的丑老婆子，我认为德·彭维尔先生说的善心的太太只能是这个样子；然而我现在所见到的却是一个风韵十足的面庞，一双柔情美丽的大蓝眼睛，光彩闪耀的肤色，动人心魄的胸部的轮廓——我这新入教的年轻信徒，一眼便把她完全看遍了。我立刻被她俘虏了。</p>
+</blockquote>
+<blockquote>
+<p>从第一天起，我们之间就建立了最亲密的关系，在这以后她的一生中，我们之间总是保持着这种关系。“孩子”是她对我的称呼，“妈妈”则成了我对她的称呼，甚至后来当岁月冲淡了我们二人间的年龄差异的时候，我们也仍旧保持着“孩子”和“妈妈”的称呼。我觉得这两个称呼把我们相互间交往的含义，我们彼此的态度的纯朴，特别是我们心灵间的联系都非常出色地表示出来了。</p>
+</blockquote>
+<p>她比卢梭大了约十二岁，初识时卢梭才约十六七岁，对这样一个美貌的女人迅速地产生了依恋的情感，但彼时还未产生一种性的冲动，只是一个尚无依靠者对世界的牵挂，但在相处的过程中，这种情感也逐渐变化。</p>
+<blockquote>
+<p>一句话，拿我和最热烈的情人来比，只剩下唯一的一个差别了，但这也是根本的差别；正是这种差别，使得我的情况从情理上讲，几乎是不可想象的。</p>
+</blockquote>
+<blockquote>
+<p>不久，我这种惊慌消除了，我学会了欺骗本性的危险办法，这种办法拯救了像我这种性情的青年人，使他们免于淫佚放荡的生活，但却消耗着他们的健康、精力，有时甚至他们的生命。这种恶习，不仅对于怕羞的人和胆小的人是非常方便的，而且对于那些想象力相当强的人还有一种很大的吸引力；换句话说，就是他们可以随心所欲地去占有一切女性，可以使自己心里着迷的漂亮女人来助成自己的乐趣，而无须得到她们的同意。在我受到这种有害的便利的引诱之后，我就一直在摧毁自然赋予我的、多少年来才保养好的健康身体。</p>
+</blockquote>
+<p>后来，在与一个女学生及其母亲的相处过程中，卢梭感受到了一种来自她人的超越温情的情感。</p>
+<blockquote>
+<p>她那种淡漠、冰冷和毫无感情的态度简直到了令人难以置信的程度。不论是让她高兴，或是惹她生气，都同样是办不到的。我确信要是有个男人对她采取什么无理行动，她也会任凭摆布的，这当然不是由于她心里愿意，而是由于麻木不仁。她的母亲唯恐她碰到这种危险，一步也不离开她。</p>
+</blockquote>
+<blockquote>
+<p>每天上午我来到她家的时候，给我预备的奶油咖啡早就摆在那里了，母亲总是忘不了以紧紧贴住嘴唇的亲吻来迎接我，我在好奇心的驱使下，真想对她的女儿回敬同样的一吻，看看她到底有什么表示。</p>
+</blockquote>
+<blockquote>
+<p>腊尔太太对我太关心了，因此不能使我对她毫不动情，她的关怀使我非常感动。我认为这是很平常的一件事，就对妈妈说了。其实就是我感到有什么神秘的成分，我也是会跟她谈的，因为不论什么事情，要我对她保守秘密是办不到的；我的心赤裸裸地摆在她的面前，如同摆在上帝的面前一样。</p>
+</blockquote>
+<p>在腊尔太太以及另一位孟顿夫人的所带来的“危险”的影响下，妈妈以一种荒诞的理由向卢梭允诺了性。</p>
+<blockquote>
+<p>她用了整整一天的时间来使我能够接受她要给我的恩情，但是她不像别的女人那样用巧计和调情来达到目的，而是用充满感情和良知的谈话。她说的那些话，与其说是对我的诱惑，不如说是对我的开导，刺激感官者少，感动心灵者多。但是，无论她那番既不冰冷也不忧伤的话说得如何出色，如何有益，我都没有以应有的注意去倾听，也没有像从前那样把她的话深深地铭刻在心上。</p>
+</blockquote>
+<blockquote>
+<p>大家可以设想一下我那热情奔放和贪恋异性的气质，燃烧的血液，痴情的心，我的精力，我的强壮的体质，我的年龄。再想想我当时渴望得到女人却还没有接触过任何一个女人的情况，想象、需要、虚荣、好奇，全都交织在一起，使我欲火中烧，急切地要做一个男人，表现为一个男人。</p>
+</blockquote>
+<blockquote>
+<p>与其说渴望不如说是畏惧的那个日子终于来到了。我既然什么都应许了，也就不能说了不算。我的心实践了我的诺言，并不希求报偿。不过，我却得到了报偿。于是，我便第一次投入了一个女人——我所崇拜的一个女人的怀抱。我幸福吗？不，我只是得到了肉体上的满足。有一种难以克服的忧伤毒化了它的魅力。我觉得我好像犯下了一桩乱伦罪似的。有两三次，我激动地把她紧紧搂在怀里的时候，我的眼泪浸湿了她的胸脯。她呢，既不显得忧伤，也不显得兴奋，只有温存和平静。因为她根本不是一个喜欢纵欲的女人，没有追求过这方面的满足，所以她既没感到性的快乐，也不为此而懊悔。</p>
+</blockquote>
+<p>对于以“妈妈”和“孩子”互称的二人来说，这种关系最够荒诞，卢梭也对妈妈做出了解释。</p>
+<blockquote>
+<p>我再说一遍，她的一切过失都在于她缺乏判断能力，绝不是出自她的情欲。她是上等家庭出身，心地纯洁，她喜欢正派的行为，她的性情是正直和善良的，趣味也相当高雅。她生来就是为了做一个具有完美品德的女人，她也喜欢这样做，但是她没有能遵守这种品德，因为她一向所听从的不是把她引向正路的感情，而是把她引入迷途的理性。当许多错误的道理引她走入迷途的时候，她的正确的感情一直在抵抗。</p>
+</blockquote></li>
+<li><p>女店主巴西勒太太</p>
+<blockquote>
+<p>这个新的埃癸斯托斯一看见我到他的女主人店里来，就气得嘴里直嘟囔，他以轻蔑的态度对待我，女主人也毫不留情地以同样的态度对待他。她甚至好像为了自己开心，故意在他面前对我表示亲昵，叫他难堪。这种报复方法非常适合我的胃口，如果我们单独在一起的时候，她对我也是这样，那就更合我的口味了。但是她却并不把事情发展到这种程度，或者至少是方式不一样。也许是她认为我太年轻，也许她不知道该怎样采取主动，也许她确实愿意做一个贤淑的女人，她对我采取一种保留态度，固然这种态度并不拒人于千里之外，我却不知道为什么竟感到畏缩。</p>
+</blockquote>
+<blockquote>
+<p>但是我有时看到，由于她的某种同情以及她的披肩下面的胸膛不时起伏，这种危险的情景更使我神魂颠倒。当我热情迸发到几乎不能自持的时候，她便以平静的声音向我说句话，我便立即清醒过来。</p>
+</blockquote>
+<blockquote>
+<p>我赶紧站起来，同时抓住了她伸给我的一只手，热烈地吻了两下，在我吻第二下的时候，我觉得她那只可爱的手稍稍按了一下我的嘴唇。我一生也没经过这样愉快的时刻，可惜良机不再，我们这种青春的爱情也就到此为止了。</p>
+</blockquote>
+<blockquote>
+<p>在占有女人时所能感到的一切，都抵不上我在她脚前所度过的那两分钟，虽然我连她的衣裙都没有碰一下。是的，任何快乐都比不上一个心爱的正派女人所能给予的快乐。在她跟前，一切都是恩宠。</p>
+</blockquote></li>
+<li><p>娼妓徐丽埃妲</p>
+<blockquote>
+<p>她那双东方型的大黑眼珠把火一样的热情射进我的心里，虽然先是一阵惊讶使我有些不知所措，但是肉感之乐很快就把我迷住了，以至于尽管有许多人看着，还是需要那个美人儿亲自使我有所克制，因为我醉了，或者毋宁说是发狂了。</p>
+</blockquote>
+<blockquote>
+<p>我曾经满怀激情地说起过拉尔纳热夫人，现在回忆起来，有时还使我如醉如痴，但是，要是和我的徐丽埃妲比起来，她是多么老丑和冷漠啊！</p>
+</blockquote>
+<blockquote>
+<p>我走进一个妓女的卧室，就跟走进爱与美的神庙里一样，我仿佛在她身上见到了美神和爱神。我绝对不能相信，如果你没有敬慕之意和尊重之心，你竟能感到像她使我感到的那种情感。当我刚从最初的亲昵之中认识到她的媚态与爱抚的价值，就唯恐失去它的果实，急于要去摘取。忽然我感到，不是欲火在燃烧着我的全身，而是冰块在我的血管里奔流，我的两腿发软了，我几乎晕倒了，我赶快坐下来，哭得和小孩一样。</p>
+</blockquote>
+<blockquote>
+<p>我立刻就在脑子里盘算起来了，一个女人怎么会有个瘪奶头呢，因为我深信这是由于某种重大的天生暗疾，并把这个念头转了又转，所以我就明明白白看出我想象中的最美妙的人儿，此刻抱在我怀里的，原来只是一个畸形的怪物，只是大自然的次品，男人的弃物，床笫间的赝货。</p>
+</blockquote>
+<blockquote>
+<p>我想去坐到她的身边，她却又走开了，找了张躺椅坐下，一忽儿又站起来，在房里踱来踱去，一面摇着扇子，以冷淡而嫌恶的语调对我说：“查内托，lascia
+le donne，e studia la matematica（丢开女人，研究数学去吧）。”</p>
+</blockquote>
+<blockquote>
+<p>而我真正不能自遣的，老实说，就是我给她留下了一个可鄙的印象。</p>
+</blockquote></li>
+<li><p>包定十一二岁的小姑娘</p>
+<blockquote>
+<p>他找来找去，居然找到了一个十一二岁的小姑娘，她的狠心的母亲正在设法把她卖出去。</p>
+</blockquote>
+<blockquote>
+<p>不知不觉地，我的心就依恋上那个小安佐蕾妲了，但是那是一种慈父般的感情，毫无肉欲掺杂其中，以至于这种感情越增长，我就越不能在这里面掺进肉欲的成分。我感到，将来这孩子长大了，我要是接触她，一定会毛骨悚然，和犯了乱伦罪一样。我看那善良的卡利约，他的感情也不自觉地转到了这同一方面。我们没想到自己寻来的这许多欢乐，虽和我们原先所计划的一样温馨，而性质却截然不同。</p>
+</blockquote></li>
+<li><p>仆人(旅馆的而不是他的）戴莱丝</p>
+<blockquote>
+<p>我预先向她声明，我永远不会抛弃她，也永远不会和她结婚。爱情、尊敬、真诚，这就是我取得成功的原因；也正因为她心地善良忠厚，所以我虽然在女人面前胆子不大，却取得了美满的结果。</p>
+</blockquote>
+<blockquote>
+<p>我一旦知道了原委，便高兴得叫了起来：“童贞么，”我叫道，“在巴黎，过了二十岁，哪还有什么童贞女！啊！我的戴莱丝啊，我不找我根本不想找的东西，却占有了笃实而健康的你，我太幸福了。”</p>
+</blockquote>
+<blockquote>
+<p>她不会数钱，也不会算账。说话时用的字眼常和她所要说的意思相反。我曾把她使用的词汇编成一本小册子拿给卢森堡夫人取乐。她那些驴唇不对马嘴的话，在我生活过的那些社交圈子里已经变得无人不知、无人不晓了。</p>
+</blockquote>
+<blockquote>
+<p>在那些最高贵的夫人面前，在王公大人面前，她的感情、她的良知、她的应对和她的操守，都为她赢得了普遍的钦佩，并为我招来了许多夸奖她优点的恭维话，而这些恭维话，我觉得都是很真诚的。</p>
+</blockquote></li>
+</ol>
+<p>这些可能只是他与异性经历的冰山一角，有些人在文中占了不少的篇幅，并且掺杂了他极强烈的情感，但我想这些内容更多的也只是他对自己人生的记录，毕竟以他写下这些文字时的年龄，很多人也许已经从他的生命中告别。</p>
+<p>我是有些羡慕卢梭与胡正这样毫无顾忌地表露自己过去的行为的。我也曾想过将自己的所思所想彻底向世界公开，这样也许我能在世上留下一些属于自己的痕迹，虽然这痕迹可能只被一些喜好窥视者看到，而非我所在乎或在乎我之人。</p>
+<p>不过恐怕我永远不会这么做。一面是因为自己的懦弱。另一面？哪怕是卢梭也是在死后才完整公开忏悔录，并且彼时已被统治阶级视为“疯子”，而胡正公开日记时甚至已经是医学意义上的精神病人。这样的前车之鉴摆着，世界恐怕并不欢迎人们袒露内心，也不需要人们袒露内心。</p>
+<p>如果哪天我真地选择了将自己的一切公向这世界展示，恐怕那天我也将被世界彻底放逐。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/20230414/" rel="prev" title="20230414">
+                  <i class="fa fa-angle-left"></i> 20230414
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/20230421/" rel="next" title="20230421">
+                  20230421 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">符川</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"lU6d3FysA23TiCI8IjNm8FIq-gzGzoHsz","app_key":"REXsOK3C6lGuzQjH0anf6FGE","server_url":null,"security":false}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
